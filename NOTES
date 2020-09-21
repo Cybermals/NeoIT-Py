@@ -1,0 +1,3 @@
+* the stencil buffer must be enabled in the "Config.prc" file in order for
+StencilView and similar classes to work properly (see the "etc" folder in the
+Panda3D package)
