@@ -14,6 +14,10 @@
     new_password: NewPassword
     confirm_password: ConfirmPassword
     new_email: NewEmail
+    username2: Username2
+    password2: Password2
+    new_password2: NewPassword2
+    confirm_password2: ConfirmPassword2
 
     Screen:
         name: "LogoScreen"
@@ -386,3 +390,134 @@
                         font_size: dp(24)
                         color: (0, 0, 1, 1)
                         on_release: base.leave_new_account_screen()
+
+    Screen:
+        name: "ChangePasswordScreen"
+
+        canvas:
+            Rectangle:
+                size: self.size
+                source: "./data/textures/GUI/backdrop1.jpg"
+
+        FloatLayout:
+            GameFrame:
+                orientation: "vertical"
+                padding: 64
+                spacing: 8
+                pos_hint: {"x": .05, "y": .15}
+                size_hint: (.5, .8)
+                bg_source: "./data/textures/GUI/startscreen.png"
+
+                Label:
+                    size_hint_y: .2
+                    text: "Change Password"
+                    font_size: dp(48)
+                    color: (0, 0, 1, 1)
+
+                BoxLayout:
+                    orientation: "horizontal"
+                    size_hint_y: .1
+
+                    Label:
+                        size_hint_x: .7
+                        text: "Username:"
+                        font_size: dp(24)
+                        color: (0, 0, 1, 1)
+                        text_size: self.size
+                        halign: "right"
+
+                    TextInput:
+                        id: Username2
+                        font_size: dp(24)
+                        foreground_color: (0, 0, 1, 1)
+                        background_color: (0, 0, 0, 0)
+                        background_normal: "./data/textures/blank.png"
+                        background_active: "./data/textures/blank.png"
+                        background_disabled_normal: "./data/textures/blank.png"
+                        multiline: False
+
+                BoxLayout:
+                    orientation: "horizontal"
+                    size_hint_y: .1
+
+                    Label:
+                        size_hint_x: .7
+                        text: "Password:"
+                        font_size: dp(24)
+                        color: (0, 0, 1, 1)
+                        text_size: self.size
+                        halign: "right"
+
+                    TextInput:
+                        id: Password2
+                        font_size: dp(24)
+                        foreground_color: (0, 0, 1, 1)
+                        background_color: (0, 0, 0, 0)
+                        background_normal: "./data/textures/blank.png"
+                        background_active: "./data/textures/blank.png"
+                        background_disabled_normal: "./data/textures/blank.png"
+                        multiline: False
+                        password: True
+
+                BoxLayout:
+                    orientation: "horizontal"
+                    size_hint_y: .1
+
+                    Label:
+                        size_hint_x: .7
+                        text: "New Password:"
+                        font_size: dp(24)
+                        color: (0, 0, 1, 1)
+                        text_size: self.size
+                        halign: "right"
+
+                    TextInput:
+                        id: NewPassword2
+                        font_size: dp(24)
+                        foreground_color: (0, 0, 1, 1)
+                        background_color: (0, 0, 0, 0)
+                        background_normal: "./data/textures/blank.png"
+                        background_active: "./data/textures/blank.png"
+                        background_disabled_normal: "./data/textures/blank.png"
+                        multiline: False
+                        password: True
+
+                BoxLayout:
+                    orientation: "horizontal"
+                    size_hint_y: .1
+
+                    Label:
+                        size_hint_x: .7
+                        text: "Confirm Password:"
+                        font_size: dp(24)
+                        color: (0, 0, 1, 1)
+                        text_size: self.size
+                        halign: "right"
+
+                    TextInput:
+                        id: ConfirmPassword2
+                        font_size: dp(24)
+                        foreground_color: (0, 0, 1, 1)
+                        background_color: (0, 0, 0, 0)
+                        background_normal: "./data/textures/blank.png"
+                        background_active: "./data/textures/blank.png"
+                        background_disabled_normal: "./data/textures/blank.png"
+                        multiline: False
+                        password: True
+
+                BoxLayout:
+                    orientation: "vertical"
+                    padding: dp(128)
+                    spacing: dp(32)
+
+                    GameButton:
+                        text: "Confirm"
+                        font_size: dp(24)
+                        color: (0, 0, 1, 1)
+                        on_release: base.do_password_change()
+
+                    GameButton:
+                        text: "Back"
+                        font_size: dp(24)
+                        color: (0, 0, 1, 1)
+                        on_release: base.leave_change_password_screen()
