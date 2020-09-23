@@ -14,6 +14,10 @@
     new_password: NewPassword
     confirm_password: ConfirmPassword
     new_email: NewEmail
+    username2: Username2
+    password2: Password2
+    new_password2: NewPassword2
+    confirm_password2: ConfirmPassword2
 
     Screen:
         name: "LogoScreen"
@@ -42,7 +46,7 @@
                 size_hint: (.14, .04)
                 text: "New Game"
                 font_size: dp(24)
-                color: (1, .5, 0, 1)
+                color: (0, 0, 1, 1)
                 on_release: base.new_game()
 
             GameButton:
@@ -50,7 +54,7 @@
                 size_hint: (.14, .04)
                 text: "Multiplayer"
                 font_size: dp(24)
-                color: (1, .5, 0, 1)
+                color: (0, 0, 1, 1)
                 on_release: base.multiplayer()
 
             GameButton:
@@ -58,15 +62,16 @@
                 size_hint: (.14, .04)
                 text: "Quit"
                 font_size: dp(24)
-                color: (1, .5, 0, 1)
+                color: (0, 0, 1, 1)
                 on_release: base.quit()
 
             TextInput:
                 id: UpdateBox
                 pos_hint: {"x": .5, "y": .2}
                 size_hint: (.4, .4)
-                text: ""
+                text: "Loading..."
                 readonly: True
+                foreground_color: (1, 1, 1, 1)
                 background_normal: "./data/textures/GUI/borderCenter.png"
                 background_active: "./data/textures/GUI/borderCenter.png"
                 background_disabled_normal: "./data/textures/GUI/borderCenter.png"
@@ -92,11 +97,11 @@
                     size_hint_y: .1
                     text: "Campaign"
                     font_size: dp(48)
-                    color: (1, .5, 0, 1)
+                    color: (0, 0, 1, 1)
 
                 RecycleView:
                     viewclass: "GameListButton"
-                    data: [{"text": os.path.splitext(campaign)[0], "path": os.path.join("./data/campaigns", campaign), "font_size": dp(24), "color": (1, .5, 0, 1)} for campaign in sorted(os.listdir("./data/campaigns"))]
+                    data: [{"text": os.path.splitext(campaign)[0], "path": os.path.join("./data/campaigns", campaign), "font_size": dp(24), "color": (0, 0, 1, 1)} for campaign in sorted(os.listdir("./data/campaigns"))]
 
                     RecycleBoxLayout:
                         orientation: "vertical"
@@ -109,7 +114,7 @@
                     size_hint_y: .1
                     text: "Back"
                     font_size: dp(24)
-                    color: (1, .5, 0, 1)
+                    color: (0, 0, 1, 1)
                     on_release: base.leave_campaign_select()
 
     Screen:
@@ -133,7 +138,7 @@
                     size_hint_y: .2
                     text: "Login"
                     font_size: dp(48)
-                    color: (1, .5, 0, 1)
+                    color: (0, 0, 1, 1)
 
                 BoxLayout:
                     orientation: "horizontal"
@@ -143,13 +148,13 @@
                         size_hint_x: .33
                         text: "Username:"
                         font_size: dp(24)
-                        color: (1, .5, 0, 1)
+                        color: (0, 0, 1, 1)
 
                     TextInput:
                         id: Username
                         text: ""
                         font_size: dp(24)
-                        foreground_color: (1, .5, 0, 1)
+                        foreground_color: (0, 0, 1, 1)
                         background_color: (0, 0, 0, 0)
                         background_normal: "./data/textures/blank.png"
                         background_active: "./data/textures/blank.png"
@@ -164,13 +169,13 @@
                         size_hint_x: .33
                         text: "Password:"
                         font_size: dp(24)
-                        color: (1, .5, 0, 1)
+                        color: (0, 0, 1, 1)
 
                     TextInput:
                         id: Password
                         text: ""
                         font_size: dp(24)
-                        foreground_color: (1, .5, 0, 1)
+                        foreground_color: (0, 0, 1, 1)
                         background_color: (0, 0, 0, 0)
                         background_normal: "./data/textures/blank.png"
                         background_active: "./data/textures/blank.png"
@@ -186,25 +191,25 @@
                     GameButton:
                         text: "Login"
                         font_size: dp(24)
-                        color: (1, .5, 0, 1)
+                        color: (0, 0, 1, 1)
                         on_release: base.login()
 
                     GameButton:
                         text: "New Account"
                         font_size: dp(24)
-                        color: (1, .5, 0, 1)
+                        color: (0, 0, 1, 1)
                         on_release: base.new_account()
 
                     GameButton:
                         text: "Change Password"
                         font_size: dp(24)
-                        color: (1, .5, 0, 1)
+                        color: (0, 0, 1, 1)
                         on_release: base.change_password()
 
                     GameButton:
                         text: "Back"
                         font_size: dp(24)
-                        color: (1, .5, 0, 1)
+                        color: (0, 0, 1, 1)
                         on_release: base.leave_login_screen()
 
     Screen:
@@ -228,7 +233,7 @@
                     size_hint_y: .2
                     text: "Create New Account"
                     font_size: dp(48)
-                    color: (1, .5, 0, 1)
+                    color: (0, 0, 1, 1)
 
                 BoxLayout:
                     orientation: "horizontal"
@@ -238,7 +243,7 @@
                         size_hint_x: .33
                         text: "Username:"
                         font_size: dp(24)
-                        color: (1, .5, 0, 1)
+                        color: (0, 0, 1, 1)
                         halign: "right"
                         text_size: self.size
 
@@ -246,7 +251,7 @@
                         id: NewUsername
                         text: ""
                         font_size: dp(24)
-                        foreground_color: (1, .5, 0, 1)
+                        foreground_color: (0, 0, 1, 1)
                         background_color: (0, 0, 0, 0)
                         background_normal: "./data/textures/blank.png"
                         background_active: "./data/textures/blank.png"
@@ -261,7 +266,7 @@
                         size_hint_x: .33
                         text: "Password:"
                         font_size: dp(24)
-                        color: (1, .5, 0, 1)
+                        color: (0, 0, 1, 1)
                         halign: "right"
                         text_size: self.size
 
@@ -269,7 +274,7 @@
                         id: NewPassword
                         text: ""
                         font_size: dp(24)
-                        foreground_color: (1, .5, 0, 1)
+                        foreground_color: (0, 0, 1, 1)
                         background_color: (0, 0, 0, 0)
                         background_normal: "./data/textures/blank.png"
                         background_active: "./data/textures/blank.png"
@@ -285,14 +290,14 @@
                         size_hint_x: .65
                         text: "Confirm Password:"
                         font_size: dp(24)
-                        color: (1, .5, 0, 1)
+                        color: (0, 0, 1, 1)
                         halign: "right"
 
                     TextInput:
                         id: ConfirmPassword
                         text: ""
                         font_size: dp(24)
-                        foreground_color: (1, .5, 0, 1)
+                        foreground_color: (0, 0, 1, 1)
                         background_color: (0, 0, 0, 0)
                         background_normal: "./data/textures/blank.png"
                         background_active: "./data/textures/blank.png"
@@ -308,7 +313,7 @@
                         size_hint_x: .33
                         text: "Email:"
                         font_size: dp(24)
-                        color: (1, .5, 0, 1)
+                        color: (0, 0, 1, 1)
                         halign: "right"
                         text_size: self.size
 
@@ -316,7 +321,7 @@
                         id: NewEmail
                         text: ""
                         font_size: dp(24)
-                        foreground_color: (1, .5, 0, 1)
+                        foreground_color: (0, 0, 1, 1)
                         background_color: (0, 0, 0, 0)
                         background_normal: "./data/textures/blank.png"
                         background_active: "./data/textures/blank.png"
@@ -331,7 +336,7 @@
                         size_hint_x: .33
                         text: "Question:"
                         font_size: dp(24)
-                        color: (1, .5, 0, 1)
+                        color: (0, 0, 1, 1)
                         halign: "right"
                         text_size: self.size
 
@@ -339,7 +344,7 @@
                         id: NewQuestion
                         text: ""
                         font_size: dp(24)
-                        foreground_color: (1, .5, 0, 1)
+                        foreground_color: (0, 0, 1, 1)
                         background_color: (0, 0, 0, 0)
                         background_normal: "./data/textures/blank.png"
                         background_active: "./data/textures/blank.png"
@@ -354,7 +359,7 @@
                         size_hint_x: .33
                         text: "Answer:"
                         font_size: dp(24)
-                        color: (1, .5, 0, 1)
+                        color: (0, 0, 1, 1)
                         halign: "right"
                         text_size: self.size
 
@@ -362,7 +367,7 @@
                         id: NewAnswer
                         text: ""
                         font_size: dp(24)
-                        foreground_color: (1, .5, 0, 1)
+                        foreground_color: (0, 0, 1, 1)
                         background_color: (0, 0, 0, 0)
                         background_normal: "./data/textures/blank.png"
                         background_active: "./data/textures/blank.png"
@@ -377,11 +382,142 @@
                     GameButton:
                         text: "Create Account"
                         font_size: dp(24)
-                        color: (1, .5, 0, 1)
+                        color: (0, 0, 1, 1)
                         on_release: base.create_new_account()
 
                     GameButton:
                         text: "Back"
                         font_size: dp(24)
-                        color: (1, .5, 0, 1)
+                        color: (0, 0, 1, 1)
                         on_release: base.leave_new_account_screen()
+
+    Screen:
+        name: "ChangePasswordScreen"
+
+        canvas:
+            Rectangle:
+                size: self.size
+                source: "./data/textures/GUI/backdrop1.jpg"
+
+        FloatLayout:
+            GameFrame:
+                orientation: "vertical"
+                padding: 64
+                spacing: 8
+                pos_hint: {"x": .05, "y": .15}
+                size_hint: (.5, .8)
+                bg_source: "./data/textures/GUI/startscreen.png"
+
+                Label:
+                    size_hint_y: .2
+                    text: "Change Password"
+                    font_size: dp(48)
+                    color: (0, 0, 1, 1)
+
+                BoxLayout:
+                    orientation: "horizontal"
+                    size_hint_y: .1
+
+                    Label:
+                        size_hint_x: .7
+                        text: "Username:"
+                        font_size: dp(24)
+                        color: (0, 0, 1, 1)
+                        text_size: self.size
+                        halign: "right"
+
+                    TextInput:
+                        id: Username2
+                        font_size: dp(24)
+                        foreground_color: (0, 0, 1, 1)
+                        background_color: (0, 0, 0, 0)
+                        background_normal: "./data/textures/blank.png"
+                        background_active: "./data/textures/blank.png"
+                        background_disabled_normal: "./data/textures/blank.png"
+                        multiline: False
+
+                BoxLayout:
+                    orientation: "horizontal"
+                    size_hint_y: .1
+
+                    Label:
+                        size_hint_x: .7
+                        text: "Password:"
+                        font_size: dp(24)
+                        color: (0, 0, 1, 1)
+                        text_size: self.size
+                        halign: "right"
+
+                    TextInput:
+                        id: Password2
+                        font_size: dp(24)
+                        foreground_color: (0, 0, 1, 1)
+                        background_color: (0, 0, 0, 0)
+                        background_normal: "./data/textures/blank.png"
+                        background_active: "./data/textures/blank.png"
+                        background_disabled_normal: "./data/textures/blank.png"
+                        multiline: False
+                        password: True
+
+                BoxLayout:
+                    orientation: "horizontal"
+                    size_hint_y: .1
+
+                    Label:
+                        size_hint_x: .7
+                        text: "New Password:"
+                        font_size: dp(24)
+                        color: (0, 0, 1, 1)
+                        text_size: self.size
+                        halign: "right"
+
+                    TextInput:
+                        id: NewPassword2
+                        font_size: dp(24)
+                        foreground_color: (0, 0, 1, 1)
+                        background_color: (0, 0, 0, 0)
+                        background_normal: "./data/textures/blank.png"
+                        background_active: "./data/textures/blank.png"
+                        background_disabled_normal: "./data/textures/blank.png"
+                        multiline: False
+                        password: True
+
+                BoxLayout:
+                    orientation: "horizontal"
+                    size_hint_y: .1
+
+                    Label:
+                        size_hint_x: .7
+                        text: "Confirm Password:"
+                        font_size: dp(24)
+                        color: (0, 0, 1, 1)
+                        text_size: self.size
+                        halign: "right"
+
+                    TextInput:
+                        id: ConfirmPassword2
+                        font_size: dp(24)
+                        foreground_color: (0, 0, 1, 1)
+                        background_color: (0, 0, 0, 0)
+                        background_normal: "./data/textures/blank.png"
+                        background_active: "./data/textures/blank.png"
+                        background_disabled_normal: "./data/textures/blank.png"
+                        multiline: False
+                        password: True
+
+                BoxLayout:
+                    orientation: "vertical"
+                    padding: dp(128)
+                    spacing: dp(32)
+
+                    GameButton:
+                        text: "Confirm"
+                        font_size: dp(24)
+                        color: (0, 0, 1, 1)
+                        on_release: base.do_password_change()
+
+                    GameButton:
+                        text: "Back"
+                        font_size: dp(24)
+                        color: (0, 0, 1, 1)
+                        on_release: base.leave_change_password_screen()
