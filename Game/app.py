@@ -139,12 +139,20 @@ class NeoITPyApp(ShowBase):
         elif self.state == APP_STATE_CAMPAIGN_SELECT:
             pass
 
+        #Update login screen
+        elif self.state == APP_STATE_LOGIN:
+            pass
+
         #Update campaign mode screen
         elif self.state == APP_STATE_CAMPAIGN:
             pass
 
         #Update new account screen
         elif self.state == APP_STATE_NEW_ACCOUNT:
+            pass
+
+        #Update change password screen
+        elif self.state == APP_STATE_CHANGE_PASSWORD:
             pass
 
         #This task continues infinitely
