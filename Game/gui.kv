@@ -18,6 +18,16 @@
     password2: Password2
     new_password2: NewPassword2
     confirm_password2: ConfirmPassword2
+    #insert char create/edit props here
+    chat_box: ChatBox
+    chat_text: ChatText
+    global_chat: GlobalChat
+    local_chat: LocalChat
+    party_chat: PartyChat
+    private_chat: PrivateChat
+    private_msg_recipient: PrivateMsgRecipient
+    chat_mode: ChatMode
+    message: Message
 
     Screen:
         name: "LogoScreen"
@@ -521,3 +531,145 @@
                         font_size: dp(24)
                         color: (0, 0, 0, 1)
                         on_release: base.leave_change_password_screen()
+
+    Screen:
+        name: "CharSelectScreen"
+
+    Screen:
+        name: "CharEditScreen"
+
+    Screen:
+        name: "HUD"
+
+        FloatLayout:
+            AnchorLayout:
+                padding: 32
+                anchor_x: "left"
+                anchor_y: "bottom"
+
+                ScreenManager:
+                    id: ChatBox
+                    size_hint: (.4, .4)
+
+                    Screen:
+                        name: "Show"
+
+                        BoxLayout:
+                            orientation: "vertical"
+                            spacing: 8
+
+                            GameButton:
+                                size_hint_y: .25
+                                text: "Hide"
+                                font_size: dp(24)
+                                color: (0, 0, 0, 1)
+                                on_release: base.gui.show_chat_box(False)
+
+                            ScreenManager:
+                                id: ChatText
+
+                                Screen:
+                                    name: "Global"
+
+                                    TextInput:
+                                        id: GlobalChat
+                                        text: ""
+                                        font_size: dp(24)
+                                        foreground_color: (1, 1, 1, 1)
+                                        background_normal: "./data/textures/GUI/borderCenter.png"
+                                        background_active: "./data/textures/GUI/borderCenter.png"
+                                        background_disabled_normal: "./data/textures/GUI/borderCenter.png"
+
+                                Screen:
+                                    name: "Local"
+
+                                    TextInput:
+                                        id: LocalChat
+                                        text: ""
+                                        font_size: dp(24)
+                                        foreground_color: (1, 1, 1, 1)
+                                        background_normal: "./data/textures/GUI/borderCenter.png"
+                                        background_active: "./data/textures/GUI/borderCenter.png"
+                                        background_disabled_normal: "./data/textures/GUI/borderCenter.png"
+
+                                Screen:
+                                    name: "Party"
+
+                                    TextInput:
+                                        id: PartyChat
+                                        text: ""
+                                        font_size: dp(24)
+                                        foreground_color: (1, 1, 1, 1)
+                                        background_normal: "./data/textures/GUI/borderCenter.png"
+                                        background_active: "./data/textures/GUI/borderCenter.png"
+                                        background_disabled_normal: "./data/textures/GUI/borderCenter.png"
+
+                                Screen:
+                                    name: "Private"
+
+                                    TextInput:
+                                        id: PrivateChat
+                                        text: ""
+                                        font_size: dp(24)
+                                        foreground_color: (1, 1, 1, 1)
+                                        background_normal: "./data/textures/GUI/borderCenter.png"
+                                        background_active: "./data/textures/GUI/borderCenter.png"
+                                        background_disabled_normal: "./data/textures/GUI/borderCenter.png"
+
+                            BoxLayout:
+                                orientation: "horizontal"
+                                size_hint_y: .25
+
+                                TextInput:
+                                    id: PrivateMsgRecipient
+                                    size_hint_x: 1.5
+                                    text: ""
+                                    font_size: dp(24)
+                                    foreground_color: (1, 1, 1, 1)
+                                    background_normal: "./data/textures/GUI/borderCenter.png"
+                                    background_active: "./data/textures/GUI/borderCenter.png"
+                                    background_disabled_normal: "./data/textures/GUI/borderCenter.png"
+
+                                GameButton:
+                                    id: ChatMode
+                                    text: "Global"
+                                    font_size: dp(24)
+                                    color: (0, 0, 0, 1)
+                                    on_release: base.gui.switch_chat_mode()
+
+                            BoxLayout:
+                                orientation: "horizontal"
+                                size_hint_y: .25
+
+                                TextInput:
+                                    id: Message
+                                    size_hint_x: 2
+                                    text: ""
+                                    font_size: dp(24)
+                                    foreground_color: (1, 1, 1, 1)
+                                    background_normal: "./data/textures/GUI/borderCenter.png"
+                                    background_active: "./data/textures/GUI/borderCenter.png"
+                                    background_disabled_normal: "./data/textures/GUI/borderCenter.png"
+
+                                GameButton:
+                                    text: "Say"
+                                    font_size: dp(24)
+                                    color: (0, 0, 0, 1)
+
+                    Screen:
+                        name: "Hide"
+
+                        GameButton:
+                            size_hint_y: .1
+                            text: "Show"
+                            font_size: dp(24)
+                            color: (0, 0, 0, 1)
+                            on_release: base.gui.show_chat_box(True)
+
+            AnchorLayout:
+                padding: 32
+                anchor_x: "right"
+                anchor_y: "bottom"
+
+                BoxLayout:
+                    orientation: "horizontal"

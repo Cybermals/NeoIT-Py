@@ -12,7 +12,7 @@ from kivy.properties import ObjectProperty, StringProperty
 from kivy.uix.behaviors import ButtonBehavior
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
-from kivy.uix.screenmanager import ScreenManager
+from kivy.uix.screenmanager import ScreenManager, SlideTransition
 from kivy.uix.widget import Widget
 from panda3d_kivy.app import App
 
@@ -208,6 +208,22 @@ class GUI(App):
 
         else:
             return None
+
+    def show_chat_box(self, show):
+        """Show or hide the chat box."""
+        if show:
+            self.root.chat_box.transition = SlideTransition(direction = "up")
+            self.root.chat_box.current = "Show"
+
+        else:
+            self.root.chat_box.transition = SlideTransition(direction = "down")
+            self.root.chat_box.current = "Hide"
+
+    def switch_chat_mode(self):
+        """Switch to the next chat mode."""
+        next = self.root.chat_text.next()
+        self.root.chat_mode.text = next
+        self.root.chat_text.current = next
 
 
 #Register custom widget classes
