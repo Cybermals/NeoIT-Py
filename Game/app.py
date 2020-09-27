@@ -69,6 +69,7 @@ class NeoITPyApp(ShowBase):
         """Start the given campaign."""
         print("Starting campaign '{}'...".format(name))
         self.gui.switch_to_screen("HUD", FadeTransition())
+        self.gui.show_multiplayer_hud(False)
 
     def leave_campaign_select(self):
         """Leave the campaign select screen and return to the title screen."""

@@ -8,11 +8,11 @@ from kivy.clock import Clock
 from kivy.core.image import Image as CoreImage
 from kivy.factory import Factory
 from kivy.graphics import Color, Rectangle
-from kivy.properties import ObjectProperty, StringProperty
+from kivy.properties import ObjectProperty, NumericProperty, StringProperty
 from kivy.uix.behaviors import ButtonBehavior
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
-from kivy.uix.screenmanager import ScreenManager, SlideTransition
+from kivy.uix.screenmanager import NoTransition, ScreenManager, SlideTransition
 from kivy.uix.widget import Widget
 from panda3d_kivy.app import App
 
@@ -171,6 +171,48 @@ class GameListButton(ButtonBehavior, Label):
             self.bg.source = self.images[2]
 
 
+class HPBar(Widget):
+    """An HP bar."""
+    hp = NumericProperty(100)
+    max_hp = NumericProperty(100)
+
+    def __init__(self, **kwargs):
+        """Setup this HP bar."""
+        super(HPBar, self).__init__(**kwargs)
+
+        with self.canvas:
+            Color(1, 1, 1, .5)
+            self.bg = Rectangle(pos = self.pos, size = self.size)
+            Color(1, 1, 1, 1)
+            self.fg = Rectangle(
+                pos = self.pos, 
+                size = self.size, 
+                source = "./data/textures/GUI/hpbar.png"
+                )
+
+        self.bind(
+            pos = self.update, 
+            size = self.update, 
+            hp = self.update, 
+            max_hp = self.update
+            )
+
+    def update(self, *args):
+        """Update this widget when its position or size changes."""
+        self.bg.pos = self.pos
+        self.bg.size = self.size
+
+        self.fg.pos = self.pos
+        ratio = self.hp / self.max_hp
+        self.fg.size = (self.width * abs(ratio), self.height)
+
+        if ratio < 0:
+            self.fg.source = "./data/textures/GUI/woundbar.png"
+
+        else:
+            self.fg.source = "./data/textures/GUI/hpbar.png"
+
+
 class MainScreen(ScreenManager):
     """The main screen of this app. It manages all the other screens."""
 
@@ -225,9 +267,20 @@ class GUI(App):
         self.root.chat_mode.text = next
         self.root.chat_text.current = next
 
+    def show_multiplayer_hud(self, show):
+        """Show or hide the multiplayer HUD."""
+        self.root.multiplayer_hud.transition = NoTransition()
+
+        if show:
+            self.root.multiplayer_hud.current = "Show"
+
+        else:
+            self.root.multiplayer_hud.current = "Hide"
+
 
 #Register custom widget classes
 #===============================================================================
 Factory.register("AnimatedLogo", AnimatedLogo)
 Factory.register("GameFrame", GameFrame)
 Factory.register("GameButton", GameButton)
+Factory.register("HPBar", HPBar)

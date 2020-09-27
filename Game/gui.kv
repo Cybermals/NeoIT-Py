@@ -28,6 +28,9 @@
     private_msg_recipient: PrivateMsgRecipient
     chat_mode: ChatMode
     message: Message
+    current_skill: CurrentSkill
+    player_hp: PlayerHP
+    multiplayer_hud: MultiplayerHUD
 
     Screen:
         name: "LogoScreen"
@@ -549,7 +552,7 @@
 
                 ScreenManager:
                     id: ChatBox
-                    size_hint: (.4, .4)
+                    size_hint: (.35, .4)
 
                     Screen:
                         name: "Show"
@@ -672,4 +675,60 @@
                 anchor_y: "bottom"
 
                 BoxLayout:
-                    orientation: "horizontal"
+                    orientation: "vertical"
+                    spacing: 8
+                    size_hint: (.33, .2)
+
+                    Label:
+                        id: CurrentSkill
+                        text: "Attack"
+                        font_size: dp(48)
+                        color: (1, 1, 1, 1)
+
+                    HPBar:
+                        id: PlayerHP
+                        size_hint_y: .33
+
+                    ScreenManager:
+                        id: MultiplayerHUD
+                        size_hint_y: .33
+
+                        Screen:
+                            name: "Show"
+
+                            BoxLayout:
+                                orientation: "horizontal"
+
+                                GameButton:
+                                    text: "H"
+                                    font_size: dp(24)
+                                    color: (0, 0, 0, 1)
+
+                                GameButton:
+                                    text: "B"
+                                    font_size: dp(24)
+                                    color: (0, 0, 0, 1)
+
+                                GameButton:
+                                    text: "N"
+                                    font_size: dp(24)
+                                    color: (0, 0, 0, 1)
+
+                                GameButton:
+                                    text: "I"
+                                    font_size: dp(24)
+                                    color: (0, 0, 0, 1)
+
+                                GameButton:
+                                    text: "J"
+                                    font_size: dp(24)
+                                    color: (0, 0, 0, 1)
+
+                                GameButton:
+                                    text: "P"
+                                    font_size: dp(24)
+                                    color: (0, 0, 0, 1)
+
+                        Screen:
+                            name: "Hide"
+                        
