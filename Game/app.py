@@ -68,6 +68,9 @@ class NeoITPyApp(ShowBase):
     def start_campaign(self, name):
         """Start the given campaign."""
         print("Starting campaign '{}'...".format(name))
+        self.gui.show_multiplayer_hud(False)
+        self.gui.show_target_info(False)
+        self.gui.switch_to_screen("HUD", FadeTransition())
 
     def leave_campaign_select(self):
         """Leave the campaign select screen and return to the title screen."""
@@ -139,12 +142,20 @@ class NeoITPyApp(ShowBase):
         elif self.state == APP_STATE_CAMPAIGN_SELECT:
             pass
 
+        #Update login screen
+        elif self.state == APP_STATE_LOGIN:
+            pass
+
         #Update campaign mode screen
         elif self.state == APP_STATE_CAMPAIGN:
             pass
 
         #Update new account screen
         elif self.state == APP_STATE_NEW_ACCOUNT:
+            pass
+
+        #Update change password screen
+        elif self.state == APP_STATE_CHANGE_PASSWORD:
             pass
 
         #This task continues infinitely
