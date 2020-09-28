@@ -18,6 +18,7 @@ APP_STATE_CAMPAIGN_SELECT = 2
 APP_STATE_CAMPAIGN = 3
 APP_STATE_LOGIN = 4
 APP_STATE_NEW_ACCOUNT = 5
+APP_STATE_CHANGE_PASSWORD = 6
 
 
 #Classes
@@ -67,6 +68,9 @@ class NeoITPyApp(ShowBase):
     def start_campaign(self, name):
         """Start the given campaign."""
         print("Starting campaign '{}'...".format(name))
+        self.gui.show_multiplayer_hud(False)
+        self.gui.show_target_info(False)
+        self.gui.switch_to_screen("HUD", FadeTransition())
 
     def leave_campaign_select(self):
         """Leave the campaign select screen and return to the title screen."""
@@ -86,7 +90,9 @@ class NeoITPyApp(ShowBase):
 
     def change_password(self):
         """Enter the password change screen."""
-        print("Change password...")
+        self.gui.switch_to_screen("ChangePasswordScreen",
+            SlideTransition(direction = "left"))
+        self.state = APP_STATE_CHANGE_PASSWORD
 
     def leave_login_screen(self):
         """Leave the login screen and return to the title screen."""
@@ -100,6 +106,16 @@ class NeoITPyApp(ShowBase):
 
     def leave_new_account_screen(self):
         """Leave the new account screen and return to the login screen."""
+        self.gui.switch_to_screen("LoginScreen",
+            SlideTransition(direction = "right"))
+        self.state = APP_STATE_LOGIN
+
+    def do_password_change(self):
+        """Change the user's current password."""
+        print("Changing password...")
+
+    def leave_change_password_screen(self):
+        """Leave the change password screen and return to the login screen."""
         self.gui.switch_to_screen("LoginScreen",
             SlideTransition(direction = "right"))
         self.state = APP_STATE_LOGIN
@@ -126,12 +142,20 @@ class NeoITPyApp(ShowBase):
         elif self.state == APP_STATE_CAMPAIGN_SELECT:
             pass
 
+        #Update login screen
+        elif self.state == APP_STATE_LOGIN:
+            pass
+
         #Update campaign mode screen
         elif self.state == APP_STATE_CAMPAIGN:
             pass
 
         #Update new account screen
         elif self.state == APP_STATE_NEW_ACCOUNT:
+            pass
+
+        #Update change password screen
+        elif self.state == APP_STATE_CHANGE_PASSWORD:
             pass
 
         #This task continues infinitely
