@@ -31,6 +31,9 @@
     current_skill: CurrentSkill
     player_hp: PlayerHP
     multiplayer_hud: MultiplayerHUD
+    target_info: TargetInfo
+    target_name: TargetName
+    target_hp: TargetHP
 
     Screen:
         name: "LogoScreen"
@@ -576,8 +579,9 @@
 
                                     TextInput:
                                         id: GlobalChat
-                                        text: ""
+                                        text: "---Global Chat---"
                                         font_size: dp(24)
+                                        readonly: True
                                         foreground_color: (1, 1, 1, 1)
                                         background_normal: "./data/textures/GUI/borderCenter.png"
                                         background_active: "./data/textures/GUI/borderCenter.png"
@@ -588,8 +592,9 @@
 
                                     TextInput:
                                         id: LocalChat
-                                        text: ""
+                                        text: "---Local Chat---"
                                         font_size: dp(24)
+                                        readonly: True
                                         foreground_color: (1, 1, 1, 1)
                                         background_normal: "./data/textures/GUI/borderCenter.png"
                                         background_active: "./data/textures/GUI/borderCenter.png"
@@ -600,8 +605,9 @@
 
                                     TextInput:
                                         id: PartyChat
-                                        text: ""
+                                        text: "---Party Chat---"
                                         font_size: dp(24)
+                                        readonly: True
                                         foreground_color: (1, 1, 1, 1)
                                         background_normal: "./data/textures/GUI/borderCenter.png"
                                         background_active: "./data/textures/GUI/borderCenter.png"
@@ -612,8 +618,9 @@
 
                                     TextInput:
                                         id: PrivateChat
-                                        text: ""
+                                        text: "---Private Chat---"
                                         font_size: dp(24)
+                                        readonly: True
                                         foreground_color: (1, 1, 1, 1)
                                         background_normal: "./data/textures/GUI/borderCenter.png"
                                         background_active: "./data/textures/GUI/borderCenter.png"
@@ -732,3 +739,31 @@
                         Screen:
                             name: "Hide"
                         
+            AnchorLayout:
+                padding: 32
+                anchor_x: "left"
+                anchor_y: "top"
+
+                ScreenManager:
+                    id: TargetInfo
+                    size_hint: (.33, .1)
+
+                    Screen:
+                        name: "Show"
+
+                        BoxLayout:
+                            orientation: "vertical"
+                            spacing: 8
+
+                            Label:
+                                id: TargetName
+                                text: "Target"
+                                font_size: dp(24)
+                                color: (1, 1, 1, 1)
+
+                            HPBar:
+                                id: TargetHP
+                                size_hint_y: .4
+
+                    Screen:
+                        name: "Hide"

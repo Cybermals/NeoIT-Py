@@ -277,6 +277,16 @@ class GUI(App):
         else:
             self.root.multiplayer_hud.current = "Hide"
 
+    def show_target_info(self, show):
+        """Show the info for the current target."""
+        if show:
+            self.root.target_info.transition = SlideTransition(direction = "down")
+            self.root.target_info.current = "Show"
+
+        else:
+            self.root.target_info.transition = SlideTransition(direction = "up")
+            self.root.target_info.current = "Hide"
+
 
 #Register custom widget classes
 #===============================================================================
