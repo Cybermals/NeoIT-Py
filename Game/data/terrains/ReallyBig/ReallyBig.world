@@ -1,0 +1,39 @@
+[Initialize]
+reallybigterrain.cfg
+50000
+50000
+25000 25000 100
+
+[Grass]
+yellowGrass
+grassdensitymap.png
+grass_tex.jpg
+
+[RandomTrees]
+fir14_25.mesh
+fir06_30.mesh
+fir05_30.mesh
+500
+
+[WeatherCycle]
+ThunderstormRain
+
+[Portal]
+25600 270 25600
+25
+Default
+
+[Portal]
+37000 180 44750
+25
+Waterfall
+
+[Portal]
+49000 40 755
+15
+Forest
+
+[Portal]
+24800 280 24950
+30
+Ocean

@@ -1,0 +1,23 @@
+[Initialize]
+TemplateTerrain.cfg
+5000
+5000
+2500 2500 300
+
+[Trees]
+TemplateTrees.cfg
+
+[Bushes]
+TemplateBushes.cfg
+
+[FloatingBushes]
+TemplateMeshes.cfg
+
+[SpawnCritters]
+TemplateCritters.cfg
+
+[Portal]
+2500 150 2500
+15
+Default
+#

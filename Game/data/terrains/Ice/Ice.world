@@ -1,0 +1,50 @@
+[Initialize]
+iceterrain.cfg
+8000
+8000
+4000 4000 100
+
+[WeatherCycle]
+Snow
+
+[MapEffect]
+Exhale
+
+[Portal]
+4851 288 3852
+25
+Default
+
+[Portal]
+7537 260 5151
+25
+Waterfall
+
+[Portal]
+3124 300 4566
+25
+Lava
+
+[Portal]
+6657 300 4025
+25
+Ocean
+
+[Portal]
+6247 300 905
+25
+ReallyBig
+
+[WaterPlane]
+4000 250 4000
+30
+30
+Terrain/FrozenWater
+wind1.wav
+true
+
+[Gate]
+GateMatBlack
+5590 284 2130
+Ice Cave
+622 828
