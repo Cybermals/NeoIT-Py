@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<world>
+    <terrain size="10000 10000" spawnpos="4873 140 1" heightmap="lastCaveterrain.png" material="Terrain/HydroPillar">
+        <interior color="" height="900" material="Terrain/UnderwaterCeiling"/>
+    </terrain>
+    <weathercycle name="None"/>
+    <gate material="GateMatWhite" pos="4873 540 25" destmap="Serpent's Pass" destvec="1384 576 1805"/>
+    <light pos="4873 540 60" color="0.75 0.74 0.72"/>
+    <billboard pos="4873 540 60" scale="100 100" material="CaveLight"/>
+    <waterplane pos="5000 520 5000" scale="25 25" material="Terrain/LargeWater" sound="" issolid="false"/>
+</world>

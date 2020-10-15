@@ -165,7 +165,7 @@ class MapUpgrader(object):
                 #Parse the critter data
                 type = section[1].split("=")[1]
                 rate = section[2].split("=")[1]
-                roam_area = section[3].split("=")[1]
+                roam_area = section[3].split("=")[1] if len(section) > 3 else ""
 
                 #Add the critter to the XML
                 critter = etree.SubElement(elm, "critter", {
@@ -436,7 +436,7 @@ class MapUpgrader(object):
                 tree1 = os.path.splitext(section[1])[0]
                 tree2 = os.path.splitext(section[2])[0]
                 tree3 = os.path.splitext(section[3])[0]
-                tree_cnt = section[4]
+                tree_cnt = section[4] if len(section) > 4 else ""
 
                 #Add random trees to XML
                 rand_trees = etree.SubElement(root, "randomtrees", {
@@ -461,11 +461,11 @@ class MapUpgrader(object):
                 bush1 = os.path.splitext(section[1])[0]
                 bush2 = os.path.splitext(section[2])[0]
                 bush3 = os.path.splitext(section[3])[0]
-                bush_cnt = section[4]
+                bush_cnt = section[4] if len(section) > 4 else ""
 
                 #Add random bushes to XML
                 rand_bushes = etree.SubElement(root, "randombushes", {
-                    "count": count
+                    "count": bush_cnt
                     })
                 etree.SubElement(rand_bushes, "bush", {
                     "mesh": bush1
@@ -478,7 +478,7 @@ class MapUpgrader(object):
                     })
                 print("RandomBushes: {}".format(rand_bushes.attrib))
                 print("    Bushes: {}".format(
-                    [child.attribs for child in list(rand_bushes)]))
+                    [child.attrib for child in list(rand_bushes)]))
 
             #Trees Section
             elif section[0] == "Trees" or section[0] == "NewTrees":

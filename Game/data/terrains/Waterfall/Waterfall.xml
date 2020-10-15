@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<world>
+    <terrain size="2500 2500" spawnpos="500 500 100" heightmap="waterfallterrain.png" material="Terrain/WaterfallTerrain"/>
+    <grass material="grass" grassmap="grassdensitymap.png" colormap="grass_tex2.png"/>
+    <randomtrees count="20">
+        <tree mesh="fir14_25"/>
+        <tree mesh="fir06_30"/>
+        <tree mesh="fir14_25"/>
+    </randomtrees>
+    <critters limit="10"/>
+    <critter type="Duckling" rate="0.01" roamarea=""/>
+    <weathercycle name="ThunderstormRain"/>
+    <portal pos="1000 300 800" radius="25" destmap="Default"/>
+    <portal pos="2210 270 2210" radius="25" destmap="ReallyBig"/>
+    <portal pos="350 425 2450" radius="25" destmap="GreatFalls"/>
+    <waterplane pos="1545 50 1300" scale="1.5 1.5" material="Terrain/CalmWater" sound="water1.wav" issolid="false"/>
+    <waterplane pos="980 215 900" scale="1 2" material="Terrain/Water" sound="water1.wav" issolid="false"/>
+    <waterplane pos="630 285 1520" scale="1 1.8" material="Terrain/Water" sound="water1.wav" issolid="false"/>
+    <object mesh="Waterfall" pos="1260 215 1195" scale="1 0.52 1.4" rot="0 91 0" sound="" material=""/>
+    <object mesh="Waterfall" pos="1260 215 1345" scale="1.2 0.52 1.4" rot="0 90 0" sound="" material=""/>
+    <object mesh="Waterfall" pos="905 285 1185" scale="0.8 0.22 1.3" rot="0 92 0" sound="" material=""/>
+    <object mesh="Waterfall" pos="910 285 1305" scale="1 0.22 1.32" rot="0 99 0" sound="" material=""/>
+    <particle name="WaterfallSmoke" pos="1345 50 1255" sound="waterfall.mp3"/>
+    <particle name="WaterfallSmoke" pos="990 213 1225" sound="waterfall.mp3"/>
+    <gate material="GateMatBlack" pos="1269 50 1269" destmap="Waterfall Cave" destvec="476 852"/>
+</world>

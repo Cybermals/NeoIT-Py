@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<world>
+    <terrain size="8000 8000" spawnpos="4000 4000 100" heightmap="lavaterrain.png" material="Terrain/LavaTerrain"/>
+    <weathercycle name="Redsky"/>
+    <portal pos="3967 416 653" radius="25" destmap="ReallyBig"/>
+    <portal pos="1343 551 3043" radius="25" destmap="Default"/>
+    <portal pos="5766 100 515" radius="10" destmap="Waterfall"/>
+    <portal pos="533 600 403" radius="25" destmap="Ice"/>
+    <portal pos="6436 390 7251" radius="30" destmap="Jungle"/>
+    <portal pos="3432 370 4782" radius="20" destmap="Volcano"/>
+    <waterplane pos="5316 380 3471" scale="2 2" material="Terrain/Magma" sound="lava1.wav" issolid="false"/>
+    <waterplane pos="157 551 820" scale="0.3 0.3" material="Terrain/CalmWater" sound="water1.wav" issolid="false"/>
+    <waterplane pos="5766 70 515" scale="0.4 0.4" material="Terrain/Magma" sound="lava1.wav" issolid="false"/>
+    <waterplane pos="3521 400 6498" scale="0.4 0.4" material="Terrain/Magma" sound="lava1.wav" issolid="false"/>
+    <waterplane pos="6772 250 7480" scale="0.8 1" material="Terrain/CalmWater" sound="water1.wav" issolid="false"/>
+    <particle name="WaterfallSmoke" pos="6830 241 7473" sound=""/>
+    <particle name="WaterfallSmoke" pos="6687 243 7505" sound=""/>
+    <waterplane pos="3907 380 6875" scale="0.74 1" material="Terrain/CalmWater" sound="water1.wav" issolid="false"/>
+    <particle name="WaterfallSmoke" pos="3855 384 6830" sound=""/>
+    <waterplane pos="4178 135 5172" scale="100 100" material="Terrain/LargeMagma" sound="lava1.wav" issolid="false"/>
+    <particle name="Geyser" pos="3905 500 2691" sound="Steam2.wav"/>
+    <particle name="Geyser" pos="3856 501 2613" sound="Steam2.wav"/>
+    <particle name="Geyser" pos="3908 475 2775" sound="Steam1.wav"/>
+    <particle name="Geyser" pos="6113 450 4319" sound="Steam1.wav"/>
+    <particle name="Geyser" pos="4447 584 3525" sound="Steam2.wav"/>
+    <particle name="Geyser" pos="4928 256 4696" sound="Steam2.wav"/>
+    <gate material="GateMatBlack" pos="5115 395 3190" destmap="Lava Cave" destvec="482 890"/>
+</world>

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<world>
+    <terrain size="1000 1000" spawnpos="500 500 100" heightmap="lavacaveterrain.png" material="Terrain/LavaTerrain">
+        <interior color="" height="280" material="Terrain/LavaTerrain"/>
+    </terrain>
+    <critters limit="10"/>
+    <critter type="Bat" rate="0.01" roamarea=""/>
+    <gate material="GateMatWhite" pos="482 120 985" destmap="Lava" destvec="5100 3176"/>
+    <weathercycle name="None"/>
+    <light pos="482 120 970" color="0.75 0.74 0.72"/>
+    <billboard pos="482 120 935" scale="70 70" material="CaveLight"/>
+    <waterplane pos="500 80 500" scale="10 10" material="Terrain/LargeMagma" sound="lava1.wav" issolid="false"/>
+    <waterplane pos="500 90 500" scale="1 1" material="Terrain/CalmWater" sound="water1.wav" issolid="false"/>
+</world>

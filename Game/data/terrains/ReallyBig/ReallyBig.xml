@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<world>
+    <terrain size="50000 50000" spawnpos="25000 25000 100" heightmap="reallybigterrain.png" material="Terrain/ReallyBigTerrain"/>
+    <grass material="yellowGrass" grassmap="grassdensitymap.png" colormap="grass_tex.jpg"/>
+    <randomtrees count="500">
+        <tree mesh="fir14_25"/>
+        <tree mesh="fir06_30"/>
+        <tree mesh="fir05_30"/>
+    </randomtrees>
+    <weathercycle name="ThunderstormRain"/>
+    <portal pos="25600 270 25600" radius="25" destmap="Default"/>
+    <portal pos="37000 180 44750" radius="25" destmap="Waterfall"/>
+    <portal pos="49000 40 755" radius="15" destmap="Forest"/>
+    <portal pos="24800 280 24950" radius="30" destmap="Ocean"/>
+</world>

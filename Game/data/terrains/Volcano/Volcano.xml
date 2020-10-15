@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<world>
+    <terrain size="7500 7500" spawnpos="977 6329 100" heightmap="volcanoterrain.png" material="Terrain/VolcanoTerrain"/>
+    <weathercycle name="Redsky"/>
+    <portal pos="1088 880 6323" radius="25" destmap="Default"/>
+    <portal pos="3968 1650 3910" radius="25" destmap="Jungle"/>
+    <portal pos="5075 1100 3325" radius="25" destmap="Lava"/>
+    <portal pos="3365 15 3718" radius="25" destmap="Ocean"/>
+    <waterplane pos="3240 1700 3778" scale="1.2 1.2" material="Terrain/Magma" sound="lava1.wav" issolid="false"/>
+    <waterplane pos="6050 600 1725" scale="1.4 1.4" material="Terrain/Magma" sound="lava1.wav" issolid="false"/>
+    <waterplane pos="6892 425 6677" scale="5.5 7.5" material="Terrain/Magma" sound="lava1.wav" issolid="false"/>
+    <waterplane pos="2125 295 6485" scale="1.5 1.5" material="Terrain/CalmWater" sound="water1.wav" issolid="false"/>
+    <waterplane pos="2435 460 405" scale="2 2" material="Terrain/CalmWater" sound="water1.wav" issolid="false"/>
+    <particle name="WaterfallSmoke" pos="2148 290 6611" sound=""/>
+    <particle name="WaterfallSmoke" pos="2060 290 6498" sound=""/>
+    <particle name="WaterfallSmoke" pos="2160 290 6400" sound=""/>
+    <particle name="WaterfallSmoke" pos="2703 455 385" sound=""/>
+    <particle name="WaterfallSmoke" pos="2431 455 471" sound=""/>
+    <particle name="WaterfallSmoke" pos="2283 455 391" sound=""/>
+    <particle name="WaterfallSmoke" pos="2207 455 396" sound=""/>
+    <particle name="WaterfallSmoke" pos="2574 455 498" sound=""/>
+    <particle name="WaterfallSmoke" pos="2549 455 370" sound=""/>
+    <particle name="WaterfallSmoke" pos="2159 455 450" sound=""/>
+    <particle name="Geyser" pos="1962 502 294 " sound="Steam2.wav"/>
+    <particle name="Geyser" pos="5640 902 3660 " sound="Steam2.wav"/>
+    <particle name="Geyser" pos="510 895 2476" sound="Steam2.wav"/>
+    <particle name="Geyser" pos="2364 510 6585" sound="Steam2.wav"/>
+</world>

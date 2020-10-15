@@ -1,0 +1,521 @@
+<?xml version="1.0" ?>
+<world>
+    <terrain size="9000 9000" spawnpos="895 490 796" heightmap="Playgroundterrain.png" material="Terrain/PlaygroundTerrain"/>
+    <grass material="Terrain/Flower" grassmap="Playgroundgrassmask.png" colormap="Flower2.png"/>
+    <treegroup mesh="fir14_25" material="">
+        <tree pos="6262 422 1447" scale="2 1 2" rot="0"/>
+        <tree pos="6191 150 1726" scale="2 1 2" rot="0"/>
+        <tree pos="6454 463 1574" scale="2 1 2" rot="0"/>
+        <tree pos="6452 465 1156" scale="2 1 2" rot="0"/>
+        <tree pos="6362 415 1034" scale="2 1 2" rot="0"/>
+        <tree pos="6177 322 1128" scale="2 1 2" rot="0"/>
+        <tree pos="6709 624 1549" scale="3 1 3" rot="0"/>
+        <tree pos="6921 640 1549" scale="3 1 3" rot="0"/>
+        <tree pos="6978 518 1679" scale="3 1 3" rot="0"/>
+        <tree pos="7085 750 1595" scale="3 1 3" rot="0"/>
+        <tree pos="7256 430 1762" scale="3 1 3" rot="0"/>
+        <tree pos="7029 305 1809" scale="3 1 3" rot="0"/>
+    </treegroup>
+    <treegroup mesh="fir06_30" material="">
+        <tree pos="7377 752 1504" scale="2 2 2" rot="0"/>
+        <tree pos="7215 405 1886" scale="2 2 2" rot="0"/>
+        <tree pos="7039 349 1986" scale="2 2 2" rot="0"/>
+        <tree pos="6854 317 2005" scale="2 2 2" rot="0"/>
+        <tree pos="6613 306 1915" scale="2 2 2" rot="0"/>
+        <tree pos="6599 363 1766" scale="2 2 2" rot="0"/>
+        <tree pos="7203 933 1321" scale="2 2 3" rot="0"/>
+        <tree pos="7193 941 1385" scale="3 2 2" rot="0"/>
+        <tree pos="6868 915 1259" scale="3 2 3" rot="0"/>
+        <tree pos="6978 935 1223" scale="3 2 3" rot="0"/>
+        <tree pos="5629 137 1324" scale="1 1 1" rot="0"/>
+        <tree pos="5852 140 1077" scale="1 1 1" rot="0"/>
+        <tree pos="6113 323 918" scale="1 1 1" rot="0"/>
+        <tree pos="6117 249 1569" scale="1 1 1" rot="0"/>
+        <tree pos="6265 372 1586" scale="1 1 1" rot="0"/>
+        <tree pos="6650 725 1345" scale="1 1 1" rot="0"/>
+        <tree pos="4310 815 1605" scale="3 2 3" rot="0"/>
+        <tree pos="4229 815 1997" scale="3 2 3" rot="0"/>
+        <tree pos="3562 815 1871" scale="3 2 3" rot="0"/>
+        <tree pos="4003 815 1394" scale="3 2 3" rot="0"/>
+    </treegroup>
+    <treegroup mesh="Tree1" material="">
+        <tree pos="6634 137 3390" scale="4 3 4" rot="0"/>
+        <tree pos="6389 137 3162" scale="4 3 4" rot="0"/>
+        <tree pos="6051 137 3960" scale="8 7 8" rot="0 200 0"/>
+        <tree pos="907 698 1934" scale="8 7 8" rot="0 180 0"/>
+        <tree pos="1213 698 1686" scale="8 7 8" rot="0 160 0"/>
+        <tree pos="1652 698 1490" scale="8 7 8" rot="0 140 0"/>
+        <tree pos="2150 698 1484" scale="8 7 8" rot="0 120 0"/>
+        <tree pos="1908 698 1282" scale="8 7 8" rot="0 100 0"/>
+        <tree pos="1380 698 1399" scale="8 7 8" rot="0 80 0"/>
+        <tree pos="950 698 1596" scale="8 7 8" rot="0 60 0"/>
+        <tree pos="1058 698 1182" scale="8 7 8" rot="0 40 0"/>
+        <tree pos="1555 698 1034" scale="8 7 8" rot="0 20 0"/>
+        <tree pos="1165 698 823" scale="8 7 8" rot="0 0 0"/>
+    </treegroup>
+    <treegroup mesh="acaciaTree" material="">
+        <tree pos="4674 250 7389" scale="6 6 6" rot="0 180 0"/>
+        <tree pos="4670 250 7366" scale="6 6 6" rot="0 90 0"/>
+        <tree pos="3477 135 5535" scale="2 2 2" rot="0"/>
+        <tree pos="3118 135 5541" scale="2 2 2" rot="0"/>
+        <tree pos="2847 135 5422" scale="2 2 2" rot="0"/>
+        <tree pos="2688 135 5302" scale="2 2 2" rot="0"/>
+        <tree pos="2551 135 5120" scale="2 2 2" rot="0"/>
+        <tree pos="2589 135 4205" scale="2 2 2" rot="0"/>
+        <tree pos="2740 135 4056" scale="2 2 2" rot="0"/>
+        <tree pos="2938 135 3934" scale="2 2 2" rot="0"/>
+        <tree pos="3267 135 3839" scale="2 2 2" rot="0"/>
+        <tree pos="3576 135 3910" scale="2 2 2" rot="0"/>
+        <tree pos="3849 135 4068" scale="2 2 2" rot="0"/>
+        <tree pos="4100 135 4406" scale="2 2 2" rot="0"/>
+        <tree pos="6382 137 3730" scale="3 3 3" rot="0"/>
+        <tree pos="6104 137 3150" scale="3 3 3" rot="0"/>
+    </treegroup>
+    <treegroup mesh="savannahTree" material="">
+        <tree pos="3865 300 7717" scale="5 5 5" rot="0 180 0"/>
+        <tree pos="5416 300 6929" scale="" rot="5 5 5"/>
+        <tree pos="5315 300 8105" scale="" rot="5 5 5"/>
+        <tree pos="7429 463 2661" scale="2 2 2" rot="30 0 0"/>
+        <tree pos="7429 463 2661" scale="2 2 2" rot="-30 0 0"/>
+        <tree pos="7429 463 2661" scale="2 2 2" rot="30 0 80"/>
+        <tree pos="7429 463 2661" scale="2 2 2" rot="-30 0 80"/>
+        <tree pos="7429 463 2661" scale="2 2 2" rot="30 0 160"/>
+        <tree pos="7429 463 2661" scale="2 2 2" rot="-30 0 160"/>
+        <tree pos="7553 532 2690" scale="2 2 2" rot="0 0 -60"/>
+        <tree pos="7553 532 2690" scale="2 2 2" rot="0 0 0"/>
+        <tree pos="7553 532 2690" scale="2 2 2" rot="80 0 -60"/>
+        <tree pos="7553 532 2690" scale="2 2 2" rot="-30 0 -160"/>
+        <tree pos="7553 532 2690" scale="2 2 2" rot="-80 0 -60"/>
+        <tree pos="7591 477 2638" scale="2 2 2" rot="0 0 30"/>
+        <tree pos="7591 477 2638" scale="2 2 2" rot="80 0 -90"/>
+        <tree pos="7591 477 2638" scale="2 2 2" rot="80 0 -160"/>
+        <tree pos="7591 477 2638" scale="2 2 2" rot="90 0 -200"/>
+        <tree pos="7644 352 2688" scale="2 2 2" rot="0 0 -60"/>
+        <tree pos="7644 352 2688" scale="2 2 2" rot="-60 0 -60"/>
+        <tree pos="7644 352 2688" scale="2 2 2" rot="-100 0 -60"/>
+        <tree pos="7644 352 2688" scale="2 2 2" rot="70 0 0"/>
+    </treegroup>
+    <treegroup mesh="Jungletree" material="">
+        <tree pos="6489 137 5213" scale="1 1 1" rot="0"/>
+        <tree pos="6355 137 5190" scale="1 1 1" rot="0"/>
+        <tree pos="6400 137 5363" scale="8 4 8" rot="0"/>
+        <tree pos="6400 137 5363" scale="8 4 8" rot="0 180 0"/>
+    </treegroup>
+    <bushgroup mesh="fern" material="">
+        <bush pos="3190 454 4525" scale="2 2 2" rot="0"/>
+        <bush pos="3371 454 4500" scale="2 2 2" rot="0"/>
+        <bush pos="3489 454 4644" scale="2 2 2" rot="0"/>
+        <bush pos="3444 454 4824" scale="2 2 2" rot="0"/>
+        <bush pos="5722 137 3339" scale="6 6 6" rot="0"/>
+        <bush pos="6513 137 3244" scale="6 6 6" rot="0"/>
+        <bush pos="2759 137 8199" scale="10 10 10" rot="0"/>
+        <bush pos="2250 137 7709" scale="10 10 10" rot="0"/>
+        <bush pos="1492 137 8152" scale="10 10 10" rot="0"/>
+        <bush pos="2989 137 6651" scale="10 10 10" rot="0"/>
+        <bush pos="4446 137 6536" scale="10 10 10" rot="0"/>
+        <bush pos="5755 137 7619" scale="10 10 10" rot="0"/>
+        <bush pos="6540 137 5467" scale="6 6 6" rot="0"/>
+        <bush pos="6581 137 5334" scale="6 6 6" rot="0"/>
+        <bush pos="6377 137 5538" scale="6 6 6" rot="0"/>
+    </bushgroup>
+    <bushgroup mesh="farn2" material="">
+        <bush pos="4008 927 2010" scale="6 6 6" rot="0"/>
+        <bush pos="3800 927 1666" scale="6 6 6" rot="0"/>
+        <bush pos="4059 927 1602" scale="6 6 6" rot="0"/>
+        <bush pos="3749 927 1763" scale="6 6 6" rot="0"/>
+        <bush pos="4104 927 1896" scale="6 6 6" rot="0"/>
+    </bushgroup>
+    <bushgroup mesh="rockSlab" material="">
+        <bush pos="5663 382 3795" scale="7 2 7" rot="0"/>
+        <bush pos="5663 258 3795" scale="7 2 7" rot="0"/>
+        <bush pos="5742 137 3854" scale="0.5 14 0.5" rot="0"/>
+        <bush pos="5723 137 3688" scale="" rot="0.5 15 0.5"/>
+        <bush pos="5750 275 3741" scale="0.5 13 0.5" rot="0"/>
+        <bush pos="3946 908 1775" scale="15 2 15" rot="180"/>
+        <bush pos="4174 819 1830" scale="0.5 13 0.5" rot="180"/>
+        <bush pos="4129 819 1539" scale="0.5 13 0.5" rot="180"/>
+        <bush pos="3875 819 1540" scale="0.5 13 0.5" rot="180"/>
+        <bush pos="3688 819 1722" scale="0.5 13 0.5" rot="180"/>
+        <bush pos="3840 819 1988" scale="0.5 13 0.5" rot="180"/>
+        <bush pos="3946 1029 1775" scale="8 2 8" rot="180"/>
+        <bush pos="4282 872 1722" scale="1 1 1" rot="180"/>
+        <bush pos="4075 928 1804" scale="0.5 13 0.5" rot="180"/>
+        <bush pos="3857 928 1858" scale="0.5 13 0.5" rot="180"/>
+        <bush pos="3899 928 1677" scale="0.5 13 0.5" rot="180"/>
+        <bush pos="4134 990 1699" scale="1 1 1" rot="180"/>
+        <bush pos="3946 819 1775" scale="1 1 1" rot="180"/>
+        <bush pos="3693 819 1815" scale="0.6 1 0.6" rot="0"/>
+        <bush pos="3770 819 1941" scale="0.6 1 0.6" rot="0"/>
+        <bush pos="4098 819 1856" scale="0.6 1 0.6" rot="0"/>
+        <bush pos="4024 819 1929" scale="0.6 1 0.6" rot="0"/>
+        <bush pos="4158 819 1777" scale="0.6 1 0.6" rot="0"/>
+        <bush pos="4136 819 1611" scale="0.6 1 0.6" rot="0"/>
+        <bush pos="3938 819 1534" scale="0.6 1 0.6" rot="0"/>
+        <bush pos="4038 819 1532" scale="0.6 1 0.6" rot="0"/>
+        <bush pos="3767 819 1641" scale="0.6 1 0.6" rot="0"/>
+        <bush pos="4619 697 7483" scale="0.6 1 0.6" rot="0"/>
+        <bush pos="4578 697 7435" scale="0.6 1 0.6" rot="0"/>
+        <bush pos="4639 697 7251" scale="0.6 1 0.6" rot="0"/>
+        <bush pos="4592 697 7284" scale="0.6 1 0.6" rot="0"/>
+        <bush pos="4757 697 7432" scale="0.6 1 0.6" rot="0"/>
+        <bush pos="4704 697 7454" scale="0.6 1 0.6" rot="0"/>
+        <bush pos="4525 697 7351" scale="1 2 1" rot="0"/>
+    </bushgroup>
+    <bushgroup mesh="rockSlab2" material="">
+        <bush pos="4670 670 7366" scale="10 3 10" rot="0 180 0"/>
+        <bush pos="3865 579 7717" scale="5 1 5" rot="0 180 0"/>
+        <bush pos="5416 579 6929" scale="5 1 5" rot="0 180 0"/>
+        <bush pos="5315 579 8105" scale="5 1 5" rot="0 180 0"/>
+        <bush pos="5158 589 8063" scale="1 1 1" rot="180"/>
+        <bush pos="5011 589 8031" scale="1 1 1" rot="180"/>
+        <bush pos="4899 589 8002" scale="1 1 1" rot="180"/>
+        <bush pos="4785 589 7972" scale="1 1 1" rot="180"/>
+        <bush pos="4662 589 7940" scale="1 1 1" rot="180"/>
+        <bush pos="4518 589 7902" scale="1 1 1" rot="180"/>
+        <bush pos="4366 589 7862" scale="1 1 1" rot="180"/>
+        <bush pos="4237 589 7828" scale="1 1 1" rot="180"/>
+        <bush pos="4106 589 7794" scale="1 1 1" rot="180"/>
+        <bush pos="4010 589 7733" scale="1 1 1" rot="180"/>
+        <bush pos="4886 697 7266" scale="1 1 1" rot="180"/>
+        <bush pos="4942 691 7231" scale="1 1 1" rot="180"/>
+        <bush pos="4996 684 7196" scale="1 1 1" rot="180"/>
+        <bush pos="5071 664 7150" scale="1 1 1" rot="180"/>
+        <bush pos="5141 644 7106" scale="1 1 1" rot="180"/>
+        <bush pos="5202 624 7069" scale="1 1 1" rot="180"/>
+        <bush pos="5274 603 7024" scale="1 1 1" rot="180"/>
+        <bush pos="5384 589 7108" scale="1 1 1" rot="180"/>
+        <bush pos="5377 589 7212" scale="1 1 1" rot="180"/>
+        <bush pos="5369 589 7316" scale="1 1 1" rot="180"/>
+        <bush pos="5362 589 7417" scale="1 1 1" rot="180"/>
+        <bush pos="5356 589 7512" scale="1 1 1" rot="180"/>
+        <bush pos="5349 589 7602" scale="1 1 1" rot="180"/>
+        <bush pos="5343 589 7695" scale="1 1 1" rot="180"/>
+        <bush pos="5336 589 7794" scale="1 1 1" rot="180"/>
+        <bush pos="5329 589 7891" scale="1 1 1" rot="180"/>
+        <bush pos="3696 589 7628" scale="1 1 1" rot="180"/>
+        <bush pos="3629 556 7708" scale="1 1 1" rot="180"/>
+        <bush pos="3684 521 7813" scale="1 1 1" rot="180"/>
+        <bush pos="3760 495 7854" scale="1 1 1" rot="180"/>
+        <bush pos="3861 464 7856" scale="1 1 1" rot="180"/>
+        <bush pos="3950 432 7835" scale="1 1 1" rot="180"/>
+        <bush pos="4028 408 7801" scale="1 1 1" rot="180"/>
+        <bush pos="4011 375 7709" scale="1 1 1" rot="180"/>
+        <bush pos="3974 348 7625" scale="1 1 1" rot="180"/>
+        <bush pos="3909 329 7567" scale="1 1 1" rot="180"/>
+        <bush pos="3834 305 7560" scale="1 1 1" rot="180"/>
+        <bush pos="6405 144 5401" scale="0.5 1 0.5" rot="180 180 0"/>
+    </bushgroup>
+    <bushgroup mesh="grassPatch" material="">
+        <bush pos="5685 399 3787" scale="2 2 2" rot="0"/>
+        <bush pos="5728 137 3771" scale="2 2 2" rot="0"/>
+        <bush pos="6734 137 2942" scale="2 2 2" rot="0"/>
+        <bush pos="7069 137 3043" scale="2 2 2" rot="0"/>
+        <bush pos="7426 137 2907" scale="2 2 2" rot="0"/>
+        <bush pos="7350 137 2492" scale="2 2 2" rot="0"/>
+        <bush pos="7932 137 2630" scale="2 2 2" rot="0"/>
+        <bush pos="8118 137 3064" scale="2 2 2" rot="0"/>
+        <bush pos="7727 137 3709" scale="2 2 2" rot="0"/>
+        <bush pos="7465 137 3745" scale="2 2 2" rot="0"/>
+        <bush pos="7534 137 3347" scale="2 2 2" rot="0"/>
+        <bush pos="7356 137 4265" scale="2 2 2" rot="0"/>
+        <bush pos="6860 137 4619" scale="2 2 2" rot="0"/>
+        <bush pos="6244 137 4383" scale="2 2 2" rot="0"/>
+        <bush pos="3946 1047 1775" scale="4 4 4" rot="0"/>
+        <bush pos="2647 137 7829" scale="2 2 2" rot="0"/>
+        <bush pos="2722 137 7212" scale="2 2 2" rot="0"/>
+        <bush pos="2941 137 6863" scale="2 2 2" rot="0"/>
+        <bush pos="3371 137 7413" scale="2 2 2" rot="0"/>
+        <bush pos="3679 137 8124" scale="2 2 2" rot="0"/>
+        <bush pos="4418 137 8331" scale="2 2 2" rot="0"/>
+        <bush pos="5399 589 6919" scale="2 2 2" rot="0"/>
+        <bush pos="5334 589 8097" scale="2 2 2" rot="0"/>
+        <bush pos="3885 589 7702" scale="2 2 2" rot="0"/>
+    </bushgroup>
+    <bushgroup mesh="shroom2_2" material="">
+        <bush pos="3270 705 4677" scale="10 9 10" rot="0"/>
+        <bush pos="3294 705 4656" scale="10 9 10" rot="0"/>
+        <bush pos="3288 705 4723" scale="10 9 10" rot="0"/>
+        <bush pos="9641 243 5849" scale="50 40 50" rot="0"/>
+        <bush pos="7533 274 6049" scale="50 40 50" rot="0"/>
+        <bush pos="7725 258 5322" scale="50 40 50" rot="0 180 0"/>
+    </bushgroup>
+    <bushgroup mesh="shrub" material="">
+        <bush pos="5788 137 3866" scale="5 5 5" rot="0"/>
+        <bush pos="5778 137 3662" scale="5 5 5" rot="0"/>
+        <bush pos="5439 498 3657" scale="5 5 5" rot="0"/>
+        <bush pos="5514 498 3977" scale="5 5 5" rot="0"/>
+        <bush pos="6987 270 6208" scale="5 5 5" rot="0"/>
+        <bush pos="7193 270 6132" scale="5 5 5" rot="0"/>
+        <bush pos="6801 270 6079" scale="5 5 5" rot="0"/>
+        <bush pos="6472 270 5974" scale="5 5 5" rot="0"/>
+        <bush pos="6190 270 6017" scale="5 5 5" rot="0"/>
+        <bush pos="5932 270 6041" scale="5 5 5" rot="0"/>
+        <bush pos="4433 803 1780" scale="7 7 7" rot="0"/>
+    </bushgroup>
+    <bushgroup mesh="shroom2_1" material="">
+        <bush pos="3298 705 4692" scale="80 70 80" rot="0"/>
+        <bush pos="3270 705 4677" scale="2 1.9 2" rot="0"/>
+        <bush pos="3294 705 4656" scale="2 1.9 2" rot="0"/>
+        <bush pos="3288 705 4723" scale="2 1.9 2" rot="0"/>
+        <bush pos="7485 267 5811" scale="40 35 40" rot="0"/>
+        <bush pos="7629 262 5571" scale="40 35 40" rot="0"/>
+        <bush pos="7627 235 4941" scale="40 35 40" rot="0"/>
+    </bushgroup>
+    <bushgroup mesh="farn1" material="">
+        <bush pos="1465 192 2211" scale="5 5 5" rot="0"/>
+        <bush pos="2072 192 1794" scale="5 5 5" rot="0"/>
+    </bushgroup>
+    <bushgroup mesh="waterfall" material="Waterfall2">
+        <bush pos="1840 190 1998" scale="2 0.5 2" rot="0 30 0"/>
+        <bush pos="741 727 7176" scale="3.5 2 2.5" rot="0 90 0"/>
+    </bushgroup>
+    <bushgroup mesh="rock" material="">
+        <bush pos="1824 156 1867" scale="2 2 2" rot="0"/>
+        <bush pos="1775 156 1894" scale="2 2 2" rot="0"/>
+        <bush pos="1737 156 1926" scale="2 2 2" rot="0"/>
+        <bush pos="1699 156 1961" scale="2 2 2" rot="0"/>
+        <bush pos="1824 177 1867" scale="1 1 1" rot="0 180 0"/>
+        <bush pos="1775 177 1894" scale="1 1 1" rot="0 180 0"/>
+        <bush pos="1737 177 1926" scale="1 1 1" rot="0 180 0"/>
+        <bush pos="1699 177 1961" scale="1 1 1" rot="0 180 0"/>
+        <bush pos="1788 179 1849" scale="1 1 1" rot="0 90 0"/>
+        <bush pos="1735 175 1878" scale="1 1 1" rot="0 90 0"/>
+        <bush pos="1695 175 1915" scale="1 1 1" rot="0 90 0"/>
+        <bush pos="7068 933 1302" scale="1.5 1.5 1.5" rot="77"/>
+        <bush pos="3935 819 1667" scale="0.5 0.7 0.5" rot="0"/>
+        <bush pos="3982 819 1617" scale="0.5 0.7 0.5" rot="0"/>
+        <bush pos="3933 819 1617" scale="0.5 0.7 0.5" rot="0"/>
+        <bush pos="3982 819 1665" scale="0.5 0.7 0.5" rot="0"/>
+        <bush pos="3981 819 1629" scale="0.5 0.7 0.5" rot="0"/>
+        <bush pos="3982 819 1652" scale="0.6 0.7 0.6" rot="0 90 0"/>
+        <bush pos="3951 819 1666" scale="0.6 0.7 0.6" rot="0 90 0"/>
+        <bush pos="3965 819 1666" scale="0.6 0.7 0.6" rot="0 90 0"/>
+        <bush pos="3932 819 1632" scale="0.6 0.7 0.6" rot="0 90 0"/>
+        <bush pos="3933 819 1653" scale="0.6 0.7 0.6" rot="0 90 0"/>
+        <bush pos="3966 819 1617" scale="0.6 0.7 0.6" rot="0 90 0"/>
+        <bush pos="3944 819 1616" scale="0.6 0.7 0.6" rot="0 90 0"/>
+        <bush pos="3985 819 1639" scale="0.6 0.7 0.6" rot="0 90 0"/>
+        <bush pos="3930 819 1643" scale="0.6 0.7 0.6" rot="0 90 0"/>
+        <bush pos="4666 697 7360" scale="0.3 0.3 0.3" rot="0"/>
+        <bush pos="4663 697 7367" scale="0.3 0.3 0.3" rot="0"/>
+        <bush pos="4658 697 7371" scale="0.3 0.3 0.3" rot="0"/>
+        <bush pos="4649 697 7371" scale="0.3 0.3 0.3" rot="0"/>
+        <bush pos="4645 697 7364" scale="0.3 0.3 0.3" rot="0"/>
+        <bush pos="4646 697 7353" scale="0.3 0.3 0.3" rot="0"/>
+        <bush pos="4654 697 7350" scale="0.3 0.3 0.3" rot="0"/>
+        <bush pos="4663 697 7350" scale="0.3 0.3 0.3" rot="0"/>
+    </bushgroup>
+    <bushgroup mesh="salmon" material="">
+        <bush pos="2151 61 2254" scale="1 1 1" rot="0"/>
+        <bush pos="1986 61 2358" scale="1 1 1" rot="0 30 0"/>
+        <bush pos="2020 61 2211" scale="1 1 1" rot="0 200 0"/>
+        <bush pos="2207 104 4486" scale="1 1 1" rot="0 10 0"/>
+        <bush pos="2372 104 2269" scale="1 1 1" rot="0 300 0"/>
+    </bushgroup>
+    <bushgroup mesh="crystal" material="">
+        <bush pos="595 752 7525" scale="20 20 20" rot="0"/>
+        <bush pos="566 752 7692" scale="15 15 15" rot="0"/>
+        <bush pos="542 752 7865" scale="10 10 10" rot="0"/>
+        <bush pos="520 752 8059" scale="5 5 5" rot="0"/>
+        <bush pos="491 752 8238" scale="2.5 2.5 2.5" rot="0"/>
+        <bush pos="593 752 6831" scale="20 20 20" rot="0 180 0"/>
+        <bush pos="582 752 6708" scale="15 15 15" rot="0 180 0"/>
+        <bush pos="569 752 6573" scale="10 10 10" rot="0 180 0"/>
+        <bush pos="561 752 6489" scale="5 5 5" rot="0 180 0"/>
+        <bush pos="550 752 6383" scale="2.5 2.5 2.5" rot="0 180 0"/>
+        <bush pos="4409 745 1417" scale="5 5 5" rot="0 180 0"/>
+        <bush pos="4257 745 1298" scale="5 5 5" rot="0 180 0"/>
+        <bush pos="4062 745 1218" scale="5 5 5" rot="0 180 0"/>
+        <bush pos="3795 745 1280" scale="5 5 5" rot="0 180 0"/>
+    </bushgroup>
+    <bushgroup mesh="shroom1_2" material="">
+        <bush pos="4100 815 1428" scale="29 20 29" rot="0 90 0"/>
+        <bush pos="3629 815 1537" scale="29 20 29" rot="0 90 0"/>
+        <bush pos="3917 815 2048" scale="10 8 10" rot="0 90 0"/>
+        <bush pos="4009 137 6269" scale="29 20 29" rot="0 90 0"/>
+        <bush pos="6361 137 7743" scale="29 20 29" rot="0 60 0"/>
+        <bush pos="1852 137 6336" scale="29 20 29" rot="0 90 0"/>
+        <bush pos="1444 137 3004" scale="29 20 29" rot="0 0 0"/>
+        <bush pos="5440 137 1735" scale="29 20 29" rot="0 300 0"/>
+    </bushgroup>
+    <bushgroup mesh="head2" material="">
+        <bush pos="3958 927 1781" scale="4 4 4" rot="0"/>
+    </bushgroup>
+    <bushgroup mesh="body1" material="">
+        <bush pos="3958 927 1781" scale="4 4 4" rot="0"/>
+    </bushgroup>
+    <bushgroup mesh="tail2" material="">
+        <bush pos="3958 927 1781" scale="4 4 4" rot="0"/>
+    </bushgroup>
+    <bushgroup mesh="wings" material="">
+        <bush pos="3958 927 1781" scale="4 4 4" rot="0"/>
+    </bushgroup>
+    <weathercycle name="ThunderstormRain"/>
+    <critters limit="80"/>
+    <critter type="Red Panda" rate="0.1" roamarea=""/>
+    <critter type="Peacock" rate="0.1" roamarea=""/>
+    <critter type="Frog" rate="0.1" roamarea=""/>
+    <critter type="Mouse" rate="0.1" roamarea=""/>
+    <randomtrees count="400">
+        <tree mesh="fern"/>
+        <tree mesh="acaciatree"/>
+        <tree mesh="Tree1"/>
+    </randomtrees>
+    <portal pos="1019 163 8301" radius="25" destmap="GreatFalls"/>
+    <portal pos="7607 167 8205" radius="25" destmap="Default"/>
+    <portal pos="8289 170 658" radius="25" destmap="Forest"/>
+    <waterplane pos="4276 132 3769" scale="30 30" material="Terrain/LargeWater" sound="" issolid="false"/>
+    <waterplane pos="415 727 7176" scale="1.2 1.2" material="Terrain/RapidWater" sound="waterfall.mp3" issolid="false"/>
+    <colbox pos="4670 694 7366" size="380 3 380"/>
+    <colbox pos="3865 579 7717" size="200 10 200"/>
+    <colbox pos="5416 579 6929" size="200 10 200"/>
+    <colbox pos="5315 579 8105" size="200 10 200"/>
+    <colbox pos="5158 589 8063" size="40 10 40"/>
+    <colbox pos="5011 589 8031" size="40 10 40"/>
+    <colbox pos="4899 589 8002" size="40 10 40"/>
+    <colbox pos="4785 589 7972" size="40 10 40"/>
+    <colbox pos="4662 589 7940" size="40 10 40"/>
+    <colbox pos="4518 589 7902" size="40 10 40"/>
+    <colbox pos="4366 589 7862" size="40 10 40"/>
+    <colbox pos="4237 589 7828" size="40 10 40"/>
+    <colbox pos="4106 589 7794" size="40 10 40"/>
+    <colbox pos="4010 589 7733" size="40 10 40"/>
+    <colbox pos="4886 697 7266" size="40 10 40"/>
+    <colbox pos="4942 691 7231" size="40 10 40"/>
+    <colbox pos="4996 684 7196" size="40 10 40"/>
+    <colbox pos="5071 664 7150" size="40 10 40"/>
+    <colbox pos="5141 644 7106" size="40 10 40"/>
+    <colbox pos="5202 624 7069" size="40 10 40"/>
+    <colbox pos="5274 603 7024" size="40 10 40"/>
+    <colbox pos="5384 589 7108" size="40 10 40"/>
+    <colbox pos="5377 589 7212" size="40 10 40"/>
+    <colbox pos="5369 589 7316" size="40 10 40"/>
+    <colbox pos="5362 589 7417" size="40 10 40"/>
+    <colbox pos="5356 589 7512" size="40 10 40"/>
+    <colbox pos="5349 589 7602" size="40 10 40"/>
+    <colbox pos="5343 589 7695" size="40 10 40"/>
+    <colbox pos="5336 589 7794" size="40 10 40"/>
+    <colbox pos="5329 589 7891" size="40 10 40"/>
+    <colbox pos="3696 589 7628" size="40 10 40"/>
+    <colbox pos="3629 556 7708" size="40 10 40"/>
+    <colbox pos="3684 521 7813" size="40 10 40"/>
+    <colbox pos="3760 495 7854" size="40 10 40"/>
+    <colbox pos="3861 464 7856" size="40 10 40"/>
+    <colbox pos="3950 432 7835" size="40 10 40"/>
+    <colbox pos="4028 408 7801" size="40 10 40"/>
+    <colbox pos="4011 375 7709" size="40 10 40"/>
+    <colbox pos="3974 348 7625" size="40 10 40"/>
+    <colbox pos="3909 329 7567" size="40 10 40"/>
+    <colbox pos="3834 305 7560" size="40 10 40"/>
+    <billboard pos="3298 1037 4690" scale="350 350" material="star"/>
+    <colbox pos="5663 398 3795" size="250 1.9 250"/>
+    <colbox pos="5663 274 3795" size="250 1.9 250"/>
+    <object mesh="bubble1" pos="5273 269 5928" scale=".6 2.5 .9" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="5446 269 5887" scale=".6 2.5 .9" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="5716 266 6024" scale=".6 2.5 .9" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="5960 266 5975" scale=".6 2.5 .9" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6208 271 6056" scale=".6 2.5 .9" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6365 270 6032" scale=".6 2.5 .9" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6537 266 6118" scale=".6 2.5 .9" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6684 270 6010" scale=".6 2.5 .9" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6842 264 6173" scale=".6 2.5 .9" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="7390 270 6028" scale="1.6 3.5 1.9" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="7426 271 6233" scale="1.6 3.5 1.9" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="7422 270 6468" scale="1.6 3.5 1.9" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="7418 270 6733" scale="1.6 3.5 1.9" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="7395 267 6958" scale="1.6 3.5 1.9" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="7256 259 7166" scale="1.6 3.5 1.9" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <colbox pos="3946 908 1775" size="560 19 560"/>
+    <colbox pos="3946 1029 1775" size="300 18.5 300"/>
+    <colbox pos="4282 872 1722" size="40 9 40"/>
+    <object mesh="Crystal" pos="3946 1047 1775" scale="19 19 19" rot="0 0 0" sound="" material=""/>
+    <billboard pos="3946 1325 1775" scale="140 140" material="eheart"/>
+    <colbox pos="4134 990 1699" size="40 9 40"/>
+    <object mesh="salmon" pos="2094 61 2427" scale="1 1 1" rot="0 60 0" sound="water1.wav" material=""/>
+    <object mesh="bubble1" pos="6224 275 5384" scale="1.1 4.5 1.1" rot="90 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6222 139 5503" scale="1 4.5 1" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6223 137 5396" scale="1 4.5 1" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6250 137 5313" scale="1 4.5 1" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6296 137 5218" scale="1 4.5 1" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6422 137 5173" scale="1 4.5 1" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6563 137 5257" scale="1 4.5 1" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6612 137 5401" scale="1 4.5 1" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6480 137 5548" scale="1 4.5 1" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6326 144 5537" scale="1 4.5 1" rot="90 0 30" sound="no sound" material="CaveMat"/>
+    <colsphere pos="6405 137 5401" radius="11 11"/>
+    <colsphere pos="7068 923 1302" radius="32"/>
+    <colbox pos="3946 819 1775" size="40 9 40"/>
+    <billboard pos="3946 845 1775" scale="75 75" material="eflame"/>
+    <colbox pos="3768 819 1634" size="30 9 30"/>
+    <colbox pos="4098 819 1856" size="30 9 30"/>
+    <colbox pos="4024 819 1929" size="30 9 30"/>
+    <colbox pos="4158 819 1777" size="30 9 30"/>
+    <colbox pos="4136 819 1611" size="30 9 30"/>
+    <colbox pos="3938 819 1534" size="30 9 30"/>
+    <colbox pos="4038 819 1532" size="30 9 30"/>
+    <colbox pos="3693 819 1815" size="30 9 30"/>
+    <colbox pos="3770 819 1941" size="30 9 30"/>
+    <waterplane pos="3958 825 1642" scale="0.1 0.1" material="Terrain/Healwater" sound="" issolid="false"/>
+    <colsphere pos="3935 809 1667" radius="20"/>
+    <colsphere pos="3982 811 1617" radius="20"/>
+    <colsphere pos="3933 811 1617" radius="20"/>
+    <colsphere pos="3982 811 1665" radius="20"/>
+    <colsphere pos="3981 811 1629" radius="20"/>
+    <colsphere pos="3982 811 1652" radius="20"/>
+    <colsphere pos="3951 811 1666" radius="20"/>
+    <colsphere pos="3965 811 1666" radius="20"/>
+    <colsphere pos="3932 811 1632" radius="20"/>
+    <colsphere pos="3933 811 1653" radius="20"/>
+    <colsphere pos="3966 809 1617" radius="20"/>
+    <colsphere pos="3944 811 1616" radius="20"/>
+    <colsphere pos="3985 811 1639" radius="20"/>
+    <colsphere pos="3930 811 1643" radius="20"/>
+    <colbox pos="3957 961 1769" size="40 1 40"/>
+    <particle name="PawFirePink" pos="4652 967 7364" sound=""/>
+    <particle name="PawFirePink" pos="4656 697 7358" sound=""/>
+    <particle name="PawFirePink" pos="4660 697 7358" sound=""/>
+    <particle name="PawFirePink" pos="4657 697 7364" sound=""/>
+    <particle name="PawFirePink" pos="4652 697 7362" sound=""/>
+    <particle name="PawFirePink" pos="4652 697 7360" sound=""/>
+    <particle name="PawFirePink" pos="4653 697 7360" sound=""/>
+    <particle name="PawFirePink" pos="4654 697 7357" sound=""/>
+    <particle name="PawFirePink" pos="4658 697 7358" sound=""/>
+    <particle name="PawFirePink" pos="4656 697 7361" sound=""/>
+    <particle name="PawFirePink" pos="4654 697 7363" sound=""/>
+    <particle name="PawFirePink" pos="4659 697 7361" sound=""/>
+    <particle name="PawFirePink" pos="4652 700 7364" sound=""/>
+    <particle name="PawFirePink" pos="4656 700 7358" sound=""/>
+    <particle name="PawFirePink" pos="4660 700 7358" sound=""/>
+    <particle name="PawFirePink" pos="4657 700 7364" sound=""/>
+    <particle name="PawFirePink" pos="4652 700 7362" sound=""/>
+    <particle name="PawFirePink" pos="4652 700 7360" sound=""/>
+    <particle name="PawFirePink" pos="4653 700 7360" sound=""/>
+    <particle name="PawFirePink" pos="4654 700 7357" sound=""/>
+    <particle name="PawFirePink" pos="4658 700 7358" sound=""/>
+    <particle name="PawFirePink" pos="4656 700 7361" sound=""/>
+    <particle name="PawFirePink" pos="4654 700 7363" sound=""/>
+    <particle name="PawFirePink" pos="4659 700 7361" sound=""/>
+    <colbox pos="4619 697 7483" size="30 9 30"/>
+    <colbox pos="4578 697 7435" size="30 9 30"/>
+    <colbox pos="4639 697 7251" size="30 9 30"/>
+    <colbox pos="4592 697 7284" size="30 9 30"/>
+    <colbox pos="4757 697 7432" size="30 9 30"/>
+    <colbox pos="4704 697 7454" size="30 9 30"/>
+    <colbox pos="4525 697 7351" size="40 18 40"/>
+    <particle name="WaterSplash" pos="3960 819 1638" sound=""/>
+    <particle name="WaterfallSmoke" pos="6144 137 3509" sound=""/>
+    <particle name="Fireflyup" pos="5743 137 3850" sound=""/>
+    <particle name="Fireflyup" pos="5748 137 3767" sound=""/>
+    <particle name="Fireflyup" pos="5720 137 3688" sound=""/>
+    <particle name="Fireflyup" pos="4654 697 7364" sound=""/>
+    <particle name="Fireflyup" pos="4654 697 7364" sound=""/>
+    <particle name="WaterfallSmoke" pos="869 117 7234" sound=""/>
+    <particle name="WaterfallSmoke" pos="924 117 7192" sound=""/>
+    <particle name="BlueFlame" pos="4619 718 7483" sound=""/>
+    <particle name="BlueFlame" pos="4578 718 7435" sound=""/>
+    <particle name="BlueFlame" pos="4639 718 7251" sound=""/>
+    <particle name="BlueFlame" pos="4592 718 7284" sound=""/>
+    <particle name="BlueFlame" pos="4757 718 7432" sound=""/>
+    <particle name="BlueFlame" pos="4704 718 7454" sound=""/>
+    <particle name="BlueFlame" pos="4525 738 7351" sound=""/>
+</world>
