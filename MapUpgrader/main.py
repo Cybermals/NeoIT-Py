@@ -4,8 +4,8 @@
 import argparse
 import os
 import sys
+from xml.dom import minidom
 import xml.etree.ElementTree as etree
-
 
 #Constants
 #==============================================================================
@@ -558,13 +558,20 @@ class MapUpgrader(object):
                 print("WARNING: Unknown world section '{}' encountered.".format(
                     section[0]))
 
-        etree.dump(root)
+        #Save prettified XML
+        xml = minidom.parseString(etree.tostring(root))
+        
+        with open(world_file.replace(".world", ".xml"), "w") as f:
+            xml.writexml(f, addindent = "    ", newl = "\n")
+
         print("done")
 
     def run(self):
         """Run this app."""
         #Display header
-        print("NeoIT-Py Map Upgrader v{}\n".format(__version__))
+        print("NeoIT-Py Map Upgrader v{}".format(__version__))
+        print(__copyright__)
+        print()
 
         #Parse command-line arguments
         argparser = argparse.ArgumentParser(description = __doc__)
