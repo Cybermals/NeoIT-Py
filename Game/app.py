@@ -5,9 +5,12 @@ from queue import Queue
 from direct.showbase.ShowBase import ShowBase
 from direct.task.Task import Task
 from kivy.uix.screenmanager import FadeTransition, SlideTransition
-from panda3d.core import WindowProperties
+from panda3d.core import load_prc_file_data, WindowProperties
+load_prc_file_data("", "stencil-bits 8")
 
+from camera import CameraManager, CAM_MODE_FREE
 from gui import GUI
+from world import WorldManager
 
 
 #Constants
@@ -29,12 +32,14 @@ class NeoITPyApp(ShowBase):
         """Setup this app."""
         ShowBase.__init__(self)
 
-        #Set window size
+        #Setup window
         wnd_props = WindowProperties()
         wnd_props.set_title("Neo Impressive Title")
         wnd_props.set_origin(0, 0)
         wnd_props.set_size(1280, 960)
         self.win.request_properties(wnd_props)
+
+        self.set_background_color(0, .5, 1, 1)
 
         #Init GUI sub-system
         self.gui = GUI(self)
@@ -48,6 +53,13 @@ class NeoITPyApp(ShowBase):
         self.title_music = loader.loadMusic("./data/sounds/title.ogg")
         self.title_music.set_loop(True)
         self.title_music.play()
+
+        #Init other sub-systems
+        self.cam_mgr = CameraManager()
+        self.world_mgr = WorldManager()
+
+        #Debug stats
+        #self.messenger.toggle_verbose()
 
     def new_game(self):
         """Start a new game."""
@@ -71,6 +83,8 @@ class NeoITPyApp(ShowBase):
         self.gui.show_multiplayer_hud(False)
         self.gui.show_target_info(False)
         self.gui.switch_to_screen("HUD", FadeTransition())
+        self.cam_mgr.change_mode(CAM_MODE_FREE)
+        self.world_mgr.load_map("./data/maps/Default")
 
     def leave_campaign_select(self):
         """Leave the campaign select screen and return to the title screen."""

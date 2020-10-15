@@ -8,6 +8,7 @@ from kivy.clock import Clock
 from kivy.core.image import Image as CoreImage
 from kivy.factory import Factory
 from kivy.graphics import Color, Rectangle
+from kivy.logger import Logger
 from kivy.properties import ObjectProperty, NumericProperty, StringProperty
 from kivy.uix.behaviors import ButtonBehavior
 from kivy.uix.boxlayout import BoxLayout
@@ -73,7 +74,6 @@ class GameFrame(BoxLayout):
             del kwargs["bg_source"]
 
         super(GameFrame, self).__init__(**kwargs)
-        print("bg_source = {}".format(self.bg_source))
 
         with self.canvas:
             Color(1, 1, 1, 1)
@@ -290,7 +290,11 @@ class GUI(App):
 
 #Register custom widget classes
 #===============================================================================
+Logger.info("Registering widget classes...")
+
 Factory.register("AnimatedLogo", AnimatedLogo)
 Factory.register("GameFrame", GameFrame)
 Factory.register("GameButton", GameButton)
 Factory.register("HPBar", HPBar)
+
+Logger.info("Widget classes registered.")
