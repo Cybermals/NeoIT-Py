@@ -5,7 +5,16 @@ from queue import Queue
 from direct.showbase.ShowBase import ShowBase
 from direct.task.Task import Task
 from kivy.uix.screenmanager import FadeTransition, SlideTransition
-from panda3d.core import load_prc_file_data, WindowProperties
+from panda3d.core import (
+    AmbientLight,
+    CollisionHandlerEvent,
+    CollisionTraverser,
+    DirectionalLight,
+    load_prc_file_data,
+    Vec3,
+    Vec4,
+    WindowProperties
+    )
 load_prc_file_data("", "stencil-bits 8")
 
 from camera import CameraManager, CAM_MODE_FREE
@@ -57,6 +66,26 @@ class NeoITPyApp(ShowBase):
         #Init other sub-systems
         self.cam_mgr = CameraManager()
         self.world_mgr = WorldManager()
+
+        #Setup lighting
+        self.ambient = AmbientLight("Ambient Light")
+        self.ambient.set_color(Vec4(.2, .2, .2, 1))
+        self.ambient_np = self.render.attach_new_node(self.ambient)
+        self.render.set_light(self.ambient_np)
+
+        self.sun = DirectionalLight("Sun")
+        self.sun_np = self.render.attach_new_node(self.sun)
+        self.sun_np.set_p(-135)
+        self.render.set_light(self.sun_np)
+
+        #Setup auto-shaders
+        self.render.set_shader_auto()
+
+        #Setup collision detection
+        self.cTrav = CollisionTraverser()
+
+        self.portal_handler = CollisionHandlerEvent()
+        self.portal_handler.add_in_pattern("%fn-entered-%in")
 
         #Debug stats
         #self.messenger.toggle_verbose()
