@@ -39,18 +39,20 @@ class CameraManager(object):
         base.accept("f1", self.change_mode, [CAM_MODE_FIRST_PERSON])
         base.accept("f2", self.change_mode, [CAM_MODE_CHASE])
         base.accept("f3", self.change_mode, [CAM_MODE_FREE])
-        base.accept("w", self.set_move_vec_y, [.2])
+
+        base.accept("w", self.set_move_vec_y, [.2 * self.speed])
         base.accept("w-up", self.set_move_vec_y, [0])
-        base.accept("s", self.set_move_vec_y, [-.2])
+        base.accept("s", self.set_move_vec_y, [-.2 * self.speed])
         base.accept("s-up", self.set_move_vec_y, [0])
-        base.accept("a", self.set_move_vec_x, [-.2])
+        base.accept("a", self.set_move_vec_x, [-.2 * self.speed])
         base.accept("a-up", self.set_move_vec_x, [0])
-        base.accept("d", self.set_move_vec_x, [.2])
+        base.accept("d", self.set_move_vec_x, [.2 * self.speed])
         base.accept("d-up", self.set_move_vec_x, [0])
-        base.accept("r", self.set_move_vec_z, [.2])
+        base.accept("r", self.set_move_vec_z, [.2 * self.speed])
         base.accept("r-up", self.set_move_vec_z, [0])
-        base.accept("f", self.set_move_vec_z, [-.2])
+        base.accept("f", self.set_move_vec_z, [-.2 * self.speed])
         base.accept("f-up", self.set_move_vec_z, [0])
+
         base.accept("arrow_up", self.set_rot_vec_p, [.5])
         base.accept("arrow_up-up", self.set_rot_vec_p, [0])
         base.accept("arrow_down", self.set_rot_vec_p, [-.5])
@@ -62,23 +64,18 @@ class CameraManager(object):
 
         #Start camera manager task
         base.task_mgr.add(self.run_logic)
-
-        #Just a small camera test
-        panda = loader.load_model("panda")
-        panda.reparent_to(render)
-
         Logger.info("Camera manager initialized.")
 
     def reset(self):
         """Reset this camera manager."""
         self.mode = CAM_MODE_FIRST_PERSON
+        self.speed = 10
         self.move_vec = Vec3(0, 0, 0)
         self.rot_vec = Vec3(0, 0, 0)
 
         base.disable_mouse()
         base.camera.set_pos(0, 0, 0)
         base.camera.set_hpr(0, 0, 0)
-        base.camera.set_scale(1, 1, 1)
 
     def change_mode(self, mode):
         """Change the current camera mode."""
@@ -131,7 +128,7 @@ class CameraManager(object):
             #Now update position
             pos = base.camera.get_pos()
             vec = Vec3(self.move_vec.x, self.move_vec.y, 0)
-            base.camera.set_pos(pos + base.camera.get_quat().xform(vec))
+            base.camera.set_pos(pos + base.camera.get_quat(render).xform(vec))
             base.camera.set_z(base.camera.get_z() + self.move_vec.z)
 
         #Continue this task infinitely
