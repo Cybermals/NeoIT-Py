@@ -63,6 +63,12 @@ class NeoITPyApp(ShowBase):
         self.title_music.set_loop(True)
         self.title_music.play()
 
+        #Setup collision detection
+        self.cTrav = CollisionTraverser()
+
+        self.portal_handler = CollisionHandlerEvent()
+        self.portal_handler.add_in_pattern("%fn-entered-%in")
+
         #Init other sub-systems
         self.cam_mgr = CameraManager()
         self.world_mgr = WorldManager()
@@ -81,14 +87,8 @@ class NeoITPyApp(ShowBase):
         #Setup auto-shaders
         self.render.set_shader_auto()
 
-        #Setup collision detection
-        self.cTrav = CollisionTraverser()
-
-        self.portal_handler = CollisionHandlerEvent()
-        self.portal_handler.add_in_pattern("%fn-entered-%in")
-
         #Debug stats
-        #self.messenger.toggle_verbose()
+        self.messenger.toggle_verbose()
 
     def new_game(self):
         """Start a new game."""

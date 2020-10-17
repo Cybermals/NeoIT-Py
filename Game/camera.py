@@ -2,7 +2,7 @@
 
 from direct.task.Task import Task
 from kivy.logger import Logger
-from panda3d.core import Vec3
+from panda3d.core import CollisionNode, CollisionSphere, Vec3
 
 
 #Constants
@@ -61,6 +61,12 @@ class CameraManager(object):
         base.accept("arrow_left-up", self.set_rot_vec_h, [0])
         base.accept("arrow_right", self.set_rot_vec_h, [-.5])
         base.accept("arrow_right-up", self.set_rot_vec_h, [0])
+
+        #Setup collision detection
+        cnode = CollisionNode("camera")
+        cnode.add_solid(CollisionSphere(0, 0, 0, 10))
+        self.collider = base.camera.attach_new_node(cnode)
+        base.cTrav.add_collider(self.collider, base.portal_handler)
 
         #Start camera manager task
         base.task_mgr.add(self.run_logic)

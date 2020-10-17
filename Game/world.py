@@ -38,8 +38,9 @@ class Portal(object):
 
         #Setup collision detection
         cnode = CollisionNode("portal")
-        cnode.add_solid(CollisionSphere(0, 0, 0, radius))
+        cnode.add_solid(CollisionSphere(0, 0, 0, 1))
         collider = self.model.attach_new_node(cnode)
+        collider.set_python_tag("object", self)
         base.cTrav.add_collider(collider, base.portal_handler)
 
         #Store desination
@@ -146,9 +147,9 @@ class WorldManager(object):
                     continue
 
                 #Load gate
-                pos = parse_vec(child.attrib["pos"])
+                pos = parse_vec(child.attrib["pos"], 3)
                 destmap = child.attrib["destmap"]
-                destvec = parse_vec(child.attrib["destvec"])
+                destvec = parse_vec(child.attrib["destvec"], 3)
                 material = child.attrib["material"] if "material" in child.attrib else ""
                 self.add_gate(pos, destmap, destvec, material)
 
