@@ -169,7 +169,7 @@
         <bush pos="600 135 1462" scale="20 20 20" rot="0 70 0"/>
         <bush pos="6019 523 2528" scale="1.5 1.5 1.5" rot="0"/>
     </bushgroup>
-    <bushgroup mesh="rockSlab" material="">
+    <bushgroup mesh="rock_slab" material="">
         <bush pos="6785 589 3038" scale="8 2 8" rot="180"/>
         <bush pos="6881 607 2982" scale="0.6 0.7 0.6" rot="180"/>
         <bush pos="6880 607 3094" scale="0.6 0.7 0.6" rot="180"/>

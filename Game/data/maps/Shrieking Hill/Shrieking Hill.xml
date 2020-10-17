@@ -103,7 +103,7 @@
         <bush pos="1402 239 1052" scale="2 2 2" rot="0 0 0"/>
         <bush pos="1105 431 1515" scale="2 2 2" rot="0 0 0"/>
     </bushgroup>
-    <bushgroup mesh="rockSlab2" material="">
+    <bushgroup mesh="rock_slab2" material="">
         <bush pos="3791 470 726" scale="12 2 12" rot="0 180 0"/>
         <bush pos="3777 333 507" scale="1 17 1" rot="0 0 0"/>
         <bush pos="3629 333 798" scale="1 17 1" rot="0 0 0"/>
@@ -223,16 +223,16 @@
     <colbox pos="3791 475 726" size="480 13 480"/>
     <object mesh="Crystal" pos="4291 294 4482" scale="10 10 10" rot="0 0 0" sound="no sound" material="Terrain/Magma"/>
     <object mesh="Crystal" pos="1851 344 2428" scale="20 20 20" rot="0 0 0" sound="no sound" material="Terrain/Magma"/>
-    <object mesh="rockslab" pos="2257 982 741" scale="20 2 20" rot="0 180 0" sound="no sound" material="Terrain/LargeWater"/>
-    <object mesh="rockslab" pos="1945 966 1160" scale="1 1 1" rot="0 180 0" sound="no sound" material="Terrain/CalmWater"/>
-    <object mesh="rockslab" pos="1896 904 1233" scale="1 1 1" rot="0 180 0" sound="no sound" material="Terrain/CalmWater"/>
-    <object mesh="rockslab" pos="1853 845 1296" scale="1 1 1" rot="0 180 0" sound="no sound" material="Terrain/LakeWater"/>
-    <object mesh="rockslab" pos="1779 786 1315" scale="1 1 1" rot="0 180 0" sound="no sound" material="Terrain/LakeWater"/>
-    <object mesh="rockslab" pos="1702 712 1335" scale="1 1 1" rot="0 180 0" sound="no sound" material="Terrain/CalmWater"/>
-    <object mesh="rockslab" pos="1622 649 1355" scale="1 1 1" rot="0 180 0" sound="no sound" material="Terrain/CalmWater"/>
-    <object mesh="rockslab" pos="1546 591 1375" scale="1 1 1" rot="0 180 0" sound="no sound" material="Terrain/CalmWater"/>
-    <object mesh="rockslab" pos="1465 532 1396" scale="1 1 1" rot="0 180 0" sound="no sound" material="Terrain/CalmWater"/>
-    <object mesh="rockslab" pos="1397 482 1413" scale="1 1 1" rot="0 180 0" sound="no sound" material="Terrain/CalmWater"/>
+    <object mesh="rock_slab" pos="2257 982 741" scale="20 2 20" rot="0 180 0" sound="no sound" material="Terrain/LargeWater"/>
+    <object mesh="rock_slab" pos="1945 966 1160" scale="1 1 1" rot="0 180 0" sound="no sound" material="Terrain/CalmWater"/>
+    <object mesh="rock_slab" pos="1896 904 1233" scale="1 1 1" rot="0 180 0" sound="no sound" material="Terrain/CalmWater"/>
+    <object mesh="rock_slab" pos="1853 845 1296" scale="1 1 1" rot="0 180 0" sound="no sound" material="Terrain/LakeWater"/>
+    <object mesh="rock_slab" pos="1779 786 1315" scale="1 1 1" rot="0 180 0" sound="no sound" material="Terrain/LakeWater"/>
+    <object mesh="rock_slab" pos="1702 712 1335" scale="1 1 1" rot="0 180 0" sound="no sound" material="Terrain/CalmWater"/>
+    <object mesh="rock_slab" pos="1622 649 1355" scale="1 1 1" rot="0 180 0" sound="no sound" material="Terrain/CalmWater"/>
+    <object mesh="rock_slab" pos="1546 591 1375" scale="1 1 1" rot="0 180 0" sound="no sound" material="Terrain/CalmWater"/>
+    <object mesh="rock_slab" pos="1465 532 1396" scale="1 1 1" rot="0 180 0" sound="no sound" material="Terrain/CalmWater"/>
+    <object mesh="rock_slab" pos="1397 482 1413" scale="1 1 1" rot="0 180 0" sound="no sound" material="Terrain/CalmWater"/>
     <colbox pos="2257 982 741" size="800 18 800"/>
     <colbox pos="1945 966 1160" size="40 9 40"/>
     <colbox pos="1896 904 1233" size="40 9 40"/>
@@ -243,9 +243,9 @@
     <colbox pos="1546 591 1375" size="40 9 40"/>
     <colbox pos="1465 532 1396" size="40 9 40"/>
     <colbox pos="1397 482 1413" size="40 9 40"/>
-    <object mesh="rockslab" pos="1292 449 1519" scale="1 1 1" rot="0 180 0" sound="no sound" material="Terrain/CalmWater"/>
+    <object mesh="rock_slab" pos="1292 449 1519" scale="1 1 1" rot="0 180 0" sound="no sound" material="Terrain/CalmWater"/>
     <colbox pos="1292 449 1519" size="40 9 40"/>
-    <object mesh="rockslab" pos="1350 467 1457" scale="0.5 1 0.5" rot="0 180 0" sound="no sound" material="Terrain/CalmWater"/>
+    <object mesh="rock_slab" pos="1350 467 1457" scale="0.5 1 0.5" rot="0 180 0" sound="no sound" material="Terrain/CalmWater"/>
     <colbox pos="1350 467 1457" size="20 9 20"/>
     <particle name="Horrorup" pos="2255 1048 812" sound=""/>
     <particle name="Ghostfire" pos="1914 1000 871" sound=""/>

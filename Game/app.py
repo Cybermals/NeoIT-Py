@@ -88,7 +88,7 @@ class NeoITPyApp(ShowBase):
         self.render.set_shader_auto()
 
         #Debug stats
-        self.messenger.toggle_verbose()
+        #self.messenger.toggle_verbose()
 
     def new_game(self):
         """Start a new game."""

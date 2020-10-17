@@ -863,7 +863,7 @@
     <bushgroup mesh="shroom2_2" material="">
         <bush pos="871.314 567.843 9507.85" scale="18 8 18" rot="0 0 0"/>
     </bushgroup>
-    <bushgroup mesh="rockSlab" material="">
+    <bushgroup mesh="rock_slab" material="">
         <bush pos="5195.27 369.652 2820.59" scale="3 1 3" rot="0 0 0"/>
     </bushgroup>
     <bushgroup mesh="Wand" material="">

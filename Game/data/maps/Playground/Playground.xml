@@ -125,7 +125,7 @@
         <bush pos="3749 927 1763" scale="6 6 6" rot="0"/>
         <bush pos="4104 927 1896" scale="6 6 6" rot="0"/>
     </bushgroup>
-    <bushgroup mesh="rockSlab" material="">
+    <bushgroup mesh="rock_slab" material="">
         <bush pos="5663 382 3795" scale="7 2 7" rot="0"/>
         <bush pos="5663 258 3795" scale="7 2 7" rot="0"/>
         <bush pos="5742 137 3854" scale="0.5 14 0.5" rot="0"/>
@@ -161,7 +161,7 @@
         <bush pos="4704 697 7454" scale="0.6 1 0.6" rot="0"/>
         <bush pos="4525 697 7351" scale="1 2 1" rot="0"/>
     </bushgroup>
-    <bushgroup mesh="rockSlab2" material="">
+    <bushgroup mesh="rock_slab2" material="">
         <bush pos="4670 670 7366" scale="10 3 10" rot="0 180 0"/>
         <bush pos="3865 579 7717" scale="5 1 5" rot="0 180 0"/>
         <bush pos="5416 579 6929" scale="5 1 5" rot="0 180 0"/>

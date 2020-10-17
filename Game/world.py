@@ -8,11 +8,27 @@ from panda3d.core import (
     CollisionNode,
     CollisionSphere,
     GeoMipTerrain,
+    Material,
     Texture,
-    TextureStage
+    TextureStage,
+    Vec4
     )
 
 from utils import parse_float, parse_vec
+
+
+#Constants
+#==============================================================================
+gate_mat_black = Material("GateMatBlack")
+gate_mat_black.ambient = Vec4(0, 0, 0, 1)
+gate_mat_black.diffuse = Vec4(0, 0, 0, 1)
+gate_mat_black.specular = Vec4(0, 0, 0, 1)
+
+gate_mat_white = Material("GateMatWhite")
+gate_mat_white.ambient = Vec4(1, 1, 1, 1)
+gate_mat_white.diffuse = Vec4(1, 1, 1, 1)
+gate_mat_white.specular = Vec4(0, 0, 0, 1)
+gate_mat_white.emission = Vec4(.5, .5, .5, 1)
 
 
 #Classes
@@ -58,9 +74,38 @@ class Gate(Portal):
         Portal.__init__(self, pos, 10, dest)
 
         #Change the name of the collision node
-        self.model.ls()
+        self.model.find("**/portal").set_name("gate")
 
         #Store destination vector
+        self.destvec = destvec
+
+        #Set the gate material
+        self.model.set_texture_off(True)
+        self.model.set_material(gate_mat_black, 1) #need to adjust this later
+
+
+class Object(object):
+    """A scenery object."""
+    def __init__(self, mesh, pos, rot, scale, material, sound):
+        """Setup this scenery object."""
+        try:
+            #Setup model
+            self.model = loader.load_model(
+                os.path.join("./data/models/scenery", mesh, mesh))
+            self.model.set_pos(pos[0], pos[2], pos[1])
+            self.model.set_hpr(rot[0], rot[1], rot[2])
+            self.model.set_scale(scale[0], scale[2], scale[1])
+            self.model.reparent_to(render)
+
+        except IOError:
+            #Just set this to None if the model won't load
+            self.model = None
+            Logger.warning("Model '{}' failed to load.".format(mesh))
+
+    def __del__(self):
+        """Cleanup this scenery object."""
+        if self.model is not None:
+            self.model.remove_node()
 
 
 class WorldManager(object):
@@ -69,8 +114,10 @@ class WorldManager(object):
         """Setup this world manager."""
         Logger.info("Initializing world manager...")
 
+        self.terrain = None
         self.portals = []
         self.gates = []
+        self.objects = []
 
         Logger.info("World manager initialized.")
 
@@ -153,6 +200,22 @@ class WorldManager(object):
                 material = child.attrib["material"] if "material" in child.attrib else ""
                 self.add_gate(pos, destmap, destvec, material)
 
+            #Object?
+            elif child.tag == "object":
+                #Validate object
+                if not ("mesh" in child.attrib and "pos" in child.attrib):
+                    Logger.warning("Object must define 'mesh' and 'pos'.")
+                    continue
+
+                #Load object
+                mesh = child.attrib["mesh"]
+                pos = parse_vec(child.attrib["pos"], 3)
+                rot = parse_vec(child.attrib["rot"], 3) if "rot" in child.attrib else [0, 0, 0]
+                scale = parse_vec(child.attrib["scale"], 3) if "scale" in child.attrib else [1, 1, 1]
+                material = child.attrib["material"] if "material" in child.attrib else ""
+                sound = child.attrib["sound"] if "sound" in child.attrib else ""
+                self.add_object(mesh, pos, rot, scale, material, sound)
+
             #Unknown?
             else:
                 Logger.warning(
@@ -165,6 +228,9 @@ class WorldManager(object):
 
     def unload_map(self):
         """Unload the current map."""
+        if self.terrain is not None:
+            self.terrain.get_root().remove_node()
+
         self.terrain = None
         self.size = [0, 0]
         self.spawnpos = [0, 0, 0]
@@ -174,6 +240,9 @@ class WorldManager(object):
 
         while len(self.gates) > 0:
             self.del_gate(self.gates[-1])
+
+        while len(self.objects) > 0:
+            self.del_object(self.objects[-1])
 
     def add_portal(self, pos, radius, dest):
         """Add a portal to this world."""
@@ -195,3 +264,12 @@ class WorldManager(object):
         """Remove a gate from this world."""
         self.gates.remove(gate)
         Logger.info("Removed gate {}".format(gate))
+
+    def add_object(self, mesh, pos, rot, scale, material, sound):
+        """Add an object to this world."""
+        self.objects.append(Object(mesh, pos, rot, scale, material, sound))
+        Logger.info("Added object: mesh = '{}', pos = {}, rot = {}, scale = {}, material = '{}', sound = '{}'".format(mesh, pos, rot, scale, material, sound))
+
+    def del_object(self, object):
+        """Delete an object from this world."""
+        Logger.info("Removed object {}".format(object))
