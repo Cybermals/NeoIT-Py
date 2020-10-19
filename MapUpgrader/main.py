@@ -19,11 +19,49 @@ __version__ = "1.0.0"
 #==============================================================================
 class MapUpgrader(object):
     """A basic app class."""
+    def convert_pos(self, pos):
+        """Convert a position in Ogre coordinates to Panda3D coordinates."""
+        #Handle 2 coordinate position
+        if pos.count(" ") == 1:
+            x, y = [float(coord) for coord in pos.split(" ")]
+            y = self.map_size[1] - y
+            return "{} {}".format(x, y)
+
+        #Swap Y and Z and invert Y
+        x, z, y = [float(coord) for coord in pos.split(" ")]
+        y = self.map_size[1] - y
+        return "{} {} {}".format(x, y, z)
+
+    def convert_rot(self, rot):
+        """Convert a rotation in Ogre coordinates to Panda3D coordinates."""
+        #Handle single coordinate rotation
+        if rot.count(" ") == 0:
+            return "{} 0 0".format(rot)
+
+        #Put the heading, pitch, and roll in the proper order
+        p, h, r = rot.split(" ")
+        return "{} {} {}".format(h, p, r)
+
+    def convert_scale(self, scale):
+        """Convert a scale in Ogre coordinates to Panda3D coordinates."""
+        #Handle single coordinate scale
+        if scale.count(" ") == 0:
+            return "{} {} {}".format(scale, scale, scale)
+
+        #Handle a 2 coordinate scale
+        elif scale.count(" ") == 1:
+            return "{} {}".format(scale, scale)
+
+        #Swap Y and Z
+        x, z, y = scale.split(" ")
+        return "{} {} {}".format(x, y, z)
+
     def load_ogre_terrain(self, terrain_file):
         """Load an Ogre terrain config file."""
         #Open the terrain config file
         heightmap = ""
         material = ""
+        height = "300"
 
         with open(terrain_file, "r") as f:
             #Find the heightmap and material file entries
@@ -36,7 +74,11 @@ class MapUpgrader(object):
                 elif line.startswith("CustomMaterialName"):
                     material = line.split("=")[1].strip()
 
-        return (heightmap, material)
+                #Height?
+                elif line.startswith("MaxHeight"):
+                    height = line.split("=")[1].strip()
+
+        return (heightmap, material, float(height) * 2)
 
     def load_it_cfg(self, world_file):
         """Load an IT config file.
@@ -67,7 +109,7 @@ class MapUpgrader(object):
             material = tree[1] if len(tree) > 1 else ""
 
             #Add a new tree group to the XML
-            tree_group = etree.SubElement(elm, "treegroup", {
+            tree_group = etree.SubElement(elm, "objectgroup", {
                 "mesh": mesh,
                 "material": material
                 })
@@ -85,12 +127,12 @@ class MapUpgrader(object):
                 else:
                     #Parse instance data
                     inst_data = inst.split(";")
-                    pos = inst_data[0]
-                    scale = inst_data[1] if len(inst_data) > 1 else ""
-                    rot = inst_data[2] if len(inst_data) > 2 else ""
+                    pos = self.convert_pos(inst_data[0])
+                    scale = self.convert_scale(inst_data[1]) if len(inst_data) > 1 else ""
+                    rot = self.convert_rot(inst_data[2]) if len(inst_data) > 2 else ""
 
                     #Add the tree to the XML
-                    tree_inst = etree.SubElement(tree_group, "tree", {
+                    tree_inst = etree.SubElement(tree_group, "object", {
                         "pos": pos,
                         "scale": scale,
                         "rot": rot
@@ -111,7 +153,7 @@ class MapUpgrader(object):
             material = bush[1] if len(bush) > 1 else ""
 
             #Add a new bush group to the XML
-            bush_group = etree.SubElement(elm, "bushgroup", {
+            bush_group = etree.SubElement(elm, "objectgroup", {
                 "mesh": mesh,
                 "material": material
                 })
@@ -129,12 +171,12 @@ class MapUpgrader(object):
                 else:
                     #Parse instance data
                     inst_data = inst.split(";")
-                    pos = inst_data[0]
-                    scale = inst_data[1] if len(inst_data) > 1 else ""
-                    rot = inst_data[2] if len(inst_data) > 2 else ""
+                    pos = self.convert_pos(inst_data[0])
+                    scale = self.convert_scale(inst_data[1]) if len(inst_data) > 1 else ""
+                    rot = self.convert_rot(inst_data[2]) if len(inst_data) > 2 else ""
 
                     #Add the bush to the XML
-                    bush_inst = etree.SubElement(bush_group, "bush", {
+                    bush_inst = etree.SubElement(bush_group, "object", {
                         "pos": pos,
                         "scale": scale,
                         "rot": rot
@@ -178,8 +220,8 @@ class MapUpgrader(object):
             #RoamArea Section
             elif section[0] == "RoamArea":
                 #Parse the roam area data
-                start = section[1].split("=")[1]
-                range = section[2].split("=")[1]
+                start = self.convert_pos(section[1].split("=")[1])
+                range = self.convert_scale(section[2].split("=")[1])
 
                 #Add the roam area to the XML
                 roam_area = etree.SubElement(elm, "roamarea", {
@@ -199,6 +241,7 @@ class MapUpgrader(object):
 
         #Upgrade the old map
         map_dir = os.path.dirname(world_file)
+        self.map_size = (0, 0)
         sections = self.load_it_cfg(world_file)
         xml = etree.ElementTree()
         xml._setroot(etree.Element("world"))
@@ -210,16 +253,17 @@ class MapUpgrader(object):
                 #Parse terrain data
                 config = section[1]
                 width = section[2]
-                height = section[3]
+                depth = section[3]
                 spawn_pos = section[4]
 
-                #Load the heightmap and material data
-                heightmap, material = self.load_ogre_terrain(
+                #Load the heightmap, material, and height data
+                heightmap, material, height = self.load_ogre_terrain(
                     os.path.join(map_dir, config))
+                self.map_size = (float(width), float(depth), float(height)) #we will need this to convert from Ogre coords to Panda3D coords
 
                 #Add terrain to XML
                 terrain = etree.SubElement(root, "terrain", {
-                    "size": width + " " + height,
+                    "size": "{} {} {}".format(width, depth, height),
                     "spawnpos": spawn_pos,
                     "heightmap": heightmap,
                     "material": material
@@ -229,7 +273,7 @@ class MapUpgrader(object):
             #Portal Section
             elif section[0] == "Portal":
                 #Parse portal data
-                pos = section[1]
+                pos = self.convert_pos(section[1])
                 radius = section[2]
                 dest_map = section[3]
 
@@ -245,9 +289,9 @@ class MapUpgrader(object):
             elif section[0] == "Gate":
                 #Parse gate data
                 material = section[1]
-                pos = section[2]
+                pos = self.convert_pos(section[2])
                 dest_map = section[3]
-                dest_vec = section[4]
+                dest_vec = self.convert_pos(section[4])
 
                 #Add gate to XML
                 gate = etree.SubElement(root, "gate", {
@@ -261,9 +305,9 @@ class MapUpgrader(object):
             #WaterPlane Section
             elif section[0] == "WaterPlane":
                 #Parse water plane data
-                pos = section[1]
+                pos = self.convert_pos(section[1])
                 scale_x = section[2]
-                scale_z = section[3]
+                scale_y = section[3]
                 material = section[4] if len(section) > 4 else ""
                 sound = section[5] if len(section) > 5 else ""
                 is_solid = section[6] if len(section) > 6 else "false"
@@ -271,7 +315,7 @@ class MapUpgrader(object):
                 #Add water plane to XML
                 water_plane = etree.SubElement(root, "waterplane", {
                     "pos": pos,
-                    "scale": scale_x + " " + scale_z,
+                    "scale": scale_x + " " + scale_y,
                     "material": material,
                     "sound": sound,
                     "issolid": is_solid
@@ -282,9 +326,9 @@ class MapUpgrader(object):
             elif section[0] == "Object":
                 #Parse object data
                 mesh = os.path.splitext(section[1])[0]
-                pos = section[2]
-                scale = section[3]
-                rot = section[4]
+                pos = self.convert_pos(section[2])
+                scale = self.convert_scale(section[3])
+                rot = self.convert_rot(section[4])
                 sound = section[5] if len(section) > 5 else ""
                 material = section[6] if len(section) > 6 else ""
 
@@ -303,7 +347,7 @@ class MapUpgrader(object):
             elif section[0] == "Particle":
                 #Parse particle data
                 name = section[1]
-                pos = section[2]
+                pos = self.convert_pos(section[2])
                 sound = section[3] if len(section) > 3 else ""
 
                 #Add particle to XML
@@ -349,7 +393,7 @@ class MapUpgrader(object):
             #Light Section
             elif section[0] == "Light":
                 #Parse light data
-                pos = section[1]
+                pos = self.convert_pos(section[1])
                 color = section[2]
 
                 #Add light to XML
@@ -362,8 +406,8 @@ class MapUpgrader(object):
             #Billboard Section
             elif section[0] == "Billboard":
                 #Parse billboard data
-                pos = section[1]
-                scale = section[2]
+                pos = self.convert_pos(section[1])
+                scale = self.convert_scale(section[2])
                 material = section[3]
 
                 #Add billboard to XML
@@ -377,7 +421,7 @@ class MapUpgrader(object):
             #SphereWall Section
             elif section[0] == "SphereWall":
                 #Parse sphere wall data
-                pos = section[1]
+                pos = self.convert_pos(section[1])
                 radius = section[2]
                 is_inside = section[3]
 
@@ -392,8 +436,8 @@ class MapUpgrader(object):
             #BoxWall Section
             elif section[0] == "BoxWall":
                 #Parse box wall data
-                pos = section[1]
-                range = section[2]
+                pos = self.convert_pos(section[1])
+                range = self.convert_scale(section[2])
                 is_inside = section[3]
 
                 #Add box wall to XML
@@ -439,7 +483,7 @@ class MapUpgrader(object):
                 tree_cnt = section[4] if len(section) > 4 else ""
 
                 #Add random trees to XML
-                rand_trees = etree.SubElement(root, "randomtrees", {
+                rand_trees = etree.SubElement(root, "randomobjects", {
                     "count": tree_cnt
                     })
                 etree.SubElement(rand_trees, "tree", {
@@ -464,7 +508,7 @@ class MapUpgrader(object):
                 bush_cnt = section[4] if len(section) > 4 else ""
 
                 #Add random bushes to XML
-                rand_bushes = etree.SubElement(root, "randombushes", {
+                rand_bushes = etree.SubElement(root, "randomobjects", {
                     "count": bush_cnt
                     })
                 etree.SubElement(rand_bushes, "bush", {
@@ -487,13 +531,8 @@ class MapUpgrader(object):
                 self.load_it_trees(os.path.join(map_dir, tree_file), root)
 
             #Bushes Section
-            elif section[0] == "Bushes" or section[0] == "NewBushes":
-                #Parse bush data
-                bush_file = section[1]
-                self.load_it_bushes(os.path.join(map_dir, bush_file), root)
-
-            #FloatingBushes Section
-            elif (section[0] == "FloatingBushes" or 
+            elif (section[0] == "Bushes" or section[0] == "NewBushes" or 
+                section[0] == "FloatingBushes" or 
                 section[0] == "NewFloatingBushes"):
                 #Parse bush data
                 bush_file = section[1]
@@ -502,8 +541,8 @@ class MapUpgrader(object):
             #CollBox Section
             elif section[0] == "CollBox":
                 #Parse collision box data
-                pos = section[1]
-                size = section[2]
+                pos = self.convert_pos(section[1])
+                size = self.convert_scale(section[2])
 
                 #Add collision box to XML
                 colbox = etree.SubElement(root, "colbox", {
@@ -515,7 +554,7 @@ class MapUpgrader(object):
             #CollSphere Section
             elif section[0] == "CollSphere":
                 #Parse collision sphere data
-                pos = section[1]
+                pos = self.convert_pos(section[1])
                 radius = section[2]
 
                 #Add collision sphere to XML

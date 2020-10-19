@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="8000 8000" spawnpos="4000 3900 25" heightmap="oceanterrain.png" material="Terrain/MarshTerrain"/>
+    <terrain size="8000 8000 1400.0" spawnpos="4000 3900 25" heightmap="oceanterrain.png" material="Terrain/MarshTerrain"/>
     <grass material="yellowGrass" grassmap="grassdensitymap.png" colormap="grass_tex.jpg"/>
-    <portal pos="1250 300 1000" radius="25" destmap="Default"/>
-    <portal pos="900 120 7100" radius="50" destmap="Waterfall"/>
-    <waterplane pos="4000 600 4000" scale="30 30" material="Terrain/LargeWater" sound="water1.wav" issolid="false"/>
-    <gate material="GateMatBlack" pos="4292 140 4161" destmap="Underwater Cave" destvec="217 4859 676"/>
+    <portal pos="1250.0 7000.0 300.0" radius="25" destmap="Default"/>
+    <portal pos="900.0 900.0 120.0" radius="50" destmap="Waterfall"/>
+    <waterplane pos="4000.0 4000.0 600.0" scale="30 30" material="Terrain/LargeWater" sound="water1.wav" issolid="false"/>
+    <gate material="GateMatBlack" pos="4292.0 3839.0 140.0" destmap="Underwater Cave" destvec="217.0 7324.0 4859.0"/>
 </world>

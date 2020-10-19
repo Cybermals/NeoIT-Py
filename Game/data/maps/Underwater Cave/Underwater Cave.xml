@@ -1,31 +1,31 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="1000 1000" spawnpos="450 450 100" heightmap="underwaterCaveterrain.png" material="Terrain/HydroPillar">
+    <terrain size="1000 1000 500.0" spawnpos="450 450 100" heightmap="underwaterCaveterrain.png" material="Terrain/HydroPillar">
         <interior color="" height="245" material="Terrain/UnderwaterCeiling"/>
     </terrain>
-    <bushgroup mesh="waterfall" material="">
-        <bush pos="870 122 165" scale="0.15 0.3 1" rot="0 -45 0"/>
-    </bushgroup>
-    <bushgroup mesh="crystal" material="">
-        <bush pos="80 146 263" scale="2.5 2.5 2.5" rot="0 0 0"/>
-        <bush pos="95 147 236" scale="1 1 1" rot="0 30 0"/>
-        <bush pos="64 148 303" scale="1.2 1.2 1.2" rot="0 60 0"/>
-        <bush pos="102 146 309" scale="1.1 1.1 1.1" rot="0 105 0"/>
-        <bush pos="140 146 263" scale="1.4 1.4 1.4" rot="0 250 0"/>
-    </bushgroup>
+    <objectgroup mesh="waterfall" material="">
+        <object pos="870.0 835.0 122.0" scale="0.15 1 0.3" rot="-45 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="crystal" material="">
+        <object pos="80.0 737.0 146.0" scale="2.5 2.5 2.5" rot="0 0 0"/>
+        <object pos="95.0 764.0 147.0" scale="1 1 1" rot="30 0 0"/>
+        <object pos="64.0 697.0 148.0" scale="1.2 1.2 1.2" rot="60 0 0"/>
+        <object pos="102.0 691.0 146.0" scale="1.1 1.1 1.1" rot="105 0 0"/>
+        <object pos="140.0 737.0 146.0" scale="1.4 1.4 1.4" rot="250 0 0"/>
+    </objectgroup>
     <weathercycle name="None"/>
-    <spherewall pos="500 0 500" radius="490" isinside="false"/>
-    <gate material="GateMatWhite" pos="889 130 147" destmap="Ocean" destvec="736 607 168"/>
-    <light pos="870 130 166" color="0.75 0.74 0.72"/>
-    <billboard pos="870 130 166" scale="60 60" material="CaveLight"/>
-    <gate material="GateMatWhite" pos="147 32 870" destmap="Serpent's Pass" destvec="557 198"/>
-    <light pos="175 32 848" color="0.75 0.74 0.72"/>
-    <billboard pos="175 32 848" scale="100 100" material="CaveLight"/>
-    <waterplane pos="500 30 500" scale="20 20" material="Terrain/LargeWater" sound="" issolid="false"/>
-    <particle name="WaterSplash" pos="827 28 208" sound="water1.wav"/>
-    <light pos="94 148 273" color="0.05 0.74 1"/>
-    <particle name="Fireflywest" pos="94 148 273" sound=""/>
-    <particle name="Fireflynorth" pos="94 148 273" sound=""/>
-    <particle name="Fireflyeast" pos="298 148 448" sound=""/>
-    <particle name="Fireflysouth" pos="298 148 448" sound=""/>
+    <spherewall pos="500.0 500.0 0.0" radius="490" isinside="false"/>
+    <gate material="GateMatWhite" pos="889.0 853.0 130.0" destmap="Ocean" destvec="736.0 832.0 607.0"/>
+    <light pos="870.0 834.0 130.0" color="0.75 0.74 0.72"/>
+    <billboard pos="870.0 834.0 130.0" scale="60 60 60 60" material="CaveLight"/>
+    <gate material="GateMatWhite" pos="147.0 130.0 32.0" destmap="Serpent's Pass" destvec="557.0 802.0"/>
+    <light pos="175.0 152.0 32.0" color="0.75 0.74 0.72"/>
+    <billboard pos="175.0 152.0 32.0" scale="100 100 100 100" material="CaveLight"/>
+    <waterplane pos="500.0 500.0 30.0" scale="20 20" material="Terrain/LargeWater" sound="" issolid="false"/>
+    <particle name="WaterSplash" pos="827.0 792.0 28.0" sound="water1.wav"/>
+    <light pos="94.0 727.0 148.0" color="0.05 0.74 1"/>
+    <particle name="Fireflywest" pos="94.0 727.0 148.0" sound=""/>
+    <particle name="Fireflynorth" pos="94.0 727.0 148.0" sound=""/>
+    <particle name="Fireflyeast" pos="298.0 552.0 148.0" sound=""/>
+    <particle name="Fireflysouth" pos="298.0 552.0 148.0" sound=""/>
 </world>

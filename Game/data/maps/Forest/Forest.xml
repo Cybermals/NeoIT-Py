@@ -1,17 +1,17 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="5000 5000" spawnpos="900 2000 1" heightmap="forestterrain.png" material="Terrain/ForestTerrain"/>
+    <terrain size="5000 5000 1200.0" spawnpos="900 2000 1" heightmap="forestterrain.png" material="Terrain/ForestTerrain"/>
     <grass material="grass" grassmap="grassdensitymap2.png" colormap="grass_tex.jpg"/>
-    <randomtrees count="350">
+    <randomobjects count="350">
         <tree mesh="fir14_25"/>
         <tree mesh="fir06_30"/>
         <tree mesh="fir05_30"/>
-    </randomtrees>
-    <randombushes count="">
+    </randomobjects>
+    <randomobjects count="">
         <bush mesh="farn1"/>
         <bush mesh="plant2"/>
         <bush mesh="shroom1_1"/>
-    </randombushes>
-    <portal pos="940 120 780" radius="25" destmap="Default"/>
-    <waterplane pos="1100 280 900" scale="2.2 2.2" material="Terrain/CalmWater" sound="water1.wav" issolid="false"/>
+    </randomobjects>
+    <portal pos="940.0 4220.0 120.0" radius="25" destmap="Default"/>
+    <waterplane pos="1100.0 4100.0 280.0" scale="2.2 2.2" material="Terrain/CalmWater" sound="water1.wav" issolid="false"/>
 </world>

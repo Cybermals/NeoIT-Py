@@ -1,15 +1,15 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="2000 2000" spawnpos="1000 1000 100" heightmap="serpentPassterrain.png" material="Terrain/HydroPillar">
+    <terrain size="2000 2000 2000.0" spawnpos="1000 1000 100" heightmap="serpentPassterrain.png" material="Terrain/HydroPillar">
         <interior color="" height="920" material="Terrain/UnderwaterCeiling"/>
     </terrain>
     <weathercycle name="None"/>
-    <spherewall pos="1000 0 1000" radius="990" isinside="false"/>
-    <gate material="GateMatWhite" pos="500 576 105" destmap="Underwater Cave" destvec="223 31 809"/>
-    <light pos="525 576 130" color="0.75 0.74 0.72"/>
-    <billboard pos="525 576 130" scale="60 60" material="CaveLight"/>
-    <gate material="GateMatWhite" pos="1449 576 1910" destmap="Last Cave" destvec="4867 142"/>
-    <light pos="1432 576 1890" color="0.75 0.74 0.72"/>
-    <billboard pos="1429 576 1886" scale="100 100" material="CaveLight"/>
-    <waterplane pos="1000 570 1000" scale="20 20" material="Terrain/LargeWater" sound="" issolid="false"/>
+    <spherewall pos="1000.0 1000.0 0.0" radius="990" isinside="false"/>
+    <gate material="GateMatWhite" pos="500.0 1895.0 576.0" destmap="Underwater Cave" destvec="223.0 1191.0 31.0"/>
+    <light pos="525.0 1870.0 576.0" color="0.75 0.74 0.72"/>
+    <billboard pos="525.0 1870.0 576.0" scale="60 60 60 60" material="CaveLight"/>
+    <gate material="GateMatWhite" pos="1449.0 90.0 576.0" destmap="Last Cave" destvec="4867.0 1858.0"/>
+    <light pos="1432.0 110.0 576.0" color="0.75 0.74 0.72"/>
+    <billboard pos="1429.0 114.0 576.0" scale="100 100 100 100" material="CaveLight"/>
+    <waterplane pos="1000.0 1000.0 570.0" scale="20 20" material="Terrain/LargeWater" sound="" issolid="false"/>
 </world>

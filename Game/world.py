@@ -39,7 +39,7 @@ class Portal(object):
         """Setup this portal."""
         #Setup model
         self.model = loader.load_model("./data/models/scenery/portal/portal")
-        self.model.set_pos(pos[0], pos[2], pos[1]) #Y is up in the map data
+        self.model.set_pos(*pos) #Y is up in the map data
         self.model.set_scale(radius, radius, radius)
 
         try:
@@ -55,15 +55,16 @@ class Portal(object):
         #Setup collision detection
         cnode = CollisionNode("portal")
         cnode.add_solid(CollisionSphere(0, 0, 0, 1))
-        collider = self.model.attach_new_node(cnode)
-        collider.set_python_tag("object", self)
-        base.cTrav.add_collider(collider, base.portal_handler)
+        self.collider = self.model.attach_new_node(cnode)
+        self.collider.set_python_tag("object", self)
+        base.cTrav.add_collider(self.collider, base.portal_handler)
 
         #Store desination
         self.dest = dest
 
     def __del__(self):
         """Cleanup this portal."""
+        base.cTrav.remove_collider(self.collider)
         self.model.remove_node()
 
 
@@ -92,9 +93,9 @@ class Object(object):
             #Setup model
             self.model = loader.load_model(
                 os.path.join("./data/models/scenery", mesh, mesh))
-            self.model.set_pos(pos[0], pos[2], pos[1])
-            self.model.set_hpr(rot[0], rot[1], rot[2])
-            self.model.set_scale(scale[0], scale[2], scale[1])
+            self.model.set_pos(*pos)
+            self.model.set_hpr(*rot)
+            self.model.set_scale(*scale)
             self.model.reparent_to(render)
 
         except IOError:
@@ -148,7 +149,7 @@ class WorldManager(object):
                     return False
 
                 #Load terrain
-                self.size = parse_vec(child.attrib["size"], 2)
+                self.size = parse_vec(child.attrib["size"], 3)
                 self.spawnpos = parse_vec(child.attrib["spawnpos"], 2)
                 heightmap = os.path.join(map, child.attrib["heightmap"])
 
@@ -162,15 +163,19 @@ class WorldManager(object):
 
                 self.terrain.generate()
                 self.terrain_np = self.terrain.get_root()
-                self.terrain_np.set_scale(self.size[0] / 512, self.size[1] / 512, 300)
-                tex = loader.load_texture("./data/textures/terrain/grass_tex.jpg")
+                self.terrain_np.set_scale(self.size[0] / 512, self.size[1] / 512, 
+                    self.size[2])
+                tex = loader.load_texture(
+                    "./data/textures/terrain/grass_tex.jpg")
                 self.terrain_np.set_texture(tex)
-                self.terrain_np.set_tex_scale(TextureStage.get_default(), 5000 / 512, 5000 / 512)
+                self.terrain_np.set_tex_scale(TextureStage.get_default(), 
+                    self.size[0] / 512, self.size[1] / 512)
                 tex.set_wrap_u(Texture.WM_repeat)
                 tex.set_wrap_v(Texture.WM_repeat)
                 self.terrain_np.reparent_to(render)
 
-                base.camera.set_pos(self.size[0] / 2, self.size[1] / 2, 100)
+                base.camera.set_pos(self.size[0] / 2, self.size[1] / 2, 
+                    self.size[2])
 
             #Portal?
             elif child.tag == "portal":
@@ -216,6 +221,18 @@ class WorldManager(object):
                 sound = child.attrib["sound"] if "sound" in child.attrib else ""
                 self.add_object(mesh, pos, rot, scale, material, sound)
 
+            #Object Group?
+            elif child.tag == "objectgroup":
+                #Validate object group
+                if not ("mesh" in child.attrib):
+                    Logger.warning("Object group must define 'mesh'.")
+                    continue
+
+                #Load object group
+                mesh = child.attrib["mesh"]
+                material = child.attrib["material"] if "material" in child.attrib else ""
+                self.load_object_group(child, mesh, material)
+
             #Unknown?
             else:
                 Logger.warning(
@@ -244,6 +261,20 @@ class WorldManager(object):
         while len(self.objects) > 0:
             self.del_object(self.objects[-1])
 
+    def load_object_group(self, group, mesh, material):
+        """Load a group of objects."""
+        for object in group:
+            #Validate object
+            if not ("pos" in object.attrib):
+                Logger.warning("Group object must define 'pos'.")
+                continue
+
+            #Load object
+            pos = parse_vec(object.attrib["pos"], 2)
+            rot = parse_vec(object.attrib["rot"], 1) if "rot" in object.attrib else [0, 0, 0]
+            scale = parse_vec(object.attrib["scale"], 1) if "scale" in object.attrib else [1, 1, 1]
+            self.add_object(mesh, pos, rot, scale, material, "")
+
     def add_portal(self, pos, radius, dest):
         """Add a portal to this world."""
         self.portals.append(Portal(pos, radius, dest))
@@ -267,9 +298,39 @@ class WorldManager(object):
 
     def add_object(self, mesh, pos, rot, scale, material, sound):
         """Add an object to this world."""
+        #Handle 2 coordinate position
+        if len(pos) == 2:
+            pos = [pos[0], pos[1], self.get_terrain_height(pos)]
+
+        #Handle single coordinate rotation
+        if len(rot) == 1:
+            rot = [rot[0], 0, 0]
+
+        #Handle single or double coordinate scale
+        if len(scale) == 1:
+            scale = [scale[0], scale[0], scale[0]]
+
+        elif len(scale) == 2:
+            scale = [scale[0], scale[1], 1]
+
+        #Add the object
         self.objects.append(Object(mesh, pos, rot, scale, material, sound))
         Logger.info("Added object: mesh = '{}', pos = {}, rot = {}, scale = {}, material = '{}', sound = '{}'".format(mesh, pos, rot, scale, material, sound))
 
     def del_object(self, object):
         """Delete an object from this world."""
         Logger.info("Removed object {}".format(object))
+
+    def get_terrain_height(self, pos):
+        """Get the height of the terrain at the given point."""
+        #Is the position a list of 2 elements?
+        if isinstance(pos, list) and len(pos) == 2:
+            return self.terrain.get_elevation(
+                pos[0] / (self.size[0] / 512), 
+                pos[1] / (self.size[1] / 512)) * self.size[2]
+
+        #Assume it is a point object
+        else:
+            return self.terrain.get_elevation(
+                pos[0] / (self.size[0] / 512), 
+                pos[1] / (self.size[1] / 512)) * self.size[2]
