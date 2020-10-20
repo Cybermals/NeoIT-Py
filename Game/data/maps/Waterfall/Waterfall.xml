@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="2500 2500 1000.0" spawnpos="500 500 100" heightmap="waterfallterrain.png" material="Terrain/WaterfallTerrain"/>
+    <terrain size="2500 2500 750.0" spawnpos="500 500 100" heightmap="waterfallterrain.png" material="Terrain/waterfallTerrain"/>
     <grass material="grass" grassmap="grassdensitymap.png" colormap="grass_tex2.png"/>
     <randomobjects count="20">
         <tree mesh="fir14_25"/>
@@ -20,7 +20,7 @@
     <object mesh="waterfall" pos="1260.0 1155.0 215.0" scale="1.2 1.4 0.52" rot="90 0 0" sound="" material=""/>
     <object mesh="waterfall" pos="905.0 1315.0 285.0" scale="0.8 1.3 0.22" rot="92 0 0" sound="" material=""/>
     <object mesh="waterfall" pos="910.0 1195.0 285.0" scale="1 1.32 0.22" rot="99 0 0" sound="" material=""/>
-    <particle name="WaterfallSmoke" pos="1345.0 1245.0 50.0" sound="waterfall.mp3"/>
-    <particle name="WaterfallSmoke" pos="990.0 1275.0 213.0" sound="waterfall.mp3"/>
-    <gate material="GateMatBlack" pos="1269.0 1231.0 50.0" destmap="Waterfall Cave" destvec="476.0 1648.0"/>
+    <particle name="waterfallSmoke" pos="1345.0 1245.0 50.0" sound="waterfall.mp3"/>
+    <particle name="waterfallSmoke" pos="990.0 1275.0 213.0" sound="waterfall.mp3"/>
+    <gate material="GateMatBlack" pos="1269.0 1231.0 50.0" destmap="waterfall Cave" destvec="476.0 1648.0"/>
 </world>

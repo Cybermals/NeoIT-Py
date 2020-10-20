@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="1000 1000 1020.0" spawnpos="500 500 100" heightmap="icecaveterrain.png" material="Terrain/IceTerrain">
+    <terrain size="1000 1000 760.0" spawnpos="500 500 100" heightmap="icecaveterrain.png" material="Terrain/IceTerrain">
         <interior color="" height="480" material="Terrain/IceTerrain"/>
     </terrain>
     <gate material="GateMatWhite" pos="517.0 146.0 350.0" destmap="Ice" destvec="5636.0 -1046.0"/>

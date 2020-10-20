@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="5000 5000 1200.0" spawnpos="900 2000 1" heightmap="forestterrain.png" material="Terrain/ForestTerrain"/>
+    <terrain size="5000 5000 850.0" spawnpos="900 2000 1" heightmap="forestterrain.png" material="Terrain/ForestTerrain"/>
     <grass material="grass" grassmap="grassdensitymap2.png" colormap="grass_tex.jpg"/>
     <randomobjects count="350">
         <tree mesh="fir14_25"/>

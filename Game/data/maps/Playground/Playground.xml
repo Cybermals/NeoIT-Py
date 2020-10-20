@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="9000 9000 2000.0" spawnpos="895 490 796" heightmap="Playgroundterrain.png" material="Terrain/PlaygroundTerrain"/>
+    <terrain size="9000 9000 1250.0" spawnpos="895 490 796" heightmap="Playgroundterrain.png" material="Terrain/PlaygroundTerrain"/>
     <grass material="Terrain/Flower" grassmap="Playgroundgrassmask.png" colormap="Flower2.png"/>
     <objectgroup mesh="fir14_25" material="">
         <object pos="6262.0 7553.0 422.0" scale="2 2 1" rot="0 0 0"/>
@@ -161,7 +161,7 @@
         <object pos="4704.0 1546.0 697.0" scale="0.6 0.6 1" rot="0 0 0"/>
         <object pos="4525.0 1649.0 697.0" scale="1 1 2" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="rockSlab2" material="">
+    <objectgroup mesh="rock_slab2" material="">
         <object pos="4670.0 1634.0 670.0" scale="10 10 3" rot="180 0 0"/>
         <object pos="3865.0 1283.0 579.0" scale="5 5 1" rot="180 0 0"/>
         <object pos="5416.0 2071.0 579.0" scale="5 5 1" rot="180 0 0"/>
@@ -265,7 +265,7 @@
         <object pos="1465.0 6789.0 192.0" scale="5 5 5" rot="0 0 0"/>
         <object pos="2072.0 7206.0 192.0" scale="5 5 5" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="waterfall" material="Waterfall2">
+    <objectgroup mesh="waterfall" material="waterfall2">
         <object pos="1840.0 7002.0 190.0" scale="2 2 0.5" rot="30 0 0"/>
         <object pos="741.0 1824.0 727.0" scale="3.5 2.5 2" rot="90 0 0"/>
     </objectgroup>
@@ -503,14 +503,14 @@
     <colbox pos="4704.0 1546.0 697.0" size="30 30 9"/>
     <colbox pos="4525.0 1649.0 697.0" size="40 40 18"/>
     <particle name="WaterSplash" pos="3960.0 7362.0 819.0" sound=""/>
-    <particle name="WaterfallSmoke" pos="6144.0 5491.0 137.0" sound=""/>
+    <particle name="waterfallSmoke" pos="6144.0 5491.0 137.0" sound=""/>
     <particle name="Fireflyup" pos="5743.0 5150.0 137.0" sound=""/>
     <particle name="Fireflyup" pos="5748.0 5233.0 137.0" sound=""/>
     <particle name="Fireflyup" pos="5720.0 5312.0 137.0" sound=""/>
     <particle name="Fireflyup" pos="4654.0 1636.0 697.0" sound=""/>
     <particle name="Fireflyup" pos="4654.0 1636.0 697.0" sound=""/>
-    <particle name="WaterfallSmoke" pos="869.0 1766.0 117.0" sound=""/>
-    <particle name="WaterfallSmoke" pos="924.0 1808.0 117.0" sound=""/>
+    <particle name="waterfallSmoke" pos="869.0 1766.0 117.0" sound=""/>
+    <particle name="waterfallSmoke" pos="924.0 1808.0 117.0" sound=""/>
     <particle name="BlueFlame" pos="4619.0 1517.0 718.0" sound=""/>
     <particle name="BlueFlame" pos="4578.0 1565.0 718.0" sound=""/>
     <particle name="BlueFlame" pos="4639.0 1749.0 718.0" sound=""/>

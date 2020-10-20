@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="12000 12000 600.0" spawnpos="3000 3000 100" heightmap="taintedplainsterrain.png" material="Terrain/TaintedPlains"/>
+    <terrain size="12000 12000 550.0" spawnpos="3000 3000 100" heightmap="taintedplainsterrain.png" material="Terrain/TaintedPlains"/>
     <weathercycle name="Weirdsky"/>
     <freezetime time="0"/>
     <objectgroup mesh="acaciaTree" material="GUIMat/None(1)">

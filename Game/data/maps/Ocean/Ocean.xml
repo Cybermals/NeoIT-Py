@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="8000 8000 1400.0" spawnpos="4000 3900 25" heightmap="oceanterrain.png" material="Terrain/MarshTerrain"/>
+    <terrain size="8000 8000 950.0" spawnpos="4000 3900 25" heightmap="oceanterrain.png" material="Terrain/MarshTerrain"/>
     <grass material="yellowGrass" grassmap="grassdensitymap.png" colormap="grass_tex.jpg"/>
     <portal pos="1250.0 7000.0 300.0" radius="25" destmap="Default"/>
     <portal pos="900.0 900.0 120.0" radius="50" destmap="Waterfall"/>

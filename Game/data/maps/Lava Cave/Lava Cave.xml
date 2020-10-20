@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="1000 1000 620.0" spawnpos="500 500 100" heightmap="lavacaveterrain.png" material="Terrain/LavaTerrain">
+    <terrain size="1000 1000 560.0" spawnpos="500 500 100" heightmap="lavacaveterrain.png" material="Terrain/LavaTerrain">
         <interior color="" height="280" material="Terrain/LavaTerrain"/>
     </terrain>
     <critters limit="10"/>

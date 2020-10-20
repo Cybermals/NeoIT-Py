@@ -11,6 +11,7 @@ from panda3d.core import (
     CollisionTraverser,
     DirectionalLight,
     load_prc_file_data,
+    PStatClient,
     Vec3,
     Vec4,
     WindowProperties
@@ -89,6 +90,7 @@ class NeoITPyApp(ShowBase):
 
         #Debug stats
         #self.messenger.toggle_verbose()
+        PStatClient.connect()
 
     def new_game(self):
         """Start a new game."""
@@ -113,7 +115,7 @@ class NeoITPyApp(ShowBase):
         self.gui.show_target_info(False)
         self.gui.switch_to_screen("HUD", FadeTransition())
         self.cam_mgr.change_mode(CAM_MODE_FREE)
-        self.world_mgr.load_map("./data/maps/Playground")
+        self.world_mgr.load_map("./data/maps/Default")
 
     def leave_campaign_select(self):
         """Leave the campaign select screen and return to the title screen."""

@@ -3,6 +3,7 @@
 import os
 import xml.etree.ElementTree as etree
 
+from direct.task.Task import Task
 from kivy.logger import Logger, LOG_LEVELS
 from panda3d.core import (
     CollisionNode,
@@ -72,7 +73,7 @@ class Gate(Portal):
     """A gate to another world."""
     def __init__(self, pos, dest, destvec, material):
         """Setup this gate."""
-        Portal.__init__(self, pos, 10, dest)
+        Portal.__init__(self, pos, 50, dest)
 
         #Change the name of the collision node
         self.model.find("**/portal").set_name("gate")
@@ -154,25 +155,25 @@ class WorldManager(object):
                 heightmap = os.path.join(map, child.attrib["heightmap"])
 
                 self.terrain = GeoMipTerrain("Terrain")
-                self.terrain.set_block_size(64)
+                self.terrain.set_bruteforce(True)
                 
                 if not self.terrain.set_heightfield(heightmap):
                     Logger.error("Failed to load heightmap for terrain.")
                     self.terrain = None
                     return False
 
-                self.terrain.generate()
                 self.terrain_np = self.terrain.get_root()
                 self.terrain_np.set_scale(self.size[0] / 512, self.size[1] / 512, 
                     self.size[2])
                 tex = loader.load_texture(
-                    "./data/textures/terrain/grass_tex.jpg")
+                    "./data/textures/terrain/grass_tex2.png")
                 self.terrain_np.set_texture(tex)
                 self.terrain_np.set_tex_scale(TextureStage.get_default(), 
                     self.size[0] / 512, self.size[1] / 512)
                 tex.set_wrap_u(Texture.WM_repeat)
                 tex.set_wrap_v(Texture.WM_repeat)
                 self.terrain_np.reparent_to(render)
+                self.terrain.generate()
 
                 base.camera.set_pos(self.size[0] / 2, self.size[1] / 2, 
                     self.size[2])

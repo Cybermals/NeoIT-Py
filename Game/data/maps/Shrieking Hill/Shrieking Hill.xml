@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="5000 5000 2000.0" spawnpos="3773 333 778" heightmap="ShriekingHillterrain.png" material="Terrain/Shrieking_HillTerrain"/>
+    <terrain size="5000 5000 1250.0" spawnpos="3773 333 778" heightmap="ShriekingHillterrain.png" material="Terrain/Shrieking_HillTerrain"/>
     <objectgroup mesh="fir05_30" material="">
         <object pos="4002.0 4585.0 231.0" scale="2 2 2" rot="0 0 0"/>
         <object pos="4111.0 4382.0 231.0" scale="2 2 2" rot="0 0 0"/>
@@ -103,7 +103,7 @@
         <object pos="1402.0 3948.0 239.0" scale="2 2 2" rot="0 0 0"/>
         <object pos="1105.0 3485.0 431.0" scale="2 2 2" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="rockSlab2" material="">
+    <objectgroup mesh="rock_slab2" material="">
         <object pos="3791.0 4274.0 470.0" scale="12 12 2" rot="180 0 0"/>
         <object pos="3777.0 4493.0 333.0" scale="1 1 17" rot="0 0 0"/>
         <object pos="3629.0 4202.0 333.0" scale="1 1 17" rot="0 0 0"/>

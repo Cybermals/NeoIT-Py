@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="8000 8000 1000.0" spawnpos="4000 4000 100" heightmap="iceterrain.png" material="Terrain/IceTerrain"/>
+    <terrain size="8000 8000 750.0" spawnpos="4000 4000 100" heightmap="iceterrain.png" material="Terrain/IceTerrain"/>
     <weathercycle name="Snow"/>
     <mapeffect name="Exhale"/>
     <portal pos="4851.0 4148.0 288.0" radius="25" destmap="Default"/>

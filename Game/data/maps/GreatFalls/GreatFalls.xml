@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="10000 10000 1600.0" spawnpos="7493.44 1294.91 100" heightmap="GreatFallsterrain.png" material="Terrain/GreatFallsTerrain"/>
+    <terrain size="10000 10000 1050.0" spawnpos="7493.44 1294.91 100" heightmap="GreatFallsterrain.png" material="Terrain/GreatFallsTerrain"/>
     <grass material="Terrain/Flower" grassmap="GreatFallsgrassmask.png" colormap="flower2.png"/>
     <objectgroup mesh="savannah_tree" material="">
         <object pos="200.0 9980.0" scale="3 3 3" rot="0 0 0"/>
@@ -893,25 +893,25 @@
     <waterplane pos="514.0 5043.4 600.0" scale=".95 4" material="Terrain/RapidWater" sound="" issolid="false"/>
     <waterplane pos="168.6 5043.4 715.0" scale=".55 4" material="Terrain/RapidWater" sound="" issolid="false"/>
     <object mesh="waterfall" pos="3881.09 6125.360000000001 201.6" scale="11 2 1" rot="90 0 0" sound="" material=""/>
-    <particle name="WaterfallSmoke" pos="3989.1 6498.92 42.0" sound=""/>
-    <particle name="WaterfallSmoke" pos="3989.1 6135.59 42.0" sound="waterfall.mp3"/>
-    <particle name="WaterfallSmoke" pos="3989.1 5556.68 42.0" sound=""/>
+    <particle name="waterfallSmoke" pos="3989.1 6498.92 42.0" sound=""/>
+    <particle name="waterfallSmoke" pos="3989.1 6135.59 42.0" sound="waterfall.mp3"/>
+    <particle name="waterfallSmoke" pos="3989.1 5556.68 42.0" sound=""/>
     <object mesh="waterfall" pos="2988.74 6168.530000000001 330.1" scale="11 2 1" rot="90 0 0" sound="" material=""/>
-    <particle name="WaterfallSmoke" pos="3088.01 5414.84 197.0" sound=""/>
-    <particle name="WaterfallSmoke" pos="3088.01 5754.61 197.0" sound="waterfall.mp3"/>
-    <particle name="WaterfallSmoke" pos="3088.01 6465.969999999999 197.0" sound=""/>
+    <particle name="waterfallSmoke" pos="3088.01 5414.84 197.0" sound=""/>
+    <particle name="waterfallSmoke" pos="3088.01 5754.61 197.0" sound="waterfall.mp3"/>
+    <particle name="waterfallSmoke" pos="3088.01 6465.969999999999 197.0" sound=""/>
     <object mesh="waterfall" pos="1778.59 5251.51 475.1" scale="3 2 1" rot="90 0 0" sound="" material=""/>
     <object mesh="waterfall" pos="1781.56 6267.3 475.1" scale="3 2 1" rot="90 0 0" sound="" material=""/>
-    <particle name="WaterfallSmoke" pos="1884.26 6289.3099999999995 323.0" sound="waterfall.mp3"/>
-    <particle name="WaterfallSmoke" pos="1888.76 5287.9 323.0" sound="waterfall.mp3"/>
+    <particle name="waterfallSmoke" pos="1884.26 6289.3099999999995 323.0" sound="waterfall.mp3"/>
+    <particle name="waterfallSmoke" pos="1888.76 5287.9 323.0" sound="waterfall.mp3"/>
     <object mesh="waterfall" pos="753.233 4966.85 600.1" scale="9 2 1" rot="90 0 0" sound="" material=""/>
-    <particle name="WaterfallSmoke" pos="864.0 4739.68 470.0" sound=""/>
-    <particle name="WaterfallSmoke" pos="864.0 5086.84 470.0" sound="waterfall.mp3"/>
-    <particle name="WaterfallSmoke" pos="864.0 5532.87 470.0" sound=""/>
+    <particle name="waterfallSmoke" pos="864.0 4739.68 470.0" sound=""/>
+    <particle name="waterfallSmoke" pos="864.0 5086.84 470.0" sound="waterfall.mp3"/>
+    <particle name="waterfallSmoke" pos="864.0 5532.87 470.0" sound=""/>
     <object mesh="waterfall" pos="307.142 4966.85 715.1" scale="10 3 1" rot="90 0 0" sound="" material=""/>
-    <particle name="WaterfallSmoke" pos="448.617 5453.68 595.0" sound="waterfall.mp3"/>
-    <particle name="WaterfallSmoke" pos="448.617 5005.74 595.0" sound=""/>
-    <particle name="WaterfallSmoke" pos="448.617 4468.07 595.0" sound="waterfall.mp3"/>
+    <particle name="waterfallSmoke" pos="448.617 5453.68 595.0" sound="waterfall.mp3"/>
+    <particle name="waterfallSmoke" pos="448.617 5005.74 595.0" sound=""/>
+    <particle name="waterfallSmoke" pos="448.617 4468.07 595.0" sound="waterfall.mp3"/>
     <particle name="Swarm" pos="664.167 8886.41 900.0" sound=""/>
     <particle name="Swarm" pos="2073.64 6021.82 851.0" sound=""/>
     <particle name="Swarm" pos="6591.68 2640.0 327.0" sound=""/>

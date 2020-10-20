@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="10000 10000 2000.0" spawnpos="4873 140 1" heightmap="lastCaveterrain.png" material="Terrain/HydroPillar">
+    <terrain size="10000 10000 1250.0" spawnpos="4873 140 1" heightmap="lastCaveterrain.png" material="Terrain/HydroPillar">
         <interior color="" height="900" material="Terrain/UnderwaterCeiling"/>
     </terrain>
     <weathercycle name="None"/>

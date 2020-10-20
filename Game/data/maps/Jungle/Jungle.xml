@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="25000 25000 5000.0" spawnpos="4000 4000 100" heightmap="jungleterrainkopi.png" material="Terrain/JungleTerrain"/>
+    <terrain size="25000 25000 2750.0" spawnpos="4000 4000 100" heightmap="JungleTerrainKopi.png" material="Terrain/JungleTerrain"/>
     <grass material="yellowGrass" grassmap="grassdensitymap.png" colormap="grass_tex.jpg"/>
     <randomobjects count="25000">
         <tree mesh="fir14_25"/>
@@ -18,12 +18,12 @@
     <waterplane pos="5561.0 23299.0 910.0" scale="100 100" material="Terrain/LargeWater" sound="water1.wav" issolid="false"/>
     <waterplane pos="348.0 2420.0 1200.0" scale="0.18 0.21" material="Terrain/Water" sound="water1.wav" issolid="false"/>
     <object mesh="waterfall" pos="440.0 2419.0 1195.0" scale="1.5 2 1" rot="90 0 0" sound="" material=""/>
-    <particle name="WaterfallSmoke" pos="600.0 2464.0 911.0" sound="waterfall.mp3"/>
+    <particle name="waterfallSmoke" pos="600.0 2464.0 911.0" sound="waterfall.mp3"/>
     <object mesh="waterfall" pos="483.0 2468.0 1015.0" scale="3 1.5 0.5" rot="90 0 0" sound="" material=""/>
     <waterplane pos="3000.0 20500.0 1210.0" scale="1.85 1.25" material="Terrain/Water" sound="water1.wav" issolid="false"/>
     <particle name="Geyser" pos="2844.0 20609.0 1214.0" sound="Steam2.wav"/>
-    <particle name="WaterfallSmoke" pos="2823.0 20465.0 1199.0" sound=""/>
+    <particle name="waterfallSmoke" pos="2823.0 20465.0 1199.0" sound=""/>
     <particle name="Geyser" pos="3062.0 20560.0 1211.0" sound="Steam1.wav"/>
-    <particle name="WaterfallSmoke" pos="2700.0 20371.0 1212.0" sound=""/>
-    <particle name="WaterfallSmoke" pos="3218.0 20513.0 1211.0" sound=""/>
+    <particle name="waterfallSmoke" pos="2700.0 20371.0 1212.0" sound=""/>
+    <particle name="waterfallSmoke" pos="3218.0 20513.0 1211.0" sound=""/>
 </world>
