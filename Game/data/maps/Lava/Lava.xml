@@ -1,10 +1,10 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="8000 8000 950.0" spawnpos="4000 4000 100" heightmap="lavaterrain.png" material="Terrain/LavaTerrain"/>
+    <terrain size="8000 8000 910.0" spawnpos="4000 4000 100" heightmap="lavaterrain.png" material="Terrain/LavaTerrain"/>
     <weathercycle name="Redsky"/>
     <portal pos="3967.0 7347.0 416.0" radius="25" destmap="ReallyBig"/>
     <portal pos="1343.0 4957.0 551.0" radius="25" destmap="Default"/>
-    <portal pos="5766.0 7485.0 100.0" radius="10" destmap="Waterfall"/>
+    <portal pos="5766.0 7485.0 100.0" radius="10" destmap="waterfall"/>
     <portal pos="533.0 7597.0 600.0" radius="25" destmap="Ice"/>
     <portal pos="6436.0 749.0 390.0" radius="30" destmap="Jungle"/>
     <portal pos="3432.0 3218.0 370.0" radius="20" destmap="Volcano"/>

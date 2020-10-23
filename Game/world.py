@@ -73,7 +73,7 @@ class Gate(Portal):
     """A gate to another world."""
     def __init__(self, pos, dest, destvec, material):
         """Setup this gate."""
-        Portal.__init__(self, pos, 50, dest)
+        Portal.__init__(self, pos, 40, dest)
 
         #Change the name of the collision node
         self.model.find("**/portal").set_name("gate")

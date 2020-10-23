@@ -1,11 +1,11 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="25000 25000 2750.0" spawnpos="4000 4000 100" heightmap="JungleTerrainKopi.png" material="Terrain/JungleTerrain"/>
+    <terrain size="25000 25000 2710.0" spawnpos="4000 4000 100" heightmap="jungleterrainkopi.png" material="Terrain/JungleTerrain"/>
     <grass material="yellowGrass" grassmap="grassdensitymap.png" colormap="grass_tex.jpg"/>
     <randomobjects count="25000">
-        <tree mesh="fir14_25"/>
-        <tree mesh="fir06_30"/>
-        <tree mesh="fir05_30"/>
+        <tree mesh="diggers_fir"/>
+        <tree mesh="diggers_fir"/>
+        <tree mesh="diggers_fir"/>
     </randomobjects>
     <randomobjects count="">
         <bush mesh="farn2"/>

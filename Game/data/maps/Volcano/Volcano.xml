@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="7500 7500 2250.0" spawnpos="977 6329 100" heightmap="volcanoterrain.png" material="Terrain/VolcanoTerrain"/>
+    <terrain size="7500 7500 2210.0" spawnpos="977 6329 100" heightmap="volcanoterrain.png" material="Terrain/VolcanoTerrain"/>
     <weathercycle name="Redsky"/>
     <portal pos="1088.0 1177.0 880.0" radius="25" destmap="Default"/>
     <portal pos="3968.0 3590.0 1650.0" radius="25" destmap="Jungle"/>

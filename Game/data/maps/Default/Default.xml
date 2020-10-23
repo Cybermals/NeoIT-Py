@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="5000 5000 550.0" spawnpos="2500 2500 100" heightmap="defaulterrain.png" material="Terrain/DefaultTerrain"/>
+    <terrain size="5000 5000 510.0" spawnpos="2500 2500 100" heightmap="defaulterrain.png" material="Terrain/DefaultTerrain"/>
     <grass material="yellowGrass" grassmap="grassdensitymap.png" colormap="grass_tex.jpg"/>
-    <objectgroup mesh="fir05_30" material="">
+    <objectgroup mesh="diggers_fir" material="">
         <object pos="2500.0 2500.0" scale="1 1 1" rot="0 0 0"/>
         <object pos="490.0 4780.0" scale="0.9 0.9 0.9" rot="30 0 0"/>
         <object pos="630.0 4780.0" scale="1.1 1.1 1.1" rot="50 0 0"/>
@@ -38,7 +38,7 @@
         <object pos="3888.0 2948.0" scale="1.1 1.1 1.1" rot="170 0 0"/>
         <object pos="3849.0 1156.0" scale="1.9 1.9 1.9" rot="77 0 0"/>
     </objectgroup>
-    <objectgroup mesh="farn1" material="">
+    <objectgroup mesh="farn" material="">
         <object pos="257.0 4683.0" scale="2 2 2" rot="0 0 0"/>
         <object pos="1030.0 4573.0" scale="2 2 2" rot="0 0 0"/>
         <object pos="1060.0 4848.0" scale="2 2 2" rot="0 0 0"/>
@@ -212,7 +212,7 @@
         <object pos="1672.0 3569.0 80.0" scale="1.2 1.2 1.2" rot="0 -60 0"/>
         <object pos="1620.0 3569.0 80.0" scale="1 1 1" rot="0 -60 0"/>
     </objectgroup>
-    <portal pos="1395.0 1000.0 130.0" radius="25" destmap="Waterfall"/>
+    <portal pos="1395.0 1000.0 130.0" radius="25" destmap="waterfall"/>
     <portal pos="570.0 4810.0 340.0" radius="25" destmap="ReallyBig"/>
     <portal pos="4070.0 2930.0 50.0" radius="25" destmap="Ocean"/>
     <portal pos="4370.0 4830.0 140.0" radius="25" destmap="Ice"/>

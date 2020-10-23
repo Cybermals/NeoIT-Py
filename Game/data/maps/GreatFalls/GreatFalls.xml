@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="10000 10000 1050.0" spawnpos="7493.44 1294.91 100" heightmap="GreatFallsterrain.png" material="Terrain/GreatFallsTerrain"/>
+    <terrain size="10000 10000 1010.0" spawnpos="7493.44 1294.91 100" heightmap="GreatFallsterrain.png" material="Terrain/GreatFallsTerrain"/>
     <grass material="Terrain/Flower" grassmap="GreatFallsgrassmask.png" colormap="flower2.png"/>
     <objectgroup mesh="savannah_tree" material="">
         <object pos="200.0 9980.0" scale="3 3 3" rot="0 0 0"/>
@@ -651,11 +651,11 @@
         <object pos="1620.0 3890.0" scale="3 3 3" rot="0 0 0"/>
         <object pos="1700.0 4020.0" scale="3 3 3" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="fir06_30" material="">
+    <objectgroup mesh="diggers_fir" material="">
         <object pos="9600.0 6920.0" scale=".5 .5 .5" rot="0 0 0"/>
         <object pos="9600.0 6840.0" scale=".5 .5 .5" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="farn1" material="">
+    <objectgroup mesh="farn" material="">
         <object pos="7060.0 2340.0" scale="5 5 5" rot="0 0 0"/>
         <object pos="7180.0 2100.0" scale="5 5 5" rot="0 0 0"/>
         <object pos="7000.0 1930.0" scale="5 5 5" rot="0 0 0"/>
@@ -832,7 +832,7 @@
         <object pos="6591.68 2640.0 303.791" scale="5 5 5" rot="0 0 0"/>
         <object pos="7523.66 8397.369999999999 412.803" scale="5 5 5" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="farn1" material="">
+    <objectgroup mesh="farn" material="">
         <object pos="385.0 2825.0 696.471" scale="5 5 5" rot="0 0 0"/>
         <object pos="4765.0 1120.0 116.078" scale="5 5 5" rot="0 0 0"/>
         <object pos="6405.0 2640.0 116.078" scale="5 5 5" rot="0 0 0"/>
@@ -850,7 +850,7 @@
         <object pos="7115.0 1665.0 131.765" scale="5 5 5" rot="0 0 0"/>
         <object pos="8890.0 660.0 131.765" scale="5 5 5" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="GrassPatch" material="">
+    <objectgroup mesh="grass_patch" material="">
         <object pos="5162.97 5575.44 213.333" scale="3 3 1" rot="0 0 0"/>
     </objectgroup>
     <objectgroup mesh="shroom1_1" material="">
@@ -884,7 +884,7 @@
     <roamarea start="6860.0 5980.0 0.0" range="550 550 40"/>
     <roamarea start="5000.0 5000.0 300.0" range="10000 10000 800"/>
     <weathercycle name="RainStarfall"/>
-    <portal pos="7521.65 9590.542 117.0" radius="15" destmap="Waterfall"/>
+    <portal pos="7521.65 9590.542 117.0" radius="15" destmap="waterfall"/>
     <portal pos="7503.1 474.9200000000001 158.0" radius="15" destmap="Forest"/>
     <waterplane pos="5000.0 5000.0 50.1" scale="20 20" material="Terrain/LakeWater" sound="" issolid="false"/>
     <waterplane pos="3326.5 5906.67 201.5" scale="2.22 4" material="Terrain/RapidWater" sound="" issolid="false"/>

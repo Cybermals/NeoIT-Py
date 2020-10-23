@@ -115,7 +115,7 @@ class NeoITPyApp(ShowBase):
         self.gui.show_target_info(False)
         self.gui.switch_to_screen("HUD", FadeTransition())
         self.cam_mgr.change_mode(CAM_MODE_FREE)
-        self.world_mgr.load_map("./data/maps/Default")
+        self.world_mgr.load_map("./data/maps/Shrieking Hill")
 
     def leave_campaign_select(self):
         """Leave the campaign select screen and return to the title screen."""

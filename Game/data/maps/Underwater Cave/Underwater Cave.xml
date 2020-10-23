@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="1000 1000 500.0" spawnpos="450 450 100" heightmap="underwaterCaveterrain.png" material="Terrain/HydroPillar">
+    <terrain size="1000 1000 460.0" spawnpos="450 450 100" heightmap="underwaterCaveterrain.png" material="Terrain/HydroPillar">
         <interior color="" height="245" material="Terrain/UnderwaterCeiling"/>
     </terrain>
     <objectgroup mesh="waterfall" material="">

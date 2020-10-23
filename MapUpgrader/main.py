@@ -78,7 +78,7 @@ class MapUpgrader(object):
                 elif line.startswith("MaxHeight"):
                     height = line.split("=")[1].strip()
 
-        return (heightmap, material, float(height) + 250)
+        return (heightmap, material, float(height) + 210)
 
     def load_it_cfg(self, world_file):
         """Load an IT config file.

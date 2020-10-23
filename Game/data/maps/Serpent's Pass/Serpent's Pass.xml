@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="2000 2000 1250.0" spawnpos="1000 1000 100" heightmap="serpentPassterrain.png" material="Terrain/HydroPillar">
+    <terrain size="2000 2000 1210.0" spawnpos="1000 1000 100" heightmap="serpentPassterrain.png" material="Terrain/HydroPillar">
         <interior color="" height="920" material="Terrain/UnderwaterCeiling"/>
     </terrain>
     <weathercycle name="None"/>
