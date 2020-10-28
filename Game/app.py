@@ -16,7 +16,11 @@ from panda3d.core import (
     Vec4,
     WindowProperties
     )
-load_prc_file_data("", "stencil-bits 8")
+load_prc_file_data("", """
+show-frame-rate-meter true
+stencil-bits 8
+sync-video true
+""")
 
 from camera import CameraManager, CAM_MODE_FREE
 from gui import GUI
@@ -115,7 +119,7 @@ class NeoITPyApp(ShowBase):
         self.gui.show_target_info(False)
         self.gui.switch_to_screen("HUD", FadeTransition())
         self.cam_mgr.change_mode(CAM_MODE_FREE)
-        self.world_mgr.load_map("./data/maps/Shrieking Hill")
+        self.world_mgr.load_map("./data/maps/Hidden Valley")
 
     def leave_campaign_select(self):
         """Leave the campaign select screen and return to the title screen."""

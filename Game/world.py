@@ -155,6 +155,7 @@ class WorldManager(object):
                 heightmap = os.path.join(map, child.attrib["heightmap"])
 
                 self.terrain = GeoMipTerrain("Terrain")
+                self.terrain.set_block_size(64)
                 self.terrain.set_bruteforce(True)
                 
                 if not self.terrain.set_heightfield(heightmap):

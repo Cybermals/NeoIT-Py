@@ -3,14 +3,14 @@
     <terrain size="25000 25000 2710.0" spawnpos="4000 4000 100" heightmap="jungleterrainkopi.png" material="Terrain/JungleTerrain"/>
     <grass material="yellowGrass" grassmap="grassdensitymap.png" colormap="grass_tex.jpg"/>
     <randomobjects count="25000">
-        <tree mesh="diggers_fir"/>
-        <tree mesh="diggers_fir"/>
-        <tree mesh="diggers_fir"/>
+        <object mesh="diggers_fir"/>
+        <object mesh="diggers_fir"/>
+        <object mesh="diggers_fir"/>
     </randomobjects>
     <randomobjects count="">
-        <bush mesh="farn2"/>
-        <bush mesh="shroom2_2"/>
-        <bush mesh="shroom1_1"/>
+        <object mesh="farn2"/>
+        <object mesh="shroom2_2"/>
+        <object mesh="shroom"/>
     </randomobjects>
     <weathercycle name="Thunderstorm"/>
     <portal pos="361.0 2234.0 1186.0" radius="50" destmap="Default"/>

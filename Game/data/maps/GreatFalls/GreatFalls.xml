@@ -853,10 +853,10 @@
     <objectgroup mesh="grass_patch" material="">
         <object pos="5162.97 5575.44 213.333" scale="3 3 1" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="shroom1_1" material="">
+    <objectgroup mesh="shroom" material="">
         <object pos="4457.46 2848.9399999999996 116.078" scale="18 18 8" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="shroom1_2" material="">
+    <objectgroup mesh="shroom_2" material="">
         <object pos="3309.95 2844.1099999999997 320.0" scale="18 18 8" rot="0 0 0"/>
         <object pos="2656.33 9040.62 567.843" scale="18 18 8" rot="0 0 0"/>
     </objectgroup>

@@ -328,7 +328,7 @@
         <object pos="4062.0 7782.0 745.0" scale="5 5 5" rot="180 0 0"/>
         <object pos="3795.0 7720.0 745.0" scale="5 5 5" rot="180 0 0"/>
     </objectgroup>
-    <objectgroup mesh="shroom1_2" material="">
+    <objectgroup mesh="shroom_2" material="">
         <object pos="4100.0 7572.0 815.0" scale="29 29 20" rot="90 0 0"/>
         <object pos="3629.0 7463.0 815.0" scale="29 29 20" rot="90 0 0"/>
         <object pos="3917.0 6952.0 815.0" scale="10 10 8" rot="90 0 0"/>
@@ -357,9 +357,9 @@
     <critter type="Frog" rate="0.1" roamarea=""/>
     <critter type="Mouse" rate="0.1" roamarea=""/>
     <randomobjects count="400">
-        <tree mesh="fern"/>
-        <tree mesh="acacia_tree"/>
-        <tree mesh="Tree1"/>
+        <object mesh="fern"/>
+        <object mesh="acacia_tree"/>
+        <object mesh="Tree1"/>
     </randomobjects>
     <portal pos="1019.0 699.0 163.0" radius="25" destmap="GreatFalls"/>
     <portal pos="7607.0 795.0 167.0" radius="25" destmap="Default"/>
