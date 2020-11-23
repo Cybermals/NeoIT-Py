@@ -3,9 +3,9 @@
     <terrain size="50000 50000 510.0" spawnpos="25000 25000 100" heightmap="reallybigterrain.png" material="Terrain/ReallyBigTerrain"/>
     <grass material="yellowGrass" grassmap="grassdensitymap.png" colormap="grass_tex.jpg"/>
     <randomobjects count="500">
-        <object mesh="diggers_fir"/>
-        <object mesh="diggers_fir"/>
-        <object mesh="diggers_fir"/>
+        <tree mesh="fir14_25"/>
+        <tree mesh="fir06_30"/>
+        <tree mesh="fir05_30"/>
     </randomobjects>
     <weathercycle name="ThunderstormRain"/>
     <portal pos="25600.0 24400.0 270.0" radius="25" destmap="Default"/>

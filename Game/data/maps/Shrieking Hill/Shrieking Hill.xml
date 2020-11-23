@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <world>
     <terrain size="5000 5000 1210.0" spawnpos="3773 333 778" heightmap="ShriekingHillterrain.png" material="Terrain/Shrieking_HillTerrain"/>
-    <objectgroup mesh="diggers_fir" material="">
+    <objectgroup mesh="fir05_30" material="">
         <object pos="4002.0 4585.0 231.0" scale="2 2 2" rot="0 0 0"/>
         <object pos="4111.0 4382.0 231.0" scale="2 2 2" rot="0 0 0"/>
         <object pos="4137.0 4164.0 231.0" scale="2 2 2" rot="0 0 0"/>
@@ -23,7 +23,7 @@
         <object pos="1773.0 3770.0 431.0" scale="1 1 1" rot="0 0 0"/>
         <object pos="1936.0 3828.0 431.0" scale="1 1 1" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="diggers_fir" material="">
+    <objectgroup mesh="fir06_30" material="">
         <object pos="2894.0 4391.0 356.0" scale="2 2 2" rot="0 0 0"/>
         <object pos="2942.0 4202.0 353.0" scale="2 2 2" rot="0 0 0"/>
         <object pos="2389.0 3476.0 235.0" scale="2 2 2" rot="0 0 0"/>
@@ -61,12 +61,12 @@
         <object pos="4704.0 3397.0 239.0" scale="1 1 1" rot="0 0 0"/>
         <object pos="3547.0 2190.0 243.0" scale="1 1 1" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="diggers_fir" material="">
+    <objectgroup mesh="fir14_25" material="">
         <object pos="1841.0 302.0 237.0" scale="2 2 2" rot="0 0 0"/>
         <object pos="1631.0 308.0 247.0" scale="2 2 2" rot="0 0 0"/>
         <object pos="1414.0 320.0 231.0" scale="2 2 2" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="diggers_fir" material="Terrain/CalmWater">
+    <objectgroup mesh="fir05_30" material="Terrain/CalmWater">
         <object pos="2162.0 4569.0 1000.0" scale="1 1 1" rot="0 0 0"/>
     </objectgroup>
     <objectgroup mesh="farn2" material="">
@@ -109,7 +109,7 @@
         <object pos="3629.0 4202.0 333.0" scale="1 1 17" rot="0 0 0"/>
         <object pos="3980.0 4268.0 333.0" scale="1 1 17" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="grass_patch" material=""/>
+    <objectgroup mesh="grassPatch" material=""/>
     <objectgroup mesh="shroom2_2" material="">
         <object pos="3633.0 4282.0 333.0" scale="20 20 20" rot="0 0 0"/>
         <object pos="3654.0 4367.0 333.0" scale="20 20 20" rot="0 0 0"/>

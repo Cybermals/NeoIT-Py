@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <world>
     <terrain size="10000 10000 510.0" spawnpos="2500 2500 100" heightmap="hiddenValleyterrain.png" material="Terrain/HiddenValleyTerrain"/>
-    <objectgroup mesh="acacia_tree" material="">
+    <objectgroup mesh="acaciaTree" material="">
         <object pos="3619.0 1187.0 135.0" scale="2 2 2" rot="210 0 0"/>
         <object pos="4103.0 1124.0 135.0" scale="1 1 1" rot="20 0 0"/>
         <object pos="4396.0 1611.0 135.0" scale="1.2 1.2 1.2" rot="230 0 0"/>
@@ -40,7 +40,7 @@
         <object pos="8161.0 7383.0 138.0" scale="2 2 2" rot="0 0 0"/>
         <object pos="5959.0 7465.0 513.0" scale="1 1 1" rot="180 0 0"/>
     </objectgroup>
-    <objectgroup mesh="savannah_tree" material="">
+    <objectgroup mesh="savannahTree" material="">
         <object pos="1042.0 9142.0 135.0" scale="2.2 2.2 1" rot="210 0 0"/>
         <object pos="6785.0 6962.0 148.0" scale="8 8 8" rot="0 0 0"/>
         <object pos="6785.0 6962.0 148.0" scale="8 8 8" rot="180 0 0"/>
@@ -79,7 +79,7 @@
         <object pos="1600.0 930.0 310.0" scale="7 2.8 1" rot="180 0 0"/>
         <object pos="1000.0 1000.0 305.0" scale="2 3 1" rot="135 0 0"/>
     </objectgroup>
-    <objectgroup mesh="grass_patch" material="">
+    <objectgroup mesh="grassPatch" material="">
         <object pos="3330.0 1235.0 135.0" scale="2 2 2" rot="10 0 0"/>
         <object pos="3823.0 1414.0 135.0" scale="3 3 3" rot="20 0 0"/>
         <object pos="4146.0 1313.0 135.0" scale="1.2 1.2 1.2" rot="30 0 0"/>

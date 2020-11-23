@@ -2,7 +2,7 @@
 <world>
     <terrain size="9000 9000 1210.0" spawnpos="895 490 796" heightmap="Playgroundterrain.png" material="Terrain/PlaygroundTerrain"/>
     <grass material="Terrain/Flower" grassmap="Playgroundgrassmask.png" colormap="Flower2.png"/>
-    <objectgroup mesh="diggers_fir" material="">
+    <objectgroup mesh="fir14_25" material="">
         <object pos="6262.0 7553.0 422.0" scale="2 2 1" rot="0 0 0"/>
         <object pos="6191.0 7274.0 150.0" scale="2 2 1" rot="0 0 0"/>
         <object pos="6454.0 7426.0 463.0" scale="2 2 1" rot="0 0 0"/>
@@ -16,7 +16,7 @@
         <object pos="7256.0 7238.0 430.0" scale="3 3 1" rot="0 0 0"/>
         <object pos="7029.0 7191.0 305.0" scale="3 3 1" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="diggers_fir" material="">
+    <objectgroup mesh="fir06_30" material="">
         <object pos="7377.0 7496.0 752.0" scale="2 2 2" rot="0 0 0"/>
         <object pos="7215.0 7114.0 405.0" scale="2 2 2" rot="0 0 0"/>
         <object pos="7039.0 7014.0 349.0" scale="2 2 2" rot="0 0 0"/>
@@ -53,7 +53,7 @@
         <object pos="1555.0 7966.0 698.0" scale="8 8 7" rot="20 0 0"/>
         <object pos="1165.0 8177.0 698.0" scale="8 8 7" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="acacia_tree" material="">
+    <objectgroup mesh="acaciaTree" material="">
         <object pos="4674.0 1611.0 250.0" scale="6 6 6" rot="180 0 0"/>
         <object pos="4670.0 1634.0 250.0" scale="6 6 6" rot="90 0 0"/>
         <object pos="3477.0 3465.0 135.0" scale="2 2 2" rot="0 0 0"/>
@@ -71,7 +71,7 @@
         <object pos="6382.0 5270.0 137.0" scale="3 3 3" rot="0 0 0"/>
         <object pos="6104.0 5850.0 137.0" scale="3 3 3" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="savannah_tree" material="">
+    <objectgroup mesh="savannahTree" material="">
         <object pos="3865.0 1283.0 300.0" scale="5 5 5" rot="180 0 0"/>
         <object pos="5416.0 2071.0 300.0" scale="  " rot="5 5 5"/>
         <object pos="5315.0 895.0 300.0" scale="  " rot="5 5 5"/>
@@ -205,7 +205,7 @@
         <object pos="3834.0 1440.0 305.0" scale="1 1 1" rot="180 0 0"/>
         <object pos="6405.0 3599.0 144.0" scale="0.5 0.5 1" rot="180 180 0"/>
     </objectgroup>
-    <objectgroup mesh="grass_patch" material="">
+    <objectgroup mesh="grassPatch" material="">
         <object pos="5685.0 5213.0 399.0" scale="2 2 2" rot="0 0 0"/>
         <object pos="5728.0 5229.0 137.0" scale="2 2 2" rot="0 0 0"/>
         <object pos="6734.0 6058.0 137.0" scale="2 2 2" rot="0 0 0"/>
@@ -328,7 +328,7 @@
         <object pos="4062.0 7782.0 745.0" scale="5 5 5" rot="180 0 0"/>
         <object pos="3795.0 7720.0 745.0" scale="5 5 5" rot="180 0 0"/>
     </objectgroup>
-    <objectgroup mesh="shroom_2" material="">
+    <objectgroup mesh="shroom1_2" material="">
         <object pos="4100.0 7572.0 815.0" scale="29 29 20" rot="90 0 0"/>
         <object pos="3629.0 7463.0 815.0" scale="29 29 20" rot="90 0 0"/>
         <object pos="3917.0 6952.0 815.0" scale="10 10 8" rot="90 0 0"/>
@@ -357,9 +357,9 @@
     <critter type="Frog" rate="0.1" roamarea=""/>
     <critter type="Mouse" rate="0.1" roamarea=""/>
     <randomobjects count="400">
-        <object mesh="fern"/>
-        <object mesh="acacia_tree"/>
-        <object mesh="Tree1"/>
+        <tree mesh="fern"/>
+        <tree mesh="acaciatree"/>
+        <tree mesh="Tree1"/>
     </randomobjects>
     <portal pos="1019.0 699.0 163.0" radius="25" destmap="GreatFalls"/>
     <portal pos="7607.0 795.0 167.0" radius="25" destmap="Default"/>

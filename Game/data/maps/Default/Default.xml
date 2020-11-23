@@ -2,7 +2,7 @@
 <world>
     <terrain size="5000 5000 510.0" spawnpos="2500 2500 100" heightmap="defaulterrain.png" material="Terrain/DefaultTerrain"/>
     <grass material="yellowGrass" grassmap="grassdensitymap.png" colormap="grass_tex.jpg"/>
-    <objectgroup mesh="diggers_fir" material="">
+    <objectgroup mesh="fir05_30" material="">
         <object pos="2500.0 2500.0" scale="1 1 1" rot="0 0 0"/>
         <object pos="490.0 4780.0" scale="0.9 0.9 0.9" rot="30 0 0"/>
         <object pos="630.0 4780.0" scale="1.1 1.1 1.1" rot="50 0 0"/>

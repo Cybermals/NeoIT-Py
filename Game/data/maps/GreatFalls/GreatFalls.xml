@@ -2,7 +2,7 @@
 <world>
     <terrain size="10000 10000 1010.0" spawnpos="7493.44 1294.91 100" heightmap="GreatFallsterrain.png" material="Terrain/GreatFallsTerrain"/>
     <grass material="Terrain/Flower" grassmap="GreatFallsgrassmask.png" colormap="flower2.png"/>
-    <objectgroup mesh="savannah_tree" material="">
+    <objectgroup mesh="savannahTree" material="">
         <object pos="200.0 9980.0" scale="3 3 3" rot="0 0 0"/>
         <object pos="290.0 10000.0" scale="3 3 3" rot="0 0 0"/>
         <object pos="120.0 9900.0" scale="3 3 3" rot="0 0 0"/>
@@ -651,7 +651,7 @@
         <object pos="1620.0 3890.0" scale="3 3 3" rot="0 0 0"/>
         <object pos="1700.0 4020.0" scale="3 3 3" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="diggers_fir" material="">
+    <objectgroup mesh="fir06_30" material="">
         <object pos="9600.0 6920.0" scale=".5 .5 .5" rot="0 0 0"/>
         <object pos="9600.0 6840.0" scale=".5 .5 .5" rot="0 0 0"/>
     </objectgroup>
@@ -850,13 +850,13 @@
         <object pos="7115.0 1665.0 131.765" scale="5 5 5" rot="0 0 0"/>
         <object pos="8890.0 660.0 131.765" scale="5 5 5" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="grass_patch" material="">
+    <objectgroup mesh="GrassPatch" material="">
         <object pos="5162.97 5575.44 213.333" scale="3 3 1" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="shroom" material="">
+    <objectgroup mesh="shroom1_1" material="">
         <object pos="4457.46 2848.9399999999996 116.078" scale="18 18 8" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="shroom_2" material="">
+    <objectgroup mesh="shroom1_2" material="">
         <object pos="3309.95 2844.1099999999997 320.0" scale="18 18 8" rot="0 0 0"/>
         <object pos="2656.33 9040.62 567.843" scale="18 18 8" rot="0 0 0"/>
     </objectgroup>

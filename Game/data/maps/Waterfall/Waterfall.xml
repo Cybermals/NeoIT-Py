@@ -3,9 +3,9 @@
     <terrain size="2500 2500 710.0" spawnpos="500 500 100" heightmap="waterfallterrain.png" material="Terrain/waterfallTerrain"/>
     <grass material="grass" grassmap="grassdensitymap.png" colormap="grass_tex2.png"/>
     <randomobjects count="20">
-        <object mesh="diggers_fir"/>
-        <object mesh="diggers_fir"/>
-        <object mesh="diggers_fir"/>
+        <tree mesh="fir14_25"/>
+        <tree mesh="fir06_30"/>
+        <tree mesh="fir14_25"/>
     </randomobjects>
     <critters limit="10"/>
     <critter type="Duckling" rate="0.01" roamarea=""/>

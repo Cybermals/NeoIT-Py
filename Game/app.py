@@ -19,7 +19,7 @@ from panda3d.core import (
 load_prc_file_data("", """
 show-frame-rate-meter true
 stencil-bits 8
-sync-video true
+sync-video false
 """)
 
 from camera import CameraManager, CAM_MODE_FREE
@@ -50,7 +50,7 @@ class NeoITPyApp(ShowBase):
         wnd_props = WindowProperties()
         wnd_props.set_title("Neo Impressive Title")
         wnd_props.set_origin(0, 0)
-        wnd_props.set_size(1280, 960)
+        wnd_props.set_size(1024, 768)
         self.win.request_properties(wnd_props)
 
         self.set_background_color(0, .5, 1, 1)
@@ -80,7 +80,7 @@ class NeoITPyApp(ShowBase):
 
         #Setup lighting
         self.ambient = AmbientLight("Ambient Light")
-        self.ambient.set_color(Vec4(.2, .2, .2, 1))
+        self.ambient.set_color(Vec4(.5, .5, .5, 1))
         self.ambient_np = self.render.attach_new_node(self.ambient)
         self.render.set_light(self.ambient_np)
 
@@ -119,7 +119,7 @@ class NeoITPyApp(ShowBase):
         self.gui.show_target_info(False)
         self.gui.switch_to_screen("HUD", FadeTransition())
         self.cam_mgr.change_mode(CAM_MODE_FREE)
-        self.world_mgr.load_map("./data/maps/Hidden Valley")
+        self.world_mgr.load_map("./data/maps/Default")
 
     def leave_campaign_select(self):
         """Leave the campaign select screen and return to the title screen."""

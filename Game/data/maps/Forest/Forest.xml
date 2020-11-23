@@ -3,14 +3,14 @@
     <terrain size="5000 5000 810.0" spawnpos="900 2000 1" heightmap="forestterrain.png" material="Terrain/ForestTerrain"/>
     <grass material="grass" grassmap="grassdensitymap2.png" colormap="grass_tex.jpg"/>
     <randomobjects count="350">
-        <object mesh="diggers_fir"/>
-        <object mesh="diggers_fir"/>
-        <object mesh="diggers_fir"/>
+        <tree mesh="fir14_25"/>
+        <tree mesh="fir06_30"/>
+        <tree mesh="fir05_30"/>
     </randomobjects>
     <randomobjects count="">
-        <object mesh="farn"/>
-        <object mesh="plant2"/>
-        <object mesh="shroom"/>
+        <bush mesh="farn"/>
+        <bush mesh="plant2"/>
+        <bush mesh="shroom1_1"/>
     </randomobjects>
     <portal pos="940.0 4220.0 120.0" radius="25" destmap="Default"/>
     <waterplane pos="1100.0 4100.0 280.0" scale="2.2 2.2" material="Terrain/CalmWater" sound="water1.wav" issolid="false"/>
