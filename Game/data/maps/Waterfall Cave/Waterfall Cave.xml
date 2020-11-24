@@ -9,7 +9,7 @@
         <object pos="490.0 485.0" scale="1 1 1" rot="155 0 0"/>
         <object pos="488.0 508.0" scale="1.4 1.4 1.4" rot="90 0 0"/>
     </objectgroup>
-    <gate material="GateMatWhite" pos="470.0 56.0 130.0" destmap="waterfall" destvec="1590.0 -199.0"/>
+    <gate material="GateMatWhite" pos="470.0 56.0 130.0" destmap="Waterfall" destvec="1590.0 -199.0"/>
     <weathercycle name="None"/>
     <waterplane pos="500.0 500.0 120.0" scale="2 2" material="Terrain/CalmWater" sound="water1.wav" issolid="false"/>
     <light pos="470.0 56.0 130.0" color="0.75 0.74 0.72"/>

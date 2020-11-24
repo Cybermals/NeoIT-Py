@@ -103,14 +103,14 @@
         <object pos="1402.0 3948.0 239.0" scale="2 2 2" rot="0 0 0"/>
         <object pos="1105.0 3485.0 431.0" scale="2 2 2" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="rock_slab2" material="">
+    <objectgroup mesh="rock_slab" material="">
         <object pos="3791.0 4274.0 470.0" scale="12 12 2" rot="180 0 0"/>
         <object pos="3777.0 4493.0 333.0" scale="1 1 17" rot="0 0 0"/>
         <object pos="3629.0 4202.0 333.0" scale="1 1 17" rot="0 0 0"/>
         <object pos="3980.0 4268.0 333.0" scale="1 1 17" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="grassPatch" material=""/>
-    <objectgroup mesh="shroom2_2" material="">
+    <objectgroup mesh="grass_patch" material=""/>
+    <objectgroup mesh="shroom5" material="">
         <object pos="3633.0 4282.0 333.0" scale="20 20 20" rot="0 0 0"/>
         <object pos="3654.0 4367.0 333.0" scale="20 20 20" rot="0 0 0"/>
         <object pos="3833.0 4453.0 333.0" scale="20 20 20" rot="60 0 0"/>
@@ -132,7 +132,7 @@
         <object pos="2672.0 3141.0 356.0" scale="15 15 10" rot="140 0 0"/>
     </objectgroup>
     <objectgroup mesh="shrub" material=""/>
-    <objectgroup mesh="shroom2_1" material=""/>
+    <objectgroup mesh="shroom4" material=""/>
     <objectgroup mesh="farn" material=""/>
     <objectgroup mesh="pumpkin" material="">
         <object pos="3532.0 693.0 365.0" scale="20 20 20" rot="180 0 0"/>
@@ -209,7 +209,7 @@
         <object pos="1160.0 2357.0 344.0" scale="3 3 3" rot="-50 0 -10"/>
         <object pos="1344.0 2579.0 360.0" scale="3 3 3" rot="60 8 0"/>
     </objectgroup>
-    <objectgroup mesh="shroom2_2" material="Terrain/CalmWater">
+    <objectgroup mesh="shroom5" material="Terrain/CalmWater">
         <object pos="1993.0 4436.0 1000.0" scale="20 20 20" rot="0 0 0"/>
         <object pos="2520.0 4053.0 1000.0" scale="20 20 20" rot="0 0 0"/>
     </objectgroup>

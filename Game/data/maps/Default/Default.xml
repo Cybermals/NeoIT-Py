@@ -212,7 +212,7 @@
         <object pos="1672.0 3569.0 80.0" scale="1.2 1.2 1.2" rot="0 -60 0"/>
         <object pos="1620.0 3569.0 80.0" scale="1 1 1" rot="0 -60 0"/>
     </objectgroup>
-    <portal pos="1395.0 1000.0 130.0" radius="25" destmap="waterfall"/>
+    <portal pos="1395.0 1000.0 130.0" radius="25" destmap="Waterfall"/>
     <portal pos="570.0 4810.0 340.0" radius="25" destmap="ReallyBig"/>
     <portal pos="4070.0 2930.0 50.0" radius="25" destmap="Ocean"/>
     <portal pos="4370.0 4830.0 140.0" radius="25" destmap="Ice"/>

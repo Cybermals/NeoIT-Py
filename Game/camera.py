@@ -2,7 +2,7 @@
 
 from direct.task.Task import Task
 from kivy.logger import Logger
-from panda3d.core import CollisionNode, CollisionSphere, Vec3
+from panda3d.core import ClockObject, CollisionNode, CollisionSphere, Vec3
 
 
 #Constants
@@ -40,26 +40,26 @@ class CameraManager(object):
         base.accept("f2", self.change_mode, [CAM_MODE_CHASE])
         base.accept("f3", self.change_mode, [CAM_MODE_FREE])
 
-        base.accept("w", self.set_move_vec_y, [.2 * self.speed])
+        base.accept("w", self.set_move_vec_y, [self.speed])
         base.accept("w-up", self.set_move_vec_y, [0])
-        base.accept("s", self.set_move_vec_y, [-.2 * self.speed])
+        base.accept("s", self.set_move_vec_y, [-self.speed])
         base.accept("s-up", self.set_move_vec_y, [0])
-        base.accept("a", self.set_move_vec_x, [-.2 * self.speed])
+        base.accept("a", self.set_move_vec_x, [-self.speed])
         base.accept("a-up", self.set_move_vec_x, [0])
-        base.accept("d", self.set_move_vec_x, [.2 * self.speed])
+        base.accept("d", self.set_move_vec_x, [self.speed])
         base.accept("d-up", self.set_move_vec_x, [0])
-        base.accept("r", self.set_move_vec_z, [.2 * self.speed])
+        base.accept("r", self.set_move_vec_z, [self.speed])
         base.accept("r-up", self.set_move_vec_z, [0])
-        base.accept("f", self.set_move_vec_z, [-.2 * self.speed])
+        base.accept("f", self.set_move_vec_z, [-self.speed])
         base.accept("f-up", self.set_move_vec_z, [0])
 
-        base.accept("arrow_up", self.set_rot_vec_p, [.5])
+        base.accept("arrow_up", self.set_rot_vec_p, [self.speed / 10])
         base.accept("arrow_up-up", self.set_rot_vec_p, [0])
-        base.accept("arrow_down", self.set_rot_vec_p, [-.5])
+        base.accept("arrow_down", self.set_rot_vec_p, [-self.speed / 10])
         base.accept("arrow_down-up", self.set_rot_vec_p, [0])
-        base.accept("arrow_left", self.set_rot_vec_h, [.5])
+        base.accept("arrow_left", self.set_rot_vec_h, [self.speed / 10])
         base.accept("arrow_left-up", self.set_rot_vec_h, [0])
-        base.accept("arrow_right", self.set_rot_vec_h, [-.5])
+        base.accept("arrow_right", self.set_rot_vec_h, [-self.speed / 10])
         base.accept("arrow_right-up", self.set_rot_vec_h, [0])
 
         #Setup collision detection
@@ -75,7 +75,7 @@ class CameraManager(object):
     def reset(self):
         """Reset this camera manager."""
         self.mode = CAM_MODE_FIRST_PERSON
-        self.speed = 10
+        self.speed = 500
         self.move_vec = Vec3(0, 0, 0)
         self.rot_vec = Vec3(0, 0, 0)
 
@@ -126,16 +126,19 @@ class CameraManager(object):
 
     def run_logic(self, task):
         """Run the logic for this camera manager."""
+        #Get delta time
+        dt = ClockObject.get_global_clock().get_dt()
+
         #We only need to execute logic for the free camera here
         if self.mode == CAM_MODE_FREE:
             #Update rotation first
-            base.camera.set_hpr(base.camera.get_hpr() + self.rot_vec)
+            base.camera.set_hpr(base.camera.get_hpr() + self.rot_vec * dt)
 
             #Now update position
             pos = base.camera.get_pos()
-            vec = Vec3(self.move_vec.x, self.move_vec.y, 0)
+            vec = Vec3(self.move_vec.x, self.move_vec.y, 0) * dt
             base.camera.set_pos(pos + base.camera.get_quat(render).xform(vec))
-            base.camera.set_z(base.camera.get_z() + self.move_vec.z)
+            base.camera.set_z(base.camera.get_z() + self.move_vec.z * dt)
 
         #Continue this task infinitely
         return Task.cont

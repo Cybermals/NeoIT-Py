@@ -10,6 +10,7 @@ from panda3d.core import (
     CollisionSphere,
     GeoMipTerrain,
     Material,
+    RigidBodyCombiner,
     Texture,
     TextureStage,
     Vec4
@@ -51,7 +52,7 @@ class Portal(object):
         except IOError:
             Logger.warning("No portal texture for map '{}'.".format(dest))
 
-        self.model.reparent_to(render)
+        self.model.reparent_to(base.world_mgr.scenery_np)
 
         #Setup collision detection
         cnode = CollisionNode("portal")
@@ -97,7 +98,7 @@ class Object(object):
             self.model.set_pos(*pos)
             self.model.set_hpr(*rot)
             self.model.set_scale(*scale)
-            self.model.reparent_to(render)
+            self.model.reparent_to(base.world_mgr.scenery_np)
 
         except IOError:
             #Just set this to None if the model won't load
@@ -120,6 +121,11 @@ class WorldManager(object):
         self.portals = []
         self.gates = []
         self.objects = []
+        self.scenery = RigidBodyCombiner("scenery")
+        self.scenery_np = render.attach_new_node(self.scenery)
+        self.is_dirty = True
+
+        base.task_mgr.add(self.run_logic)
 
         Logger.info("World manager initialized.")
 
@@ -280,22 +286,26 @@ class WorldManager(object):
     def add_portal(self, pos, radius, dest):
         """Add a portal to this world."""
         self.portals.append(Portal(pos, radius, dest))
+        self.is_dirty = True
         Logger.info("Added portal: pos = {}, radius = {}, dest = '{}'".format(
             pos, radius, dest))
 
     def del_portal(self, portal):
         """Remove a portal from this world."""
         self.portals.remove(portal)
+        self.is_dirty = True
         Logger.info("Removed portal {}".format(portal))
 
     def add_gate(self, pos, dest, destvec, material):
         """Add a gate to this world."""
         self.gates.append(Gate(pos, dest, destvec, material))
+        self.is_dirty = True
         Logger.info("Added gate: pos = {}, dest = '{}', destvec = {}, material = '{}'".format(pos, dest, destvec, material))
 
     def del_gate(self, gate):
         """Remove a gate from this world."""
         self.gates.remove(gate)
+        self.is_dirty = True
         Logger.info("Removed gate {}".format(gate))
 
     def add_object(self, mesh, pos, rot, scale, material, sound):
@@ -317,10 +327,13 @@ class WorldManager(object):
 
         #Add the object
         self.objects.append(Object(mesh, pos, rot, scale, material, sound))
+        self.is_dirty = True
         Logger.info("Added object: mesh = '{}', pos = {}, rot = {}, scale = {}, material = '{}', sound = '{}'".format(mesh, pos, rot, scale, material, sound))
 
     def del_object(self, object):
         """Delete an object from this world."""
+        self.objects.remove(object)
+        self.is_dirty = True
         Logger.info("Removed object {}".format(object))
 
     def get_terrain_height(self, pos):
@@ -336,3 +349,13 @@ class WorldManager(object):
             return self.terrain.get_elevation(
                 pos[0] / (self.size[0] / 512), 
                 pos[1] / (self.size[1] / 512)) * self.size[2]
+
+    def run_logic(self, task):
+        """Run the logic for this world manager."""
+        #Optimize the scenery
+        if self.is_dirty:
+            self.scenery.collect()
+            self.is_dirty = False
+            Logger.info("Optimized the scenery.")
+
+        return Task.cont

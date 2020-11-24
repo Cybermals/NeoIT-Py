@@ -486,13 +486,13 @@ class MapUpgrader(object):
                 rand_trees = etree.SubElement(root, "randomobjects", {
                     "count": tree_cnt
                     })
-                etree.SubElement(rand_trees, "tree", {
+                etree.SubElement(rand_trees, "object", {
                     "mesh": tree1
                     })
-                etree.SubElement(rand_trees, "tree", {
+                etree.SubElement(rand_trees, "object", {
                     "mesh": tree2
                     })
-                etree.SubElement(rand_trees, "tree", {
+                etree.SubElement(rand_trees, "object", {
                     "mesh": tree3
                     })
                 print("RandomTrees: {}".format(rand_trees.attrib))
@@ -511,13 +511,13 @@ class MapUpgrader(object):
                 rand_bushes = etree.SubElement(root, "randomobjects", {
                     "count": bush_cnt
                     })
-                etree.SubElement(rand_bushes, "bush", {
+                etree.SubElement(rand_bushes, "object", {
                     "mesh": bush1
                     })
-                etree.SubElement(rand_bushes, "bush", {
+                etree.SubElement(rand_bushes, "object", {
                     "mesh": bush2
                     })
-                etree.SubElement(rand_bushes, "bush", {
+                etree.SubElement(rand_bushes, "object", {
                     "mesh": bush3
                     })
                 print("RandomBushes: {}".format(rand_bushes.attrib))

@@ -1,16 +1,16 @@
 <?xml version="1.0" ?>
 <world>
-    <terrain size="25000 25000 2710.0" spawnpos="4000 4000 100" heightmap="jungleterrainkopi.png" material="Terrain/JungleTerrain"/>
+    <terrain size="25000 25000 2710.0" spawnpos="4000 4000 100" heightmap="JungleTerrainKopi.png" material="Terrain/JungleTerrain"/>
     <grass material="yellowGrass" grassmap="grassdensitymap.png" colormap="grass_tex.jpg"/>
     <randomobjects count="25000">
-        <object mesh="diggers_fir"/>
-        <object mesh="diggers_fir"/>
-        <object mesh="diggers_fir"/>
+        <object mesh="fir14_25"/>
+        <object mesh="fir06_30"/>
+        <object mesh="fir05_30"/>
     </randomobjects>
     <randomobjects count="">
         <object mesh="farn2"/>
-        <object mesh="shroom2_2"/>
-        <object mesh="shroom"/>
+        <object mesh="shroom5"/>
+        <object mesh="shroom1"/>
     </randomobjects>
     <weathercycle name="Thunderstorm"/>
     <portal pos="361.0 2234.0 1186.0" radius="50" destmap="Default"/>

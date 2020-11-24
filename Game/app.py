@@ -49,7 +49,7 @@ class NeoITPyApp(ShowBase):
         #Setup window
         wnd_props = WindowProperties()
         wnd_props.set_title("Neo Impressive Title")
-        wnd_props.set_origin(0, 0)
+        #wnd_props.set_origin(0, 0)
         wnd_props.set_size(1024, 768)
         self.win.request_properties(wnd_props)
 
@@ -119,7 +119,7 @@ class NeoITPyApp(ShowBase):
         self.gui.show_target_info(False)
         self.gui.switch_to_screen("HUD", FadeTransition())
         self.cam_mgr.change_mode(CAM_MODE_FREE)
-        self.world_mgr.load_map("./data/maps/Default")
+        self.world_mgr.load_map("./data/maps/Waterfall Cave")
 
     def leave_campaign_select(self):
         """Leave the campaign select screen and return to the title screen."""

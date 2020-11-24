@@ -2,7 +2,7 @@
 <world>
     <terrain size="10000 10000 1010.0" spawnpos="7493.44 1294.91 100" heightmap="GreatFallsterrain.png" material="Terrain/GreatFallsTerrain"/>
     <grass material="Terrain/Flower" grassmap="GreatFallsgrassmask.png" colormap="flower2.png"/>
-    <objectgroup mesh="savannahTree" material="">
+    <objectgroup mesh="savannah_tree" material="">
         <object pos="200.0 9980.0" scale="3 3 3" rot="0 0 0"/>
         <object pos="290.0 10000.0" scale="3 3 3" rot="0 0 0"/>
         <object pos="120.0 9900.0" scale="3 3 3" rot="0 0 0"/>
@@ -826,7 +826,7 @@
         <object pos="9477.35 9591.899" scale="10 10 10" rot="90 0 0"/>
         <object pos="5117.84 5555.64" scale="20 20 20" rot="225 0 0"/>
     </objectgroup>
-    <objectgroup mesh="BeeHive" material="">
+    <objectgroup mesh="beehive" material="">
         <object pos="664.167 8886.41 906.788" scale="5 5 5" rot="0 0 0"/>
         <object pos="2073.64 6021.82 857.106" scale="5 5 5" rot="0 0 0"/>
         <object pos="6591.68 2640.0 303.791" scale="5 5 5" rot="0 0 0"/>
@@ -853,14 +853,14 @@
     <objectgroup mesh="GrassPatch" material="">
         <object pos="5162.97 5575.44 213.333" scale="3 3 1" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="shroom1_1" material="">
+    <objectgroup mesh="shroom1" material="">
         <object pos="4457.46 2848.9399999999996 116.078" scale="18 18 8" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="shroom1_2" material="">
+    <objectgroup mesh="shroom2" material="">
         <object pos="3309.95 2844.1099999999997 320.0" scale="18 18 8" rot="0 0 0"/>
         <object pos="2656.33 9040.62 567.843" scale="18 18 8" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="shroom2_2" material="">
+    <objectgroup mesh="shroom5" material="">
         <object pos="871.314 492.14999999999964 567.843" scale="18 18 8" rot="0 0 0"/>
     </objectgroup>
     <objectgroup mesh="rock_slab" material="">
@@ -884,7 +884,7 @@
     <roamarea start="6860.0 5980.0 0.0" range="550 550 40"/>
     <roamarea start="5000.0 5000.0 300.0" range="10000 10000 800"/>
     <weathercycle name="RainStarfall"/>
-    <portal pos="7521.65 9590.542 117.0" radius="15" destmap="waterfall"/>
+    <portal pos="7521.65 9590.542 117.0" radius="15" destmap="Waterfall"/>
     <portal pos="7503.1 474.9200000000001 158.0" radius="15" destmap="Forest"/>
     <waterplane pos="5000.0 5000.0 50.1" scale="20 20" material="Terrain/LakeWater" sound="" issolid="false"/>
     <waterplane pos="3326.5 5906.67 201.5" scale="2.22 4" material="Terrain/RapidWater" sound="" issolid="false"/>

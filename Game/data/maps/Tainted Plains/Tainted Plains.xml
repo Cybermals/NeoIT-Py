@@ -3,7 +3,7 @@
     <terrain size="12000 12000 510.0" spawnpos="3000 3000 100" heightmap="taintedplainsterrain.png" material="Terrain/TaintedPlains"/>
     <weathercycle name="Weirdsky"/>
     <freezetime time="0"/>
-    <objectgroup mesh="acaciaTree" material="GUIMat/None(1)">
+    <objectgroup mesh="acacia_tree" material="GUIMat/None(1)">
         <object pos="3527.0 9366.0 75.0" scale="2 2 2" rot="210 0 0"/>
         <object pos="3455.0 9204.0 75.0" scale="1 1 1" rot="20 0 0"/>
         <object pos="3383.0 9061.0 75.0" scale="1.2 1.2 1.2" rot="230 0 0"/>

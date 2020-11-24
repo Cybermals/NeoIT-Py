@@ -38,7 +38,7 @@
         <object pos="3562.0 7129.0 815.0" scale="3 3 2" rot="0 0 0"/>
         <object pos="4003.0 7606.0 815.0" scale="3 3 2" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="Tree1" material="">
+    <objectgroup mesh="tree" material="">
         <object pos="6634.0 5610.0 137.0" scale="4 4 3" rot="0 0 0"/>
         <object pos="6389.0 5838.0 137.0" scale="4 4 3" rot="0 0 0"/>
         <object pos="6051.0 5040.0 137.0" scale="8 8 7" rot="200 0 0"/>
@@ -53,7 +53,7 @@
         <object pos="1555.0 7966.0 698.0" scale="8 8 7" rot="20 0 0"/>
         <object pos="1165.0 8177.0 698.0" scale="8 8 7" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="acaciaTree" material="">
+    <objectgroup mesh="acacia_tree" material="">
         <object pos="4674.0 1611.0 250.0" scale="6 6 6" rot="180 0 0"/>
         <object pos="4670.0 1634.0 250.0" scale="6 6 6" rot="90 0 0"/>
         <object pos="3477.0 3465.0 135.0" scale="2 2 2" rot="0 0 0"/>
@@ -71,7 +71,7 @@
         <object pos="6382.0 5270.0 137.0" scale="3 3 3" rot="0 0 0"/>
         <object pos="6104.0 5850.0 137.0" scale="3 3 3" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="savannahTree" material="">
+    <objectgroup mesh="savannah_tree" material="">
         <object pos="3865.0 1283.0 300.0" scale="5 5 5" rot="180 0 0"/>
         <object pos="5416.0 2071.0 300.0" scale="  " rot="5 5 5"/>
         <object pos="5315.0 895.0 300.0" scale="  " rot="5 5 5"/>
@@ -95,7 +95,7 @@
         <object pos="7644.0 6312.0 352.0" scale="2 2 2" rot="0 -100 -60"/>
         <object pos="7644.0 6312.0 352.0" scale="2 2 2" rot="0 70 0"/>
     </objectgroup>
-    <objectgroup mesh="Jungletree" material="">
+    <objectgroup mesh="jungle_tree" material="">
         <object pos="6489.0 3787.0 137.0" scale="1 1 1" rot="0 0 0"/>
         <object pos="6355.0 3810.0 137.0" scale="1 1 1" rot="0 0 0"/>
         <object pos="6400.0 3637.0 137.0" scale="8 8 4" rot="0 0 0"/>
@@ -161,7 +161,7 @@
         <object pos="4704.0 1546.0 697.0" scale="0.6 0.6 1" rot="0 0 0"/>
         <object pos="4525.0 1649.0 697.0" scale="1 1 2" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="rock_slab2" material="">
+    <objectgroup mesh="rock_slab" material="">
         <object pos="4670.0 1634.0 670.0" scale="10 10 3" rot="180 0 0"/>
         <object pos="3865.0 1283.0 579.0" scale="5 5 1" rot="180 0 0"/>
         <object pos="5416.0 2071.0 579.0" scale="5 5 1" rot="180 0 0"/>
@@ -205,7 +205,7 @@
         <object pos="3834.0 1440.0 305.0" scale="1 1 1" rot="180 0 0"/>
         <object pos="6405.0 3599.0 144.0" scale="0.5 0.5 1" rot="180 180 0"/>
     </objectgroup>
-    <objectgroup mesh="grassPatch" material="">
+    <objectgroup mesh="grass_patch" material="">
         <object pos="5685.0 5213.0 399.0" scale="2 2 2" rot="0 0 0"/>
         <object pos="5728.0 5229.0 137.0" scale="2 2 2" rot="0 0 0"/>
         <object pos="6734.0 6058.0 137.0" scale="2 2 2" rot="0 0 0"/>
@@ -231,7 +231,7 @@
         <object pos="5334.0 903.0 589.0" scale="2 2 2" rot="0 0 0"/>
         <object pos="3885.0 1298.0 589.0" scale="2 2 2" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="shroom2_2" material="">
+    <objectgroup mesh="shroom5" material="">
         <object pos="3270.0 4323.0 705.0" scale="10 10 9" rot="0 0 0"/>
         <object pos="3294.0 4344.0 705.0" scale="10 10 9" rot="0 0 0"/>
         <object pos="3288.0 4277.0 705.0" scale="10 10 9" rot="0 0 0"/>
@@ -252,7 +252,7 @@
         <object pos="5932.0 2959.0 270.0" scale="5 5 5" rot="0 0 0"/>
         <object pos="4433.0 7220.0 803.0" scale="7 7 7" rot="0 0 0"/>
     </objectgroup>
-    <objectgroup mesh="shroom2_1" material="">
+    <objectgroup mesh="shroom4" material="">
         <object pos="3298.0 4308.0 705.0" scale="80 80 70" rot="0 0 0"/>
         <object pos="3270.0 4323.0 705.0" scale="2 2 1.9" rot="0 0 0"/>
         <object pos="3294.0 4344.0 705.0" scale="2 2 1.9" rot="0 0 0"/>
@@ -328,7 +328,7 @@
         <object pos="4062.0 7782.0 745.0" scale="5 5 5" rot="180 0 0"/>
         <object pos="3795.0 7720.0 745.0" scale="5 5 5" rot="180 0 0"/>
     </objectgroup>
-    <objectgroup mesh="shroom1_2" material="">
+    <objectgroup mesh="shroom2" material="">
         <object pos="4100.0 7572.0 815.0" scale="29 29 20" rot="90 0 0"/>
         <object pos="3629.0 7463.0 815.0" scale="29 29 20" rot="90 0 0"/>
         <object pos="3917.0 6952.0 815.0" scale="10 10 8" rot="90 0 0"/>
@@ -357,9 +357,9 @@
     <critter type="Frog" rate="0.1" roamarea=""/>
     <critter type="Mouse" rate="0.1" roamarea=""/>
     <randomobjects count="400">
-        <tree mesh="fern"/>
-        <tree mesh="acaciatree"/>
-        <tree mesh="Tree1"/>
+        <object mesh="fern"/>
+        <object mesh="acaciatree"/>
+        <object mesh="tree"/>
     </randomobjects>
     <portal pos="1019.0 699.0 163.0" radius="25" destmap="GreatFalls"/>
     <portal pos="7607.0 795.0 167.0" radius="25" destmap="Default"/>
