@@ -1,0 +1,521 @@
+<?xml version="1.0" ?>
+<world>
+    <terrain size="9000 9000 1210.0" spawnpos="895 490 796" heightmap="Playgroundterrain.png" material="Terrain/PlaygroundTerrain"/>
+    <grass material="Terrain/Flower" grassmap="Playgroundgrassmask.png" colormap="Flower2.png"/>
+    <objectgroup mesh="fir14_25" material="">
+        <object pos="6262.0 7553.0 422.0" scale="2 2 1" rot="0 0 0"/>
+        <object pos="6191.0 7274.0 150.0" scale="2 2 1" rot="0 0 0"/>
+        <object pos="6454.0 7426.0 463.0" scale="2 2 1" rot="0 0 0"/>
+        <object pos="6452.0 7844.0 465.0" scale="2 2 1" rot="0 0 0"/>
+        <object pos="6362.0 7966.0 415.0" scale="2 2 1" rot="0 0 0"/>
+        <object pos="6177.0 7872.0 322.0" scale="2 2 1" rot="0 0 0"/>
+        <object pos="6709.0 7451.0 624.0" scale="3 3 1" rot="0 0 0"/>
+        <object pos="6921.0 7451.0 640.0" scale="3 3 1" rot="0 0 0"/>
+        <object pos="6978.0 7321.0 518.0" scale="3 3 1" rot="0 0 0"/>
+        <object pos="7085.0 7405.0 750.0" scale="3 3 1" rot="0 0 0"/>
+        <object pos="7256.0 7238.0 430.0" scale="3 3 1" rot="0 0 0"/>
+        <object pos="7029.0 7191.0 305.0" scale="3 3 1" rot="0 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="fir06_30" material="">
+        <object pos="7377.0 7496.0 752.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="7215.0 7114.0 405.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="7039.0 7014.0 349.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="6854.0 6995.0 317.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="6613.0 7085.0 306.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="6599.0 7234.0 363.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="7203.0 7679.0 933.0" scale="2 3 2" rot="0 0 0"/>
+        <object pos="7193.0 7615.0 941.0" scale="3 2 2" rot="0 0 0"/>
+        <object pos="6868.0 7741.0 915.0" scale="3 3 2" rot="0 0 0"/>
+        <object pos="6978.0 7777.0 935.0" scale="3 3 2" rot="0 0 0"/>
+        <object pos="5629.0 7676.0 137.0" scale="1 1 1" rot="0 0 0"/>
+        <object pos="5852.0 7923.0 140.0" scale="1 1 1" rot="0 0 0"/>
+        <object pos="6113.0 8082.0 323.0" scale="1 1 1" rot="0 0 0"/>
+        <object pos="6117.0 7431.0 249.0" scale="1 1 1" rot="0 0 0"/>
+        <object pos="6265.0 7414.0 372.0" scale="1 1 1" rot="0 0 0"/>
+        <object pos="6650.0 7655.0 725.0" scale="1 1 1" rot="0 0 0"/>
+        <object pos="4310.0 7395.0 815.0" scale="3 3 2" rot="0 0 0"/>
+        <object pos="4229.0 7003.0 815.0" scale="3 3 2" rot="0 0 0"/>
+        <object pos="3562.0 7129.0 815.0" scale="3 3 2" rot="0 0 0"/>
+        <object pos="4003.0 7606.0 815.0" scale="3 3 2" rot="0 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="tree" material="">
+        <object pos="6634.0 5610.0 137.0" scale="4 4 3" rot="0 0 0"/>
+        <object pos="6389.0 5838.0 137.0" scale="4 4 3" rot="0 0 0"/>
+        <object pos="6051.0 5040.0 137.0" scale="8 8 7" rot="200 0 0"/>
+        <object pos="907.0 7066.0 698.0" scale="8 8 7" rot="180 0 0"/>
+        <object pos="1213.0 7314.0 698.0" scale="8 8 7" rot="160 0 0"/>
+        <object pos="1652.0 7510.0 698.0" scale="8 8 7" rot="140 0 0"/>
+        <object pos="2150.0 7516.0 698.0" scale="8 8 7" rot="120 0 0"/>
+        <object pos="1908.0 7718.0 698.0" scale="8 8 7" rot="100 0 0"/>
+        <object pos="1380.0 7601.0 698.0" scale="8 8 7" rot="80 0 0"/>
+        <object pos="950.0 7404.0 698.0" scale="8 8 7" rot="60 0 0"/>
+        <object pos="1058.0 7818.0 698.0" scale="8 8 7" rot="40 0 0"/>
+        <object pos="1555.0 7966.0 698.0" scale="8 8 7" rot="20 0 0"/>
+        <object pos="1165.0 8177.0 698.0" scale="8 8 7" rot="0 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="acacia_tree" material="">
+        <object pos="4674.0 1611.0 250.0" scale="6 6 6" rot="180 0 0"/>
+        <object pos="4670.0 1634.0 250.0" scale="6 6 6" rot="90 0 0"/>
+        <object pos="3477.0 3465.0 135.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="3118.0 3459.0 135.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="2847.0 3578.0 135.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="2688.0 3698.0 135.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="2551.0 3880.0 135.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="2589.0 4795.0 135.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="2740.0 4944.0 135.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="2938.0 5066.0 135.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="3267.0 5161.0 135.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="3576.0 5090.0 135.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="3849.0 4932.0 135.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="4100.0 4594.0 135.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="6382.0 5270.0 137.0" scale="3 3 3" rot="0 0 0"/>
+        <object pos="6104.0 5850.0 137.0" scale="3 3 3" rot="0 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="savannah_tree" material="">
+        <object pos="3865.0 1283.0 300.0" scale="5 5 5" rot="180 0 0"/>
+        <object pos="5416.0 2071.0 300.0" scale="  " rot="5 5 5"/>
+        <object pos="5315.0 895.0 300.0" scale="  " rot="5 5 5"/>
+        <object pos="7429.0 6339.0 463.0" scale="2 2 2" rot="0 30 0"/>
+        <object pos="7429.0 6339.0 463.0" scale="2 2 2" rot="0 -30 0"/>
+        <object pos="7429.0 6339.0 463.0" scale="2 2 2" rot="0 30 80"/>
+        <object pos="7429.0 6339.0 463.0" scale="2 2 2" rot="0 -30 80"/>
+        <object pos="7429.0 6339.0 463.0" scale="2 2 2" rot="0 30 160"/>
+        <object pos="7429.0 6339.0 463.0" scale="2 2 2" rot="0 -30 160"/>
+        <object pos="7553.0 6310.0 532.0" scale="2 2 2" rot="0 0 -60"/>
+        <object pos="7553.0 6310.0 532.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="7553.0 6310.0 532.0" scale="2 2 2" rot="0 80 -60"/>
+        <object pos="7553.0 6310.0 532.0" scale="2 2 2" rot="0 -30 -160"/>
+        <object pos="7553.0 6310.0 532.0" scale="2 2 2" rot="0 -80 -60"/>
+        <object pos="7591.0 6362.0 477.0" scale="2 2 2" rot="0 0 30"/>
+        <object pos="7591.0 6362.0 477.0" scale="2 2 2" rot="0 80 -90"/>
+        <object pos="7591.0 6362.0 477.0" scale="2 2 2" rot="0 80 -160"/>
+        <object pos="7591.0 6362.0 477.0" scale="2 2 2" rot="0 90 -200"/>
+        <object pos="7644.0 6312.0 352.0" scale="2 2 2" rot="0 0 -60"/>
+        <object pos="7644.0 6312.0 352.0" scale="2 2 2" rot="0 -60 -60"/>
+        <object pos="7644.0 6312.0 352.0" scale="2 2 2" rot="0 -100 -60"/>
+        <object pos="7644.0 6312.0 352.0" scale="2 2 2" rot="0 70 0"/>
+    </objectgroup>
+    <objectgroup mesh="jungle_tree" material="">
+        <object pos="6489.0 3787.0 137.0" scale="1 1 1" rot="0 0 0"/>
+        <object pos="6355.0 3810.0 137.0" scale="1 1 1" rot="0 0 0"/>
+        <object pos="6400.0 3637.0 137.0" scale="8 8 4" rot="0 0 0"/>
+        <object pos="6400.0 3637.0 137.0" scale="8 8 4" rot="180 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="fern" material="">
+        <object pos="3190.0 4475.0 454.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="3371.0 4500.0 454.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="3489.0 4356.0 454.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="3444.0 4176.0 454.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="5722.0 5661.0 137.0" scale="6 6 6" rot="0 0 0"/>
+        <object pos="6513.0 5756.0 137.0" scale="6 6 6" rot="0 0 0"/>
+        <object pos="2759.0 801.0 137.0" scale="10 10 10" rot="0 0 0"/>
+        <object pos="2250.0 1291.0 137.0" scale="10 10 10" rot="0 0 0"/>
+        <object pos="1492.0 848.0 137.0" scale="10 10 10" rot="0 0 0"/>
+        <object pos="2989.0 2349.0 137.0" scale="10 10 10" rot="0 0 0"/>
+        <object pos="4446.0 2464.0 137.0" scale="10 10 10" rot="0 0 0"/>
+        <object pos="5755.0 1381.0 137.0" scale="10 10 10" rot="0 0 0"/>
+        <object pos="6540.0 3533.0 137.0" scale="6 6 6" rot="0 0 0"/>
+        <object pos="6581.0 3666.0 137.0" scale="6 6 6" rot="0 0 0"/>
+        <object pos="6377.0 3462.0 137.0" scale="6 6 6" rot="0 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="farn2" material="">
+        <object pos="4008.0 6990.0 927.0" scale="6 6 6" rot="0 0 0"/>
+        <object pos="3800.0 7334.0 927.0" scale="6 6 6" rot="0 0 0"/>
+        <object pos="4059.0 7398.0 927.0" scale="6 6 6" rot="0 0 0"/>
+        <object pos="3749.0 7237.0 927.0" scale="6 6 6" rot="0 0 0"/>
+        <object pos="4104.0 7104.0 927.0" scale="6 6 6" rot="0 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="rock_slab" material="">
+        <object pos="5663.0 5205.0 382.0" scale="7 7 2" rot="0 0 0"/>
+        <object pos="5663.0 5205.0 258.0" scale="7 7 2" rot="0 0 0"/>
+        <object pos="5742.0 5146.0 137.0" scale="0.5 0.5 14" rot="0 0 0"/>
+        <object pos="5723.0 5312.0 137.0" scale="  " rot="15 0.5 0.5"/>
+        <object pos="5750.0 5259.0 275.0" scale="0.5 0.5 13" rot="0 0 0"/>
+        <object pos="3946.0 7225.0 908.0" scale="15 15 2" rot="180 0 0"/>
+        <object pos="4174.0 7170.0 819.0" scale="0.5 0.5 13" rot="180 0 0"/>
+        <object pos="4129.0 7461.0 819.0" scale="0.5 0.5 13" rot="180 0 0"/>
+        <object pos="3875.0 7460.0 819.0" scale="0.5 0.5 13" rot="180 0 0"/>
+        <object pos="3688.0 7278.0 819.0" scale="0.5 0.5 13" rot="180 0 0"/>
+        <object pos="3840.0 7012.0 819.0" scale="0.5 0.5 13" rot="180 0 0"/>
+        <object pos="3946.0 7225.0 1029.0" scale="8 8 2" rot="180 0 0"/>
+        <object pos="4282.0 7278.0 872.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="4075.0 7196.0 928.0" scale="0.5 0.5 13" rot="180 0 0"/>
+        <object pos="3857.0 7142.0 928.0" scale="0.5 0.5 13" rot="180 0 0"/>
+        <object pos="3899.0 7323.0 928.0" scale="0.5 0.5 13" rot="180 0 0"/>
+        <object pos="4134.0 7301.0 990.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="3946.0 7225.0 819.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="3693.0 7185.0 819.0" scale="0.6 0.6 1" rot="0 0 0"/>
+        <object pos="3770.0 7059.0 819.0" scale="0.6 0.6 1" rot="0 0 0"/>
+        <object pos="4098.0 7144.0 819.0" scale="0.6 0.6 1" rot="0 0 0"/>
+        <object pos="4024.0 7071.0 819.0" scale="0.6 0.6 1" rot="0 0 0"/>
+        <object pos="4158.0 7223.0 819.0" scale="0.6 0.6 1" rot="0 0 0"/>
+        <object pos="4136.0 7389.0 819.0" scale="0.6 0.6 1" rot="0 0 0"/>
+        <object pos="3938.0 7466.0 819.0" scale="0.6 0.6 1" rot="0 0 0"/>
+        <object pos="4038.0 7468.0 819.0" scale="0.6 0.6 1" rot="0 0 0"/>
+        <object pos="3767.0 7359.0 819.0" scale="0.6 0.6 1" rot="0 0 0"/>
+        <object pos="4619.0 1517.0 697.0" scale="0.6 0.6 1" rot="0 0 0"/>
+        <object pos="4578.0 1565.0 697.0" scale="0.6 0.6 1" rot="0 0 0"/>
+        <object pos="4639.0 1749.0 697.0" scale="0.6 0.6 1" rot="0 0 0"/>
+        <object pos="4592.0 1716.0 697.0" scale="0.6 0.6 1" rot="0 0 0"/>
+        <object pos="4757.0 1568.0 697.0" scale="0.6 0.6 1" rot="0 0 0"/>
+        <object pos="4704.0 1546.0 697.0" scale="0.6 0.6 1" rot="0 0 0"/>
+        <object pos="4525.0 1649.0 697.0" scale="1 1 2" rot="0 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="rock_slab" material="">
+        <object pos="4670.0 1634.0 670.0" scale="10 10 3" rot="180 0 0"/>
+        <object pos="3865.0 1283.0 579.0" scale="5 5 1" rot="180 0 0"/>
+        <object pos="5416.0 2071.0 579.0" scale="5 5 1" rot="180 0 0"/>
+        <object pos="5315.0 895.0 579.0" scale="5 5 1" rot="180 0 0"/>
+        <object pos="5158.0 937.0 589.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="5011.0 969.0 589.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="4899.0 998.0 589.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="4785.0 1028.0 589.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="4662.0 1060.0 589.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="4518.0 1098.0 589.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="4366.0 1138.0 589.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="4237.0 1172.0 589.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="4106.0 1206.0 589.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="4010.0 1267.0 589.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="4886.0 1734.0 697.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="4942.0 1769.0 691.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="4996.0 1804.0 684.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="5071.0 1850.0 664.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="5141.0 1894.0 644.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="5202.0 1931.0 624.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="5274.0 1976.0 603.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="5384.0 1892.0 589.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="5377.0 1788.0 589.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="5369.0 1684.0 589.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="5362.0 1583.0 589.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="5356.0 1488.0 589.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="5349.0 1398.0 589.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="5343.0 1305.0 589.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="5336.0 1206.0 589.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="5329.0 1109.0 589.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="3696.0 1372.0 589.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="3629.0 1292.0 556.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="3684.0 1187.0 521.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="3760.0 1146.0 495.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="3861.0 1144.0 464.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="3950.0 1165.0 432.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="4028.0 1199.0 408.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="4011.0 1291.0 375.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="3974.0 1375.0 348.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="3909.0 1433.0 329.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="3834.0 1440.0 305.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="6405.0 3599.0 144.0" scale="0.5 0.5 1" rot="180 180 0"/>
+    </objectgroup>
+    <objectgroup mesh="grass_patch" material="">
+        <object pos="5685.0 5213.0 399.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="5728.0 5229.0 137.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="6734.0 6058.0 137.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="7069.0 5957.0 137.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="7426.0 6093.0 137.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="7350.0 6508.0 137.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="7932.0 6370.0 137.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="8118.0 5936.0 137.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="7727.0 5291.0 137.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="7465.0 5255.0 137.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="7534.0 5653.0 137.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="7356.0 4735.0 137.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="6860.0 4381.0 137.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="6244.0 4617.0 137.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="3946.0 7225.0 1047.0" scale="4 4 4" rot="0 0 0"/>
+        <object pos="2647.0 1171.0 137.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="2722.0 1788.0 137.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="2941.0 2137.0 137.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="3371.0 1587.0 137.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="3679.0 876.0 137.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="4418.0 669.0 137.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="5399.0 2081.0 589.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="5334.0 903.0 589.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="3885.0 1298.0 589.0" scale="2 2 2" rot="0 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="shroom5" material="">
+        <object pos="3270.0 4323.0 705.0" scale="10 10 9" rot="0 0 0"/>
+        <object pos="3294.0 4344.0 705.0" scale="10 10 9" rot="0 0 0"/>
+        <object pos="3288.0 4277.0 705.0" scale="10 10 9" rot="0 0 0"/>
+        <object pos="9641.0 3151.0 243.0" scale="50 50 40" rot="0 0 0"/>
+        <object pos="7533.0 2951.0 274.0" scale="50 50 40" rot="0 0 0"/>
+        <object pos="7725.0 3678.0 258.0" scale="50 50 40" rot="180 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="shrub" material="">
+        <object pos="5788.0 5134.0 137.0" scale="5 5 5" rot="0 0 0"/>
+        <object pos="5778.0 5338.0 137.0" scale="5 5 5" rot="0 0 0"/>
+        <object pos="5439.0 5343.0 498.0" scale="5 5 5" rot="0 0 0"/>
+        <object pos="5514.0 5023.0 498.0" scale="5 5 5" rot="0 0 0"/>
+        <object pos="6987.0 2792.0 270.0" scale="5 5 5" rot="0 0 0"/>
+        <object pos="7193.0 2868.0 270.0" scale="5 5 5" rot="0 0 0"/>
+        <object pos="6801.0 2921.0 270.0" scale="5 5 5" rot="0 0 0"/>
+        <object pos="6472.0 3026.0 270.0" scale="5 5 5" rot="0 0 0"/>
+        <object pos="6190.0 2983.0 270.0" scale="5 5 5" rot="0 0 0"/>
+        <object pos="5932.0 2959.0 270.0" scale="5 5 5" rot="0 0 0"/>
+        <object pos="4433.0 7220.0 803.0" scale="7 7 7" rot="0 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="shroom4" material="">
+        <object pos="3298.0 4308.0 705.0" scale="80 80 70" rot="0 0 0"/>
+        <object pos="3270.0 4323.0 705.0" scale="2 2 1.9" rot="0 0 0"/>
+        <object pos="3294.0 4344.0 705.0" scale="2 2 1.9" rot="0 0 0"/>
+        <object pos="3288.0 4277.0 705.0" scale="2 2 1.9" rot="0 0 0"/>
+        <object pos="7485.0 3189.0 267.0" scale="40 40 35" rot="0 0 0"/>
+        <object pos="7629.0 3429.0 262.0" scale="40 40 35" rot="0 0 0"/>
+        <object pos="7627.0 4059.0 235.0" scale="40 40 35" rot="0 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="farn" material="">
+        <object pos="1465.0 6789.0 192.0" scale="5 5 5" rot="0 0 0"/>
+        <object pos="2072.0 7206.0 192.0" scale="5 5 5" rot="0 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="waterfall" material="waterfall2">
+        <object pos="1840.0 7002.0 190.0" scale="2 2 0.5" rot="30 0 0"/>
+        <object pos="741.0 1824.0 727.0" scale="3.5 2.5 2" rot="90 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="rock" material="">
+        <object pos="1824.0 7133.0 156.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="1775.0 7106.0 156.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="1737.0 7074.0 156.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="1699.0 7039.0 156.0" scale="2 2 2" rot="0 0 0"/>
+        <object pos="1824.0 7133.0 177.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="1775.0 7106.0 177.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="1737.0 7074.0 177.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="1699.0 7039.0 177.0" scale="1 1 1" rot="180 0 0"/>
+        <object pos="1788.0 7151.0 179.0" scale="1 1 1" rot="90 0 0"/>
+        <object pos="1735.0 7122.0 175.0" scale="1 1 1" rot="90 0 0"/>
+        <object pos="1695.0 7085.0 175.0" scale="1 1 1" rot="90 0 0"/>
+        <object pos="7068.0 7698.0 933.0" scale="1.5 1.5 1.5" rot="77 0 0"/>
+        <object pos="3935.0 7333.0 819.0" scale="0.5 0.5 0.7" rot="0 0 0"/>
+        <object pos="3982.0 7383.0 819.0" scale="0.5 0.5 0.7" rot="0 0 0"/>
+        <object pos="3933.0 7383.0 819.0" scale="0.5 0.5 0.7" rot="0 0 0"/>
+        <object pos="3982.0 7335.0 819.0" scale="0.5 0.5 0.7" rot="0 0 0"/>
+        <object pos="3981.0 7371.0 819.0" scale="0.5 0.5 0.7" rot="0 0 0"/>
+        <object pos="3982.0 7348.0 819.0" scale="0.6 0.6 0.7" rot="90 0 0"/>
+        <object pos="3951.0 7334.0 819.0" scale="0.6 0.6 0.7" rot="90 0 0"/>
+        <object pos="3965.0 7334.0 819.0" scale="0.6 0.6 0.7" rot="90 0 0"/>
+        <object pos="3932.0 7368.0 819.0" scale="0.6 0.6 0.7" rot="90 0 0"/>
+        <object pos="3933.0 7347.0 819.0" scale="0.6 0.6 0.7" rot="90 0 0"/>
+        <object pos="3966.0 7383.0 819.0" scale="0.6 0.6 0.7" rot="90 0 0"/>
+        <object pos="3944.0 7384.0 819.0" scale="0.6 0.6 0.7" rot="90 0 0"/>
+        <object pos="3985.0 7361.0 819.0" scale="0.6 0.6 0.7" rot="90 0 0"/>
+        <object pos="3930.0 7357.0 819.0" scale="0.6 0.6 0.7" rot="90 0 0"/>
+        <object pos="4666.0 1640.0 697.0" scale="0.3 0.3 0.3" rot="0 0 0"/>
+        <object pos="4663.0 1633.0 697.0" scale="0.3 0.3 0.3" rot="0 0 0"/>
+        <object pos="4658.0 1629.0 697.0" scale="0.3 0.3 0.3" rot="0 0 0"/>
+        <object pos="4649.0 1629.0 697.0" scale="0.3 0.3 0.3" rot="0 0 0"/>
+        <object pos="4645.0 1636.0 697.0" scale="0.3 0.3 0.3" rot="0 0 0"/>
+        <object pos="4646.0 1647.0 697.0" scale="0.3 0.3 0.3" rot="0 0 0"/>
+        <object pos="4654.0 1650.0 697.0" scale="0.3 0.3 0.3" rot="0 0 0"/>
+        <object pos="4663.0 1650.0 697.0" scale="0.3 0.3 0.3" rot="0 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="salmon" material="">
+        <object pos="2151.0 6746.0 61.0" scale="1 1 1" rot="0 0 0"/>
+        <object pos="1986.0 6642.0 61.0" scale="1 1 1" rot="30 0 0"/>
+        <object pos="2020.0 6789.0 61.0" scale="1 1 1" rot="200 0 0"/>
+        <object pos="2207.0 4514.0 104.0" scale="1 1 1" rot="10 0 0"/>
+        <object pos="2372.0 6731.0 104.0" scale="1 1 1" rot="300 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="crystal" material="">
+        <object pos="595.0 1475.0 752.0" scale="20 20 20" rot="0 0 0"/>
+        <object pos="566.0 1308.0 752.0" scale="15 15 15" rot="0 0 0"/>
+        <object pos="542.0 1135.0 752.0" scale="10 10 10" rot="0 0 0"/>
+        <object pos="520.0 941.0 752.0" scale="5 5 5" rot="0 0 0"/>
+        <object pos="491.0 762.0 752.0" scale="2.5 2.5 2.5" rot="0 0 0"/>
+        <object pos="593.0 2169.0 752.0" scale="20 20 20" rot="180 0 0"/>
+        <object pos="582.0 2292.0 752.0" scale="15 15 15" rot="180 0 0"/>
+        <object pos="569.0 2427.0 752.0" scale="10 10 10" rot="180 0 0"/>
+        <object pos="561.0 2511.0 752.0" scale="5 5 5" rot="180 0 0"/>
+        <object pos="550.0 2617.0 752.0" scale="2.5 2.5 2.5" rot="180 0 0"/>
+        <object pos="4409.0 7583.0 745.0" scale="5 5 5" rot="180 0 0"/>
+        <object pos="4257.0 7702.0 745.0" scale="5 5 5" rot="180 0 0"/>
+        <object pos="4062.0 7782.0 745.0" scale="5 5 5" rot="180 0 0"/>
+        <object pos="3795.0 7720.0 745.0" scale="5 5 5" rot="180 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="shroom2" material="">
+        <object pos="4100.0 7572.0 815.0" scale="29 29 20" rot="90 0 0"/>
+        <object pos="3629.0 7463.0 815.0" scale="29 29 20" rot="90 0 0"/>
+        <object pos="3917.0 6952.0 815.0" scale="10 10 8" rot="90 0 0"/>
+        <object pos="4009.0 2731.0 137.0" scale="29 29 20" rot="90 0 0"/>
+        <object pos="6361.0 1257.0 137.0" scale="29 29 20" rot="60 0 0"/>
+        <object pos="1852.0 2664.0 137.0" scale="29 29 20" rot="90 0 0"/>
+        <object pos="1444.0 5996.0 137.0" scale="29 29 20" rot="0 0 0"/>
+        <object pos="5440.0 7265.0 137.0" scale="29 29 20" rot="300 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="head2" material="">
+        <object pos="3958.0 7219.0 927.0" scale="4 4 4" rot="0 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="body1" material="">
+        <object pos="3958.0 7219.0 927.0" scale="4 4 4" rot="0 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="tail2" material="">
+        <object pos="3958.0 7219.0 927.0" scale="4 4 4" rot="0 0 0"/>
+    </objectgroup>
+    <objectgroup mesh="wings" material="">
+        <object pos="3958.0 7219.0 927.0" scale="4 4 4" rot="0 0 0"/>
+    </objectgroup>
+    <weathercycle name="ThunderstormRain"/>
+    <critters limit="80"/>
+    <critter type="Red Panda" rate="0.1" roamarea=""/>
+    <critter type="Peacock" rate="0.1" roamarea=""/>
+    <critter type="Frog" rate="0.1" roamarea=""/>
+    <critter type="Mouse" rate="0.1" roamarea=""/>
+    <randomobjects count="400">
+        <object mesh="fern"/>
+        <object mesh="acaciatree"/>
+        <object mesh="tree"/>
+    </randomobjects>
+    <portal pos="1019.0 699.0 163.0" radius="25" destmap="GreatFalls"/>
+    <portal pos="7607.0 795.0 167.0" radius="25" destmap="Default"/>
+    <portal pos="8289.0 8342.0 170.0" radius="25" destmap="Forest"/>
+    <waterplane pos="4276.0 5231.0 132.0" scale="30 30" material="Terrain/LargeWater" sound="" issolid="false"/>
+    <waterplane pos="415.0 1824.0 727.0" scale="1.2 1.2" material="Terrain/RapidWater" sound="waterfall.mp3" issolid="false"/>
+    <colbox pos="4670.0 1634.0 694.0" size="380 380 3"/>
+    <colbox pos="3865.0 1283.0 579.0" size="200 200 10"/>
+    <colbox pos="5416.0 2071.0 579.0" size="200 200 10"/>
+    <colbox pos="5315.0 895.0 579.0" size="200 200 10"/>
+    <colbox pos="5158.0 937.0 589.0" size="40 40 10"/>
+    <colbox pos="5011.0 969.0 589.0" size="40 40 10"/>
+    <colbox pos="4899.0 998.0 589.0" size="40 40 10"/>
+    <colbox pos="4785.0 1028.0 589.0" size="40 40 10"/>
+    <colbox pos="4662.0 1060.0 589.0" size="40 40 10"/>
+    <colbox pos="4518.0 1098.0 589.0" size="40 40 10"/>
+    <colbox pos="4366.0 1138.0 589.0" size="40 40 10"/>
+    <colbox pos="4237.0 1172.0 589.0" size="40 40 10"/>
+    <colbox pos="4106.0 1206.0 589.0" size="40 40 10"/>
+    <colbox pos="4010.0 1267.0 589.0" size="40 40 10"/>
+    <colbox pos="4886.0 1734.0 697.0" size="40 40 10"/>
+    <colbox pos="4942.0 1769.0 691.0" size="40 40 10"/>
+    <colbox pos="4996.0 1804.0 684.0" size="40 40 10"/>
+    <colbox pos="5071.0 1850.0 664.0" size="40 40 10"/>
+    <colbox pos="5141.0 1894.0 644.0" size="40 40 10"/>
+    <colbox pos="5202.0 1931.0 624.0" size="40 40 10"/>
+    <colbox pos="5274.0 1976.0 603.0" size="40 40 10"/>
+    <colbox pos="5384.0 1892.0 589.0" size="40 40 10"/>
+    <colbox pos="5377.0 1788.0 589.0" size="40 40 10"/>
+    <colbox pos="5369.0 1684.0 589.0" size="40 40 10"/>
+    <colbox pos="5362.0 1583.0 589.0" size="40 40 10"/>
+    <colbox pos="5356.0 1488.0 589.0" size="40 40 10"/>
+    <colbox pos="5349.0 1398.0 589.0" size="40 40 10"/>
+    <colbox pos="5343.0 1305.0 589.0" size="40 40 10"/>
+    <colbox pos="5336.0 1206.0 589.0" size="40 40 10"/>
+    <colbox pos="5329.0 1109.0 589.0" size="40 40 10"/>
+    <colbox pos="3696.0 1372.0 589.0" size="40 40 10"/>
+    <colbox pos="3629.0 1292.0 556.0" size="40 40 10"/>
+    <colbox pos="3684.0 1187.0 521.0" size="40 40 10"/>
+    <colbox pos="3760.0 1146.0 495.0" size="40 40 10"/>
+    <colbox pos="3861.0 1144.0 464.0" size="40 40 10"/>
+    <colbox pos="3950.0 1165.0 432.0" size="40 40 10"/>
+    <colbox pos="4028.0 1199.0 408.0" size="40 40 10"/>
+    <colbox pos="4011.0 1291.0 375.0" size="40 40 10"/>
+    <colbox pos="3974.0 1375.0 348.0" size="40 40 10"/>
+    <colbox pos="3909.0 1433.0 329.0" size="40 40 10"/>
+    <colbox pos="3834.0 1440.0 305.0" size="40 40 10"/>
+    <billboard pos="3298.0 4310.0 1037.0" scale="350 350 350 350" material="star"/>
+    <colbox pos="5663.0 5205.0 398.0" size="250 250 1.9"/>
+    <colbox pos="5663.0 5205.0 274.0" size="250 250 1.9"/>
+    <object mesh="bubble1" pos="5273.0 3072.0 269.0" scale=".6 .9 2.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="5446.0 3113.0 269.0" scale=".6 .9 2.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="5716.0 2976.0 266.0" scale=".6 .9 2.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="5960.0 3025.0 266.0" scale=".6 .9 2.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6208.0 2944.0 271.0" scale=".6 .9 2.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6365.0 2968.0 270.0" scale=".6 .9 2.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6537.0 2882.0 266.0" scale=".6 .9 2.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6684.0 2990.0 270.0" scale=".6 .9 2.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6842.0 2827.0 264.0" scale=".6 .9 2.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="7390.0 2972.0 270.0" scale="1.6 1.9 3.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="7426.0 2767.0 271.0" scale="1.6 1.9 3.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="7422.0 2532.0 270.0" scale="1.6 1.9 3.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="7418.0 2267.0 270.0" scale="1.6 1.9 3.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="7395.0 2042.0 267.0" scale="1.6 1.9 3.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="7256.0 1834.0 259.0" scale="1.6 1.9 3.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <colbox pos="3946.0 7225.0 908.0" size="560 560 19"/>
+    <colbox pos="3946.0 7225.0 1029.0" size="300 300 18.5"/>
+    <colbox pos="4282.0 7278.0 872.0" size="40 40 9"/>
+    <object mesh="Crystal" pos="3946.0 7225.0 1047.0" scale="19 19 19" rot="0 0 0" sound="" material=""/>
+    <billboard pos="3946.0 7225.0 1325.0" scale="140 140 140 140" material="eheart"/>
+    <colbox pos="4134.0 7301.0 990.0" size="40 40 9"/>
+    <object mesh="salmon" pos="2094.0 6573.0 61.0" scale="1 1 1" rot="60 0 0" sound="water1.wav" material=""/>
+    <object mesh="bubble1" pos="6224.0 3616.0 275.0" scale="1.1 1.1 4.5" rot="0 90 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6222.0 3497.0 139.0" scale="1 1 4.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6223.0 3604.0 137.0" scale="1 1 4.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6250.0 3687.0 137.0" scale="1 1 4.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6296.0 3782.0 137.0" scale="1 1 4.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6422.0 3827.0 137.0" scale="1 1 4.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6563.0 3743.0 137.0" scale="1 1 4.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6612.0 3599.0 137.0" scale="1 1 4.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6480.0 3452.0 137.0" scale="1 1 4.5" rot="0 0 0" sound="no sound" material="CaveMat"/>
+    <object mesh="bubble1" pos="6326.0 3463.0 144.0" scale="1 1 4.5" rot="0 90 30" sound="no sound" material="CaveMat"/>
+    <colsphere pos="6405.0 3599.0 137.0" radius="11 11"/>
+    <colsphere pos="7068.0 7698.0 923.0" radius="32"/>
+    <colbox pos="3946.0 7225.0 819.0" size="40 40 9"/>
+    <billboard pos="3946.0 7225.0 845.0" scale="75 75 75 75" material="eflame"/>
+    <colbox pos="3768.0 7366.0 819.0" size="30 30 9"/>
+    <colbox pos="4098.0 7144.0 819.0" size="30 30 9"/>
+    <colbox pos="4024.0 7071.0 819.0" size="30 30 9"/>
+    <colbox pos="4158.0 7223.0 819.0" size="30 30 9"/>
+    <colbox pos="4136.0 7389.0 819.0" size="30 30 9"/>
+    <colbox pos="3938.0 7466.0 819.0" size="30 30 9"/>
+    <colbox pos="4038.0 7468.0 819.0" size="30 30 9"/>
+    <colbox pos="3693.0 7185.0 819.0" size="30 30 9"/>
+    <colbox pos="3770.0 7059.0 819.0" size="30 30 9"/>
+    <waterplane pos="3958.0 7358.0 825.0" scale="0.1 0.1" material="Terrain/Healwater" sound="" issolid="false"/>
+    <colsphere pos="3935.0 7333.0 809.0" radius="20"/>
+    <colsphere pos="3982.0 7383.0 811.0" radius="20"/>
+    <colsphere pos="3933.0 7383.0 811.0" radius="20"/>
+    <colsphere pos="3982.0 7335.0 811.0" radius="20"/>
+    <colsphere pos="3981.0 7371.0 811.0" radius="20"/>
+    <colsphere pos="3982.0 7348.0 811.0" radius="20"/>
+    <colsphere pos="3951.0 7334.0 811.0" radius="20"/>
+    <colsphere pos="3965.0 7334.0 811.0" radius="20"/>
+    <colsphere pos="3932.0 7368.0 811.0" radius="20"/>
+    <colsphere pos="3933.0 7347.0 811.0" radius="20"/>
+    <colsphere pos="3966.0 7383.0 809.0" radius="20"/>
+    <colsphere pos="3944.0 7384.0 811.0" radius="20"/>
+    <colsphere pos="3985.0 7361.0 811.0" radius="20"/>
+    <colsphere pos="3930.0 7357.0 811.0" radius="20"/>
+    <colbox pos="3957.0 7231.0 961.0" size="40 40 1"/>
+    <particle name="PawFirePink" pos="4652.0 1636.0 967.0" sound=""/>
+    <particle name="PawFirePink" pos="4656.0 1642.0 697.0" sound=""/>
+    <particle name="PawFirePink" pos="4660.0 1642.0 697.0" sound=""/>
+    <particle name="PawFirePink" pos="4657.0 1636.0 697.0" sound=""/>
+    <particle name="PawFirePink" pos="4652.0 1638.0 697.0" sound=""/>
+    <particle name="PawFirePink" pos="4652.0 1640.0 697.0" sound=""/>
+    <particle name="PawFirePink" pos="4653.0 1640.0 697.0" sound=""/>
+    <particle name="PawFirePink" pos="4654.0 1643.0 697.0" sound=""/>
+    <particle name="PawFirePink" pos="4658.0 1642.0 697.0" sound=""/>
+    <particle name="PawFirePink" pos="4656.0 1639.0 697.0" sound=""/>
+    <particle name="PawFirePink" pos="4654.0 1637.0 697.0" sound=""/>
+    <particle name="PawFirePink" pos="4659.0 1639.0 697.0" sound=""/>
+    <particle name="PawFirePink" pos="4652.0 1636.0 700.0" sound=""/>
+    <particle name="PawFirePink" pos="4656.0 1642.0 700.0" sound=""/>
+    <particle name="PawFirePink" pos="4660.0 1642.0 700.0" sound=""/>
+    <particle name="PawFirePink" pos="4657.0 1636.0 700.0" sound=""/>
+    <particle name="PawFirePink" pos="4652.0 1638.0 700.0" sound=""/>
+    <particle name="PawFirePink" pos="4652.0 1640.0 700.0" sound=""/>
+    <particle name="PawFirePink" pos="4653.0 1640.0 700.0" sound=""/>
+    <particle name="PawFirePink" pos="4654.0 1643.0 700.0" sound=""/>
+    <particle name="PawFirePink" pos="4658.0 1642.0 700.0" sound=""/>
+    <particle name="PawFirePink" pos="4656.0 1639.0 700.0" sound=""/>
+    <particle name="PawFirePink" pos="4654.0 1637.0 700.0" sound=""/>
+    <particle name="PawFirePink" pos="4659.0 1639.0 700.0" sound=""/>
+    <colbox pos="4619.0 1517.0 697.0" size="30 30 9"/>
+    <colbox pos="4578.0 1565.0 697.0" size="30 30 9"/>
+    <colbox pos="4639.0 1749.0 697.0" size="30 30 9"/>
+    <colbox pos="4592.0 1716.0 697.0" size="30 30 9"/>
+    <colbox pos="4757.0 1568.0 697.0" size="30 30 9"/>
+    <colbox pos="4704.0 1546.0 697.0" size="30 30 9"/>
+    <colbox pos="4525.0 1649.0 697.0" size="40 40 18"/>
+    <particle name="WaterSplash" pos="3960.0 7362.0 819.0" sound=""/>
+    <particle name="waterfallSmoke" pos="6144.0 5491.0 137.0" sound=""/>
+    <particle name="Fireflyup" pos="5743.0 5150.0 137.0" sound=""/>
+    <particle name="Fireflyup" pos="5748.0 5233.0 137.0" sound=""/>
+    <particle name="Fireflyup" pos="5720.0 5312.0 137.0" sound=""/>
+    <particle name="Fireflyup" pos="4654.0 1636.0 697.0" sound=""/>
+    <particle name="Fireflyup" pos="4654.0 1636.0 697.0" sound=""/>
+    <particle name="waterfallSmoke" pos="869.0 1766.0 117.0" sound=""/>
+    <particle name="waterfallSmoke" pos="924.0 1808.0 117.0" sound=""/>
+    <particle name="BlueFlame" pos="4619.0 1517.0 718.0" sound=""/>
+    <particle name="BlueFlame" pos="4578.0 1565.0 718.0" sound=""/>
+    <particle name="BlueFlame" pos="4639.0 1749.0 718.0" sound=""/>
+    <particle name="BlueFlame" pos="4592.0 1716.0 718.0" sound=""/>
+    <particle name="BlueFlame" pos="4757.0 1568.0 718.0" sound=""/>
+    <particle name="BlueFlame" pos="4704.0 1546.0 718.0" sound=""/>
+    <particle name="BlueFlame" pos="4525.0 1649.0 738.0" sound=""/>
+</world>

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<world>
+    <terrain size="1000 1000 720.0" spawnpos="500 500 100" heightmap="icecaveterrain.png" material="Terrain/IceTerrain">
+        <interior color="" height="480" material="Terrain/IceTerrain"/>
+    </terrain>
+    <gate material="GateMatWhite" pos="517.0 146.0 350.0" destmap="Ice" destvec="5636.0 -1046.0"/>
+    <weathercycle name="None"/>
+    <mapeffect name="Exhale"/>
+    <waterplane pos="500.0 500.0 90.0" scale="2 2" material="GlowingIce" sound="no sound" issolid="true"/>
+    <light pos="500.0 500.0 50.0" color="0.4 0.9 1"/>
+    <light pos="517.0 146.0 350.0" color="0.75 0.74 0.72"/>
+    <billboard pos="565.0 153.0 350.0" scale="60 60 60 60" material="CaveLight"/>
+    <spherewall pos="500.0 500.0 0.0" radius="420" isinside="false"/>
+</world>

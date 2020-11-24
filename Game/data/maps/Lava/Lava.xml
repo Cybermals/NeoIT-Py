@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<world>
+    <terrain size="8000 8000 910.0" spawnpos="4000 4000 100" heightmap="lavaterrain.png" material="Terrain/LavaTerrain"/>
+    <weathercycle name="Redsky"/>
+    <portal pos="3967.0 7347.0 416.0" radius="25" destmap="ReallyBig"/>
+    <portal pos="1343.0 4957.0 551.0" radius="25" destmap="Default"/>
+    <portal pos="5766.0 7485.0 100.0" radius="10" destmap="Waterfall"/>
+    <portal pos="533.0 7597.0 600.0" radius="25" destmap="Ice"/>
+    <portal pos="6436.0 749.0 390.0" radius="30" destmap="Jungle"/>
+    <portal pos="3432.0 3218.0 370.0" radius="20" destmap="Volcano"/>
+    <waterplane pos="5316.0 4529.0 380.0" scale="2 2" material="Terrain/Magma" sound="lava1.wav" issolid="false"/>
+    <waterplane pos="157.0 7180.0 551.0" scale="0.3 0.3" material="Terrain/CalmWater" sound="water1.wav" issolid="false"/>
+    <waterplane pos="5766.0 7485.0 70.0" scale="0.4 0.4" material="Terrain/Magma" sound="lava1.wav" issolid="false"/>
+    <waterplane pos="3521.0 1502.0 400.0" scale="0.4 0.4" material="Terrain/Magma" sound="lava1.wav" issolid="false"/>
+    <waterplane pos="6772.0 520.0 250.0" scale="0.8 1" material="Terrain/CalmWater" sound="water1.wav" issolid="false"/>
+    <particle name="waterfallSmoke" pos="6830.0 527.0 241.0" sound=""/>
+    <particle name="waterfallSmoke" pos="6687.0 495.0 243.0" sound=""/>
+    <waterplane pos="3907.0 1125.0 380.0" scale="0.74 1" material="Terrain/CalmWater" sound="water1.wav" issolid="false"/>
+    <particle name="waterfallSmoke" pos="3855.0 1170.0 384.0" sound=""/>
+    <waterplane pos="4178.0 2828.0 135.0" scale="100 100" material="Terrain/LargeMagma" sound="lava1.wav" issolid="false"/>
+    <particle name="Geyser" pos="3905.0 5309.0 500.0" sound="Steam2.wav"/>
+    <particle name="Geyser" pos="3856.0 5387.0 501.0" sound="Steam2.wav"/>
+    <particle name="Geyser" pos="3908.0 5225.0 475.0" sound="Steam1.wav"/>
+    <particle name="Geyser" pos="6113.0 3681.0 450.0" sound="Steam1.wav"/>
+    <particle name="Geyser" pos="4447.0 4475.0 584.0" sound="Steam2.wav"/>
+    <particle name="Geyser" pos="4928.0 3304.0 256.0" sound="Steam2.wav"/>
+    <gate material="GateMatBlack" pos="5115.0 4810.0 395.0" destmap="Lava Cave" destvec="482.0 7110.0"/>
+</world>

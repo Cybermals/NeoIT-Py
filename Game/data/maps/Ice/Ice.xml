@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<world>
+    <terrain size="8000 8000 710.0" spawnpos="4000 4000 100" heightmap="iceterrain.png" material="Terrain/IceTerrain"/>
+    <weathercycle name="Snow"/>
+    <mapeffect name="Exhale"/>
+    <portal pos="4851.0 4148.0 288.0" radius="25" destmap="Default"/>
+    <portal pos="7537.0 2849.0 260.0" radius="25" destmap="Waterfall"/>
+    <portal pos="3124.0 3434.0 300.0" radius="25" destmap="Lava"/>
+    <portal pos="6657.0 3975.0 300.0" radius="25" destmap="Ocean"/>
+    <portal pos="6247.0 7095.0 300.0" radius="25" destmap="ReallyBig"/>
+    <waterplane pos="4000.0 4000.0 250.0" scale="30 30" material="Terrain/FrozenWater" sound="wind1.wav" issolid="true"/>
+    <gate material="GateMatBlack" pos="5590.0 5870.0 284.0" destmap="Ice Cave" destvec="622.0 7172.0"/>
+</world>

@@ -1,0 +1,14 @@
+[Portal]
+1336 60 2504
+15
+Valley of Love
+
+[Portal]
+1336 60 2464
+15
+Bunny Hop Meadow
+
+[Portal]
+1336 60 2424
+15
+Shrieking Hill

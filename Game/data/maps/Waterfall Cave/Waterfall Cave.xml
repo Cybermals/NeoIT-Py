@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<world>
+    <terrain size="1000 1000 440.0" spawnpos="500 500 100" heightmap="waterfallcaveterrain.png" material="Terrain/waterfallCave">
+        <interior color="" height="200" material="waterfallCaveCeiling"/>
+    </terrain>
+    <objectgroup mesh="Crystal" material="">
+        <object pos="500.0 500.0" scale="2.5 2.5 2.5" rot="0 0 0"/>
+        <object pos="510.0 504.0" scale="1.7 1.7 1.7" rot="180 0 0"/>
+        <object pos="490.0 485.0" scale="1 1 1" rot="155 0 0"/>
+        <object pos="488.0 508.0" scale="1.4 1.4 1.4" rot="90 0 0"/>
+    </objectgroup>
+    <gate material="GateMatWhite" pos="470.0 56.0 130.0" destmap="Waterfall" destvec="1590.0 -199.0"/>
+    <weathercycle name="None"/>
+    <waterplane pos="500.0 500.0 120.0" scale="2 2" material="Terrain/CalmWater" sound="water1.wav" issolid="false"/>
+    <light pos="470.0 56.0 130.0" color="0.75 0.74 0.72"/>
+    <billboard pos="472.0 105.0 130.0" scale="60 60 60 60" material="CaveLight"/>
+    <spherewall pos="500.0 500.0 0.0" radius="400" isinside="false"/>
+    <light pos="500.0 495.0 132.0" color="0.1 0.9 1"/>
+    <light pos="495.0 505.0 132.0" color="0.1 0.9 1"/>
+</world>

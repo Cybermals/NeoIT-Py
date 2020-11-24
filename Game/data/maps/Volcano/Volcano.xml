@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<world>
+    <terrain size="7500 7500 2210.0" spawnpos="977 6329 100" heightmap="volcanoterrain.png" material="Terrain/VolcanoTerrain"/>
+    <weathercycle name="Redsky"/>
+    <portal pos="1088.0 1177.0 880.0" radius="25" destmap="Default"/>
+    <portal pos="3968.0 3590.0 1650.0" radius="25" destmap="Jungle"/>
+    <portal pos="5075.0 4175.0 1100.0" radius="25" destmap="Lava"/>
+    <portal pos="3365.0 3782.0 15.0" radius="25" destmap="Ocean"/>
+    <waterplane pos="3240.0 3722.0 1700.0" scale="1.2 1.2" material="Terrain/Magma" sound="lava1.wav" issolid="false"/>
+    <waterplane pos="6050.0 5775.0 600.0" scale="1.4 1.4" material="Terrain/Magma" sound="lava1.wav" issolid="false"/>
+    <waterplane pos="6892.0 823.0 425.0" scale="5.5 7.5" material="Terrain/Magma" sound="lava1.wav" issolid="false"/>
+    <waterplane pos="2125.0 1015.0 295.0" scale="1.5 1.5" material="Terrain/CalmWater" sound="water1.wav" issolid="false"/>
+    <waterplane pos="2435.0 7095.0 460.0" scale="2 2" material="Terrain/CalmWater" sound="water1.wav" issolid="false"/>
+    <particle name="waterfallSmoke" pos="2148.0 889.0 290.0" sound=""/>
+    <particle name="waterfallSmoke" pos="2060.0 1002.0 290.0" sound=""/>
+    <particle name="waterfallSmoke" pos="2160.0 1100.0 290.0" sound=""/>
+    <particle name="waterfallSmoke" pos="2703.0 7115.0 455.0" sound=""/>
+    <particle name="waterfallSmoke" pos="2431.0 7029.0 455.0" sound=""/>
+    <particle name="waterfallSmoke" pos="2283.0 7109.0 455.0" sound=""/>
+    <particle name="waterfallSmoke" pos="2207.0 7104.0 455.0" sound=""/>
+    <particle name="waterfallSmoke" pos="2574.0 7002.0 455.0" sound=""/>
+    <particle name="waterfallSmoke" pos="2549.0 7130.0 455.0" sound=""/>
+    <particle name="waterfallSmoke" pos="2159.0 7050.0 455.0" sound=""/>
+    <particle name="Geyser" pos="1962.0 7206.0 502.0" sound="Steam2.wav"/>
+    <particle name="Geyser" pos="5640.0 3840.0 902.0" sound="Steam2.wav"/>
+    <particle name="Geyser" pos="510.0 5024.0 895.0" sound="Steam2.wav"/>
+    <particle name="Geyser" pos="2364.0 915.0 510.0" sound="Steam2.wav"/>
+</world>
